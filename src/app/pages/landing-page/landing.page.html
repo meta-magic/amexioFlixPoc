@@ -1,7 +1,67 @@
-<div style="height: 100vh;background-color: lightgrey">
+<div style="height: 100vh;background-color: black">
     <app-nav-bar></app-nav-bar>
   <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <amexio-tab-pane  [closable]="false">
+          <amexio-tab title="Personal" [active]="true">
+            <h4>Personal</h4>
+            <amexio-card-pane [enableHeader]="false">
+              <amexio-pane-body>
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" class="img-fluid" alt="">
+                <br/>
+                <h5 class="red-text"><i class="fa fa-money"></i> Business</h5>
+                <h4 class="card-title">Let your startup grow!</h4>
+                <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+              </amexio-pane-body>
+              <amexio-pane-action>
+                <div style="float: right;">
+                </div>
+              </amexio-pane-action>
+            </amexio-card-pane>
+          </amexio-tab>
+          <amexio-tab title="Work">
+            <h4>Work</h4>
+
+            <amexio-card-pane [enableHeader]="false">
+              <amexio-pane-body>
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" class="img-fluid" alt="">
+                <br/>
+                <h5 class="red-text"><i class="fa fa-money"></i> Business</h5>
+                <h4 class="card-title">Let your startup grow!</h4>
+                <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+              </amexio-pane-body>
+              <amexio-pane-action>
+                <div style="float: right;">
+                </div>
+              </amexio-pane-action>
+            </amexio-card-pane>
+          </amexio-tab>
+          <amexio-tab title="Notes">
+            <h4>Notes</h4>
+
+            <amexio-card-pane [enableHeader]="false">
+              <amexio-pane-body>
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" class="img-fluid" alt="">
+                <br/>
+                <h5 class="red-text"><i class="fa fa-money"></i> Business</h5>
+                <h4 class="card-title">Let your startup grow!</h4>
+                <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+              </amexio-pane-body>
+              <amexio-pane-action>
+                <div style="float: right;">
+                </div>
+              </amexio-pane-action>
+            </amexio-card-pane>
+          </amexio-tab>
+        </amexio-tab-pane>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
     <app-multi-item-carousel></app-multi-item-carousel>
+      </div>
+    </div>
   </div>
 </div>
 
