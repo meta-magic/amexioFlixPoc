@@ -81,6 +81,7 @@ declare var $: any;
           vertical-align: top;
           cursor: pointer;
       }
+     
   `]
 
 })
