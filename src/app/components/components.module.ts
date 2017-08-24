@@ -16,12 +16,13 @@ import {CommonHttpService} from './common.http.service';
 import {DropDownComponent} from './dropdown/dropdown';
 import {FormsModule} from '@angular/forms';
 import {ListBoxComponent} from './listbox/listbox.component';
+import {ButtonComponent} from "./button/button.component";
 
 const COMPONENTS = [
   DeferredLoader,
   MultiItemCarousel,  TabPaneComponent, TabComponent,
   CardComponent, PaneBodyComponent, PaneActionComponent, ContentComponent, RatingInputComponent,
-  DropDownComponent, ListBoxComponent
+  DropDownComponent, ListBoxComponent, ButtonComponent
 ];
 
 @NgModule({

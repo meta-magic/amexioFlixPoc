@@ -1,14 +1,4 @@
-.background-image{
-  background-image: url('https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX1920_.jpg');
-  height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: 100% top;
-  background-attachment: fixed;
-}
+
 .cursor-style{
   cursor: pointer;
 }

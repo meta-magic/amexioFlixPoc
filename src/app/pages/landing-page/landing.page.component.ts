@@ -17,7 +17,6 @@ export class LandingPageComponent implements OnInit {
 
   public max = 10;
   public rate = 7;
-  public isReadonly = false;
  constructor() {
    this.content = [
      {
