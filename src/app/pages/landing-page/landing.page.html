@@ -7,11 +7,13 @@
           <amexio-tab title="OVERVIEW" [active]="true">
             <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
               <amexio-pane-body>
-                  <div CLASS="background-image">
+                  <div class="background-image img-fluid">
                   <div class="col-lg-6 col-sm-12" style="padding: 70px 0 0 5%;color: white;">
-                  <amexio-content [title]="'Sully'" [description]="'The story of Chesley Sullenberger, who became a hero after gliding his plane along the water in the Hudson River, saving all of his 155 passengers.'"
-                  [contents]="content" [videoLink]="'demo'"
-                  ></amexio-content>
+                  <amexio-content [title]="'Sully'"
+                                  [description]="'The story of Chesley Sullenberger, who became a hero after gliding his plane along the water in the Hudson River, saving all of his 155 passengers.'"
+                                  [contents]="content" [videoLink]="'demo'">
+
+                  </amexio-content>
                     <div>
                     <amexio-rating-input [(ngModel)]="rate"
                                          [max]="max" name="rate"
@@ -27,7 +29,7 @@
           <amexio-tab title="EPISODES">
             <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
               <amexio-pane-body>
-                <div CLASS="background-image">
+                <div class="background-image">
                   <div class="col-lg-6 col-sm-12" style="padding: 70px 0 0 5%;color: white;height: 60vh">
                     <amexio-content [title]="'Suits'"
                     ></amexio-content>
@@ -50,7 +52,7 @@
               </amexio-pane-action>
             </amexio-card-pane>
           </amexio-tab>
-          <amexio-tab title="MORE LINK THIS">
+          <amexio-tab title="MORE LIKE THIS">
             <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
               <amexio-pane-body>
                 <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" class="img-fluid" alt="">
@@ -79,11 +81,11 @@
         </amexio-tab-pane>
       </div>
     </div>
-    <div class="row">
+   <!-- <div class="row">
       <div class="col-sm-12">
     <app-multi-item-carousel></app-multi-item-carousel>
       </div>
-    </div>
+    </div>-->
   </div>
 
 
