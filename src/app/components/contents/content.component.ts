@@ -9,6 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
     <div class=" img-fluid" [ngStyle]="bgImageClass" (window:resize)="onResize()">
       <div class="col-lg-6 col-sm-12" style="padding: 70px 0 0 5%;color: white;">
       <h1 *ngIf="title">{{title}}</h1>
+        
       <h5 *ngIf="description"><p>{{description}}</p></h5>
         <ng-container *ngIf="contents">
           <ul *ngFor="let data of contents">
@@ -16,11 +17,11 @@ import {Component, Input, OnInit} from '@angular/core';
           </ul>
         </ng-container>
       <ul class="nav">
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="enableWatch">
           <span class="nav-link"> <amexio-btn [label]="'Watch'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'watch'" (onClick)="playVideo()"></amexio-btn>
       </span>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="enableMyList">
           <span class="nav-link"><amexio-btn [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" (onClick)="addToList()"></amexio-btn></span>
         </li>
       </ul>
@@ -31,6 +32,10 @@ import {Component, Input, OnInit} from '@angular/core';
                              [readonly]="isReadonly">
         </amexio-rating-input>
         </ng-container>
+       
+      </div>
+      <div class="col-lg-12">
+        <ng-content></ng-content><br><br>
       </div>
     </div>
   `,
@@ -55,6 +60,10 @@ export class ContentComponent implements OnInit {
   @Input() max: any;
 
   @Input() isReadonly: boolean;
+
+  @Input() enableWatch: boolean = false;
+
+  @Input() enableMyList: boolean = false;
 
   bgImageClass: any;
 

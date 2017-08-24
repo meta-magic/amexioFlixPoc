@@ -1,6 +1,6 @@
 
     <app-nav-bar></app-nav-bar>
-  <div class="container-fluid" style="height: 100vh;background-color: black">
+  <div class="container-fluid" style="background-color: black">
     <div class="row">
       <div class="col-sm-12">
         <amexio-tab-pane  [closable]="false">
@@ -11,37 +11,42 @@
                     [bgImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX1920_.jpg'"
                     [title]="'Sully'" [description]="'The story of Chesley Sullenberger, who became a hero after gliding his plane along the water in the Hudson River, saving all of his 155 passengers.'"
                   [contents]="content" [videoLink]="'demo'"
-                  [rate]="rate" [max]="max" ></amexio-content>
+                  [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" ></amexio-content>
               </amexio-pane-body>
             </amexio-card-pane>
           </amexio-tab>
           <amexio-tab title="EPISODES">
             <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
               <amexio-pane-body>
-                <div CLASS="background-image">
-                  <div class="col-lg-6 col-sm-12" style="padding: 70px 0 0 5%;color: white;height: 60vh">
-                    <amexio-content [title]="'Suits'"
-                    ></amexio-content>
-                    <amexio-dropdown [(ngModel)]="episodeName"
-                                     [placeholder]="'episode'"
-                                     name="episodeName"
-                                     [dataReader]="'response.data'"
-                                     [httpUrl]="'assets/data/episode.json'"
-                                     [httpMethod]="'get'"
-                                     [displayField]="'episode'"
-                                     [valueField]="'code'"
-                                     [width]="'250px'">
-                    </amexio-dropdown>
-                    <div>
-                    </div>
+                <amexio-content [bgMobileImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX360_.jpg'"
+                                [bgImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX1920_.jpg'"
+                                [title]="'Suits'">
+                  <amexio-dropdown [(ngModel)]="episodeName"
+                                   [placeholder]="'episode'"
+                                   name="episodeName"
+                                   [dataReader]="'response.data'"
+                                   [httpUrl]="'assets/data/episode.json'"
+                                   [httpMethod]="'get'"
+                                   [displayField]="'episode'"
+                                   [valueField]="'code'"
+                                   [width]="'250px'">
+                  </amexio-dropdown>
+                <br><br>
+                  <div class="row">
+                    <amexio-multi-item-carousel>
+                      <ng-container *ngFor="let item of data;let i =index">
+                        <amexio-media-content [id]="i"></amexio-media-content>
+                      </ng-container>
+                    </amexio-multi-item-carousel>
                   </div>
-                </div>
+                </amexio-content>
+
               </amexio-pane-body>
               <amexio-pane-action>
               </amexio-pane-action>
             </amexio-card-pane>
           </amexio-tab>
-          <amexio-tab title="MORE LINK THIS">
+          <amexio-tab title="MORE LIKE THIS">
             <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
               <amexio-pane-body>
                 <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" class="img-fluid" alt="">
