@@ -1,6 +1,6 @@
 
     <app-nav-bar></app-nav-bar>
-  <div class="container-fluid" style="height: 100vh;background-color: black">
+  <div class="container-fluid" style="background-color: black">
     <div class="row">
       <div class="col-sm-12">
         <amexio-tab-pane  [closable]="false">
@@ -71,35 +71,7 @@
       </div>
     </div>
 
-
-    <br><br><br>
-    <div class="row">
-      <amexio-multi-item-carousel>
-        <ng-container *ngFor="let item of data;let i =index">
-          <amexio-media-content [id]="i"></amexio-media-content>
-        </ng-container>
-      </amexio-multi-item-carousel>
-    </div>
-
-    <br><br><br>
-    <div class="row">
-      <amexio-multi-item-carousel>
-        <ng-container *ngFor="let item of data;let i =index">
-          <amexio-media-content [id]="i+1"></amexio-media-content>
-        </ng-container>
-      </amexio-multi-item-carousel>
-    </div>
-
-    <br><br><br>
-    <div class="row">
-      <amexio-multi-item-carousel>
-        <ng-container *ngFor="let item of data;let i =index">
-          <amexio-media-content [id]="i+2"></amexio-media-content>
-        </ng-container>
-      </amexio-multi-item-carousel>
-    </div>
-
-
+   <!--
     <br><br><br>
     <div class="row">
       <amexio-multi-item-carousel>
@@ -107,8 +79,8 @@
           <amexio-media-content [id]="i*2"></amexio-media-content>
         </ng-container>
       </amexio-multi-item-carousel>
-    </div>
-
+    </div>-->
+<!--
     <br><br><br>
     <div class="row" pagedefer>
       <ng-template>
@@ -118,7 +90,31 @@
           </ng-container>
         </amexio-multi-item-carousel>
       </ng-template>
+    </div>-->
+
+    <br><br><br>
+    <div class="row">
+      <ng-template>
+        <amexio-multi-item-carousel>
+          <ng-container *ngFor="let item of data;let i =index">
+            <amexio-media-content [id]="i*5"></amexio-media-content>
+          </ng-container>
+        </amexio-multi-item-carousel>
+      </ng-template>
     </div>
+
+    <br><br><br>
+    <div class="row">
+      <ng-template>
+      <amexio-multi-item-carousel>
+        <ng-container *ngFor="let item of data;let i =index">
+          <amexio-media-content [id]="i*6"></amexio-media-content>
+        </ng-container>
+      </amexio-multi-item-carousel>
+      </ng-template>
+    </div>
+
+
 
     <br><br><br>
     <div class="row" pagedefer>
@@ -145,13 +141,47 @@
     <br><br><br>
     <div class="row" pagedefer>
       <ng-template>
-      <amexio-multi-item-carousel>
-        <ng-container *ngFor="let item of data;let i =index">
-          <amexio-media-content [id]="i*6"></amexio-media-content>
-        </ng-container>
-      </amexio-multi-item-carousel>
+        <amexio-multi-item-carousel>
+          <ng-container *ngFor="let item of data;let i =index">
+            <amexio-media-content [id]="i*6"></amexio-media-content>
+          </ng-container>
+        </amexio-multi-item-carousel>
       </ng-template>
     </div>
+
+    <br><br><br>
+    <div class="row" pagedefer>
+      <ng-template>
+        <amexio-multi-item-carousel>
+          <ng-container *ngFor="let item of data;let i =index">
+            <amexio-media-content [id]="i*6"></amexio-media-content>
+          </ng-container>
+        </amexio-multi-item-carousel>
+      </ng-template>
+    </div>
+
+    <br><br><br>
+    <div class="row" pagedefer>
+      <ng-template>
+        <amexio-multi-item-carousel>
+          <ng-container *ngFor="let item of data;let i =index">
+            <amexio-media-content [id]="i*6"></amexio-media-content>
+          </ng-container>
+        </amexio-multi-item-carousel>
+      </ng-template>
+    </div>
+
+    <br><br><br>
+    <div class="row" pagedefer>
+      <ng-template>
+        <amexio-multi-item-carousel>
+          <ng-container *ngFor="let item of data;let i =index">
+            <amexio-media-content [id]="i*6"></amexio-media-content>
+          </ng-container>
+        </amexio-multi-item-carousel>
+      </ng-template>
+    </div>
+
 
   </div>
 
