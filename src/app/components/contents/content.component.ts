@@ -11,9 +11,22 @@ import {Component, Input, OnInit} from '@angular/core';
       <h5><p>{{description}}
       </p></h5>
       <ul *ngFor="let data of contents">
-        <li><b style="color: black">{{data.key}}</b> : {{data.value}}</li>
+        <li><b>{{data.key}}</b> : {{data.value}}</li>
       </ul>
-    <button *ngIf="videoLink" class="btn btn-primary" >watch</button>
+    <button *ngIf="videoLink" class="btn btn-primary" >watch</button><br><br>
+      <ul class="nav">
+        <li class="nav-item">
+          <span class="nav-link active"> <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link"> <i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link"> <i class="fa fa-check-circle-o fa-2x" aria-hidden="true"> MY LIST</i></span>
+        </li>
+      </ul>
+     
+     
     
   `
 })
