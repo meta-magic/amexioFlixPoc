@@ -16,13 +16,13 @@ import {Component, Input, OnInit} from '@angular/core';
     <button *ngIf="videoLink" class="btn btn-primary" >watch</button><br><br>
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#"> <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></a>
+          <span class="nav-link active"> <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></span>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> <i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></a>
+          <span class="nav-link"> <i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></span>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> <i class="fa fa-check-circle-o fa-2x" aria-hidden="true"> MY LIST</i></a>
+          <span class="nav-link"> <i class="fa fa-check-circle-o fa-2x" aria-hidden="true"> MY LIST</i></span>
         </li>
       </ul>
      
