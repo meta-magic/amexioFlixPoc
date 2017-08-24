@@ -1,20 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+
 .nav-tabs .nav-link{
   border: 0px solid transparent !important;
 }
 
 .nav-link.active{
+  color: white !important;
+  background-color: black !important;;
   border-bottom: 2px solid red !important;
-  font-weight: bold !important;
+}
 
-}
 .nav-tabs {
-  border-bottom: 1px solid #ddd !important;
-  font-weight: bold !important;
+  color: white;
+  border-bottom: 1px solid black !important;
 }
+
 .card-block {
   padding: 0 !important;
 }
+
+.card {
+  border: none;
+}
 .cursor-style{
   cursor:pointer;
+}
+
+.nav-item{
+  padding-left: 10px;
+}
+
+.amexioContent h1{
+  color: white !important;
+  font-size: 35px !important;
+  line-height: 36px !important;;
+  margin-bottom: 12px !important;;
 }
