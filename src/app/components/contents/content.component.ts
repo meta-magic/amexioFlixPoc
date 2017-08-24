@@ -1,7 +1,7 @@
 /**
  * Created by dattaram on 23/8/17.
  */
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'amexio-content',
@@ -65,6 +65,10 @@ export class ContentComponent implements OnInit {
 
   @Input() enableMyList: boolean = false;
 
+  @Output() onWatchClick: EventEmitter<any>= new EventEmitter<any>();
+
+  @Output() onAddListClick: EventEmitter<any>= new EventEmitter<any>();
+
   bgImageClass: any;
 
   constructor() {
@@ -76,10 +80,10 @@ export class ContentComponent implements OnInit {
   }
 
   playVideo() {
-
+   this.onWatchClick.emit(this.videoLink);
   }
   addToList() {
-
+  this.onAddListClick.emit(this.title);
   }
   onResize() {
     if (window.innerWidth < 995) {
