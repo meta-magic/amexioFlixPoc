@@ -47,4 +47,8 @@ export class LandingPageComponent implements OnInit {
   loadContent(){
    console.log('push content');
   }
+
+  addToList(data: any) {
+    console.log(data);
+  }
 }

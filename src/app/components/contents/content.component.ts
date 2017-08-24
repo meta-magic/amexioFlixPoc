@@ -71,6 +71,8 @@ export class ContentComponent implements OnInit {
 
   bgImageClass: any;
 
+  overviewData: any;
+
   constructor() {
 
   }
@@ -83,7 +85,13 @@ export class ContentComponent implements OnInit {
    this.onWatchClick.emit(this.videoLink);
   }
   addToList() {
-  this.onAddListClick.emit(this.title);
+    this.overviewData = {
+      'title': this.title,
+      'description': this.description,
+      'Video Link': this.videoLink,
+      'rate': this.rate
+    }
+  this.onAddListClick.emit(this.overviewData);
   }
   onResize() {
     if (window.innerWidth < 995) {
