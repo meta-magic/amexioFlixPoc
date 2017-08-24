@@ -9,7 +9,49 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppNavBarComponent implements OnInit {
- constructor() { }
+
+  bindData: any;
+
+  isMobile: boolean;
+
+  alignClass: string='dropdown-menu-right'
+
+ constructor() {
+   this.bindData = {
+     "response": {
+       "success": true,
+       "message": "Fetching  Data  Request Succeeded: Profile",
+       "data": [
+         {
+           "name": "House Of Cards",
+           "profile": "44.jpg"
+         },
+         {
+           "name": "Game Of Thrones",
+           "profile": "11.jpg"
+         },
+         {
+           "name": "Jurassic Shark",
+           "profile": "22.jpg"
+         },
+         {
+           "name": "Hansel vs Gretel",
+           "profile": "33.jpg"
+         }
+       ]
+     }
+   };
+ }
 
  ngOnInit() { }
+
+  onResize(event:any) {
+    console.log(event.target.innerWidth);
+    if (event.target.innerWidth < 995) {
+      this.isMobile = true;
+      this.alignClass = 'dropdown-menu-left';
+    } else {
+      this.isMobile = false;
+    }
+  }
 }

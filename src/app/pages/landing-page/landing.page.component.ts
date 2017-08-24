@@ -5,11 +5,43 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
  selector: 'landing-page',
- templateUrl: 'landing.page.html'
+ templateUrl: 'landing.page.html',
+  styleUrls: ['landing.page.css']
 })
 
 export class LandingPageComponent implements OnInit {
- constructor() { }
+
+  content: any[];
+
+  episodeName: string;
+
+  public max = 10;
+  public rate = 7;
+  public isReadonly = false;
+ constructor() {
+   this.content = [
+     {
+       'key': 'Director',
+       'value': 'Clint Eastwood'
+     },
+     {
+       'key': 'Starring',
+       'value': '	Tom Hanks, Aaron Eckhart, Laura Linney'
+     },
+     {
+       'key': 'Genres',
+       'value': 'Drama: Biography'
+     },
+     {
+       'key': 'Subtitles',
+       'value': '	English [CC]'
+     },
+     {
+       'key': 'Audio Languages',
+       'value': 'English'
+     }
+     ];
+ }
 
  ngOnInit() { }
 

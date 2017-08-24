@@ -1,0 +1,15 @@
+{
+  "alarm" : null,
+  "response" : {
+    "success": true,
+    "message": "Fetching  Data  Request Succeeded: episode",
+    "data": [
+      {"episode": "episode 1","code": "Ck"},
+      {"episode": "episode 2","code": "Sw"},
+      {"episode": "episode 3","code": "Glf"},
+      {"episode": "episode 4","code": "Hky"},
+      {"episode": "episode 5","code": "Scr"},
+      {"episode": "episode 6","code": "F1"}
+    ]
+  }
+}

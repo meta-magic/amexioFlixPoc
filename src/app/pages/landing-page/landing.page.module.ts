@@ -9,6 +9,9 @@ import {AppNavBarComponent} from "../layout/page.nav.bar.component";
 import {RouterModule, Routes} from "@angular/router";
 import {CommonModule} from "@angular/common";
 import {ComponentModule} from "../../components/components.module";
+import {FormsModule} from "@angular/forms";
+import {CommonHttpService} from "../../components/common.http.service";
+import {HttpModule} from "@angular/http";
 
 const routes: Routes = [
   { path: '', redirectTo: 'app', pathMatch: 'full'},
@@ -17,10 +20,10 @@ const routes: Routes = [
 
 
 @NgModule({
- imports: [CommonModule,RouterModule.forChild(routes),ComponentModule],
+ imports: [CommonModule, FormsModule, HttpModule, RouterModule.forChild(routes),ComponentModule],
  exports: [],
  declarations: [LandingPageComponent,AppNavBarComponent],
- providers: [],
+ providers: [CommonHttpService],
 })
 export class LandingPageModule {
 

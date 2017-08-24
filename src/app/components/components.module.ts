@@ -10,17 +10,24 @@ import {PaneBodyComponent} from './panes/panebody.component';
 import {CardComponent} from './panes/card.component';
 import {TabPaneComponent} from './tabpane/tabpane.component';
 import {TabComponent} from './tabpane/tabpill.component';
+import {ContentComponent} from './contents/content.component';
+import {RatingInputComponent} from './ratinginput/ratinginput.component';
+import {CommonHttpService} from './common.http.service';
+import {DropDownComponent} from './dropdown/dropdown';
+import {FormsModule} from '@angular/forms';
+import {ListBoxComponent} from './listbox/listbox.component';
 
 const COMPONENTS = [
   DeferredLoader,
   MultiItemCarousel,  TabPaneComponent, TabComponent,
-  CardComponent, PaneBodyComponent, PaneActionComponent
+  CardComponent, PaneBodyComponent, PaneActionComponent, ContentComponent, RatingInputComponent,
+  DropDownComponent, ListBoxComponent
 ];
 
 @NgModule({
- imports: [CommonModule],
+ imports: [CommonModule, FormsModule],
  exports: COMPONENTS,
  declarations: COMPONENTS,
- providers: [],
+ providers: [CommonHttpService],
 })
 export class ComponentModule { }
