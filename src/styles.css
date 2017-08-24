@@ -29,3 +29,10 @@
 .nav-item{
   padding-left: 10px;
 }
+
+.amexioContent h1{
+  color: white !important;
+  font-size: 35px !important;
+  line-height: 36px !important;;
+  margin-bottom: 12px !important;;
+}
