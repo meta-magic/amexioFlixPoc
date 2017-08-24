@@ -14,7 +14,7 @@ export class LandingPageComponent implements OnInit {
   content: any[];
 
   episodeName: string;
-
+  data : any[] = [1,2,3,4,5,6,7,8,9,10];
   public max = 10;
   public rate = 7;
  constructor() {
