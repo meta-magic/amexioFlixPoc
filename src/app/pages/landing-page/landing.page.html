@@ -1,14 +1,13 @@
 
     <app-nav-bar></app-nav-bar>
-  <div class="container-fluid" style="background-color: black">
+  <div class="container-fluid" style="background-color: black;overflow-y: hidden" >
     <div class="row">
       <div class="col-sm-12" style="padding-top: 100px">
         <amexio-tab-pane  [closable]="false">
           <amexio-tab title="OVERVIEW" [active]="true">
             <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
               <amexio-pane-body>
-                  <amexio-content [bgMobileImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX360_.jpg'"
-                    [bgImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX1920_.jpg'"
+                  <amexio-content [bgImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX1920_.jpg'"
                     [title]="'Sully'" [description]="'The story of Chesley Sullenberger, who became a hero after gliding his plane along the water in the Hudson River, saving all of his 155 passengers.'"
                   [contents]="content" [videoLink]="'demo'"
                   [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" ></amexio-content>
@@ -95,95 +94,43 @@
       </ng-template>
     </div>-->
 
-    <br><br><br>
-    <div class="row">
-      <ng-template>
-        <amexio-multi-item-carousel>
-          <ng-container *ngFor="let item of data;let i =index">
-            <amexio-media-content [id]="i*5"></amexio-media-content>
+
+        <amexio-multi-item-carousel [title]="'Top Rated Content'">
+          <ng-container *ngFor="let item of topRateContent">
+            <amexio-media-content [imgPath]="item.img"></amexio-media-content>
           </ng-container>
         </amexio-multi-item-carousel>
-      </ng-template>
-    </div>
-
-    <br><br><br>
-    <div class="row">
-      <ng-template>
-      <amexio-multi-item-carousel>
-        <ng-container *ngFor="let item of data;let i =index">
-          <amexio-media-content [id]="i*6"></amexio-media-content>
-        </ng-container>
-      </amexio-multi-item-carousel>
-      </ng-template>
-    </div>
 
 
 
-    <br><br><br>
-    <div class="row" pagedefer>
-      <ng-template>
-        <amexio-multi-item-carousel>
-          <ng-container *ngFor="let item of data;let i =index">
-            <amexio-media-content [id]="i*4"></amexio-media-content>
+        <amexio-multi-item-carousel [title]="'Most watched'">
+          <ng-container *ngFor="let item of topRateContent" >
+            <amexio-media-content [imgPath]="item.img"></amexio-media-content>
           </ng-container>
         </amexio-multi-item-carousel>
-      </ng-template>
-    </div>
 
-    <br><br><br>
-    <div class="row" pagedefer>
-      <ng-template>
-        <amexio-multi-item-carousel>
-          <ng-container *ngFor="let item of data;let i =index">
-            <amexio-media-content [id]="i*5"></amexio-media-content>
+
+        <amexio-multi-item-carousel [title]="'Picks for you'">
+          <ng-container *ngFor="let item of topRateContent">
+            <amexio-media-content [imgPath]="item.img"></amexio-media-content>
           </ng-container>
         </amexio-multi-item-carousel>
-      </ng-template>
-    </div>
 
-    <br><br><br>
-    <div class="row" pagedefer>
-      <ng-template>
-        <amexio-multi-item-carousel>
-          <ng-container *ngFor="let item of data;let i =index">
-            <amexio-media-content [id]="i*6"></amexio-media-content>
+
+        <amexio-multi-item-carousel [title]="'All Time'">
+          <ng-container *ngFor="let item of topRateContent">
+            <amexio-media-content [imgPath]="item.img"></amexio-media-content>
           </ng-container>
         </amexio-multi-item-carousel>
-      </ng-template>
-    </div>
 
-    <br><br><br>
-    <div class="row" pagedefer>
-      <ng-template>
-        <amexio-multi-item-carousel>
-          <ng-container *ngFor="let item of data;let i =index">
-            <amexio-media-content [id]="i*6"></amexio-media-content>
+
+
+        <amexio-multi-item-carousel [title]="'Your List'">
+          <ng-container *ngFor="let item of topRateContent">
+            <amexio-media-content [imgPath]="item.img"></amexio-media-content>
           </ng-container>
         </amexio-multi-item-carousel>
-      </ng-template>
-    </div>
 
-    <br><br><br>
-    <div class="row" pagedefer>
-      <ng-template>
-        <amexio-multi-item-carousel>
-          <ng-container *ngFor="let item of data;let i =index">
-            <amexio-media-content [id]="i*6"></amexio-media-content>
-          </ng-container>
-        </amexio-multi-item-carousel>
-      </ng-template>
-    </div>
-
-    <br><br><br>
-    <div class="row" pagedefer>
-      <ng-template>
-        <amexio-multi-item-carousel>
-          <ng-container *ngFor="let item of data;let i =index">
-            <amexio-media-content [id]="i*6"></amexio-media-content>
-          </ng-container>
-        </amexio-multi-item-carousel>
-      </ng-template>
-    </div>
 
 
   </div>

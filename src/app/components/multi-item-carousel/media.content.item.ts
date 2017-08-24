@@ -7,8 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
  selector: 'amexio-media-content',
  template: `   
    <div class="carosel-item" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()">
-    <img src="http://via.placeholder.com/350x150/bbbbbb/fff&amp;text={{id+1}}" />
-     <h6 hidden="null">Dummy Information</h6>
+    <img src="{{imgPath}}" />
    </div>
      
  `,
@@ -20,9 +19,13 @@ export class MediaContentItem implements OnInit {
   @Input() id : string;
   showText : boolean;
 
+  @Input() imgPath : any;
+
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    console.log(this.imgPath);
+  }
 
   onHoverEnter(){
     this.showText = true;

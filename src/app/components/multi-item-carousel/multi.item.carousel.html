@@ -1,19 +1,22 @@
-<div class="carosel" [attr.id]="elementId">
+<div style="padding-bottom: 10px;">
+  <div style="color: white;"><b>{{title}}</b></div>
+  <div class="carosel" [attr.id]="elementId">
 
-  <!-- Left  button -->
-  <a class="carousel-control-prev" (click)="onPreviousClick()" [attr.id]="'prev-'+elementId" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
+    <!-- Left  button -->
+    <a class="carousel-control-prev" (click)="onPreviousClick()" [attr.id]="'prev-'+elementId" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
 
-  <div class="carosel-inner">
-    <ng-content></ng-content>
+    <div class="carosel-inner">
+      <ng-content></ng-content>
+    </div>
+
+
+    <!-- Right button -->
+    <a class="carousel-control-next" (click)="onNextClick()" [attr.id]="'next-'+elementId" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-
-
-  <!-- Right  button -->
-  <a class="carousel-control-next" (click)="onNextClick()" [attr.id]="'next-'+elementId" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>

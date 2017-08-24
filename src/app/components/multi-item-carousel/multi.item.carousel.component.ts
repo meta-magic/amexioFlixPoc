@@ -10,12 +10,14 @@ declare var $;
   styleUrls : ['carousel.style.css']
 })
 
-export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit {
+export class MultiItemCarousel implements OnInit,AfterViewInit {
 
 
     @Input()  data : any;
 
     elementId : any;
+
+    @Input() title : any;
 
     constructor() {
       this.elementId = 'multi-item-carousel-' + Math.floor(Math.random()*90000) + 10000;
@@ -24,11 +26,6 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
     ngOnInit() { }
 
     ngAfterViewInit(){}
-
-    ngAfterContentInit() {
-
-    }
-
 
 
     onPreviousClick(){
