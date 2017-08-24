@@ -105,7 +105,8 @@ export class ContentComponent implements OnInit {
       this.bgImageClass = {
         'background-image': 'url(' + this.bgImgUrl + ')',
         'height': 100 + '%',
-        'background-repeat': 'no-repeat'
+        'background-repeat': 'no-repeat',
+        'background-position': 'right top'
       };
     }
   }
