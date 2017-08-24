@@ -18,12 +18,18 @@ import {FormsModule} from '@angular/forms';
 import {ListBoxComponent} from './listbox/listbox.component';
 import {ButtonComponent} from "./button/button.component";
 import {MediaContentItem} from "./multi-item-carousel/media.content.item";
+import {DialogComponent} from "./panes/dialog.component";
+import {PaneHeaderComponent} from "./panes/paneheader.component";
+import {WindowPaneComponent} from "./panes/windowpane.component";
+import {VerticalLeftTabPaneComponent} from "./tabpane/verticallefttab.component";
+import {VerticalRightTabPaneComponent} from "./tabpane/verticalrighttab.component";
 
 const COMPONENTS = [
   DeferredLoader,
   MultiItemCarousel,  TabPaneComponent, TabComponent,
   CardComponent, PaneBodyComponent, PaneActionComponent, ContentComponent, RatingInputComponent,
-  DropDownComponent, ListBoxComponent, ButtonComponent,MediaContentItem
+  DropDownComponent, ListBoxComponent, ButtonComponent,MediaContentItem,DialogComponent,
+  PaneHeaderComponent,WindowPaneComponent,VerticalLeftTabPaneComponent,VerticalRightTabPaneComponent
 ];
 
 @NgModule({
