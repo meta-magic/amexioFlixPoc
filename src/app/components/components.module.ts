@@ -17,12 +17,13 @@ import {DropDownComponent} from './dropdown/dropdown';
 import {FormsModule} from '@angular/forms';
 import {ListBoxComponent} from './listbox/listbox.component';
 import {ButtonComponent} from "./button/button.component";
+import {MediaContentItem} from "./multi-item-carousel/media.content.item";
 
 const COMPONENTS = [
   DeferredLoader,
   MultiItemCarousel,  TabPaneComponent, TabComponent,
   CardComponent, PaneBodyComponent, PaneActionComponent, ContentComponent, RatingInputComponent,
-  DropDownComponent, ListBoxComponent, ButtonComponent
+  DropDownComponent, ListBoxComponent, ButtonComponent,MediaContentItem
 ];
 
 @NgModule({

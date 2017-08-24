@@ -1,56 +1,48 @@
 /**
  * Created by pratik on 23/8/17.
  */
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {AfterContentInit, AfterViewInit, Component, OnInit, Input} from '@angular/core';
+
 declare var $;
 @Component({
- selector: 'app-multi-item-carousel',
+ selector: 'amexio-multi-item-carousel',
  templateUrl: 'multi.item.carousel.html',
-  styles : [`
-
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(33.33%);
-    }
-
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-33.33%)
-    }
-
-    .carousel-inner .carousel-item-right,
-    .carousel-inner .carousel-item-left{
-      transform: translateX(0);
-    }
-  `]
+  styleUrls : ['carousel.style.css']
 })
 
-export class MultiItemCarousel implements OnInit,AfterViewInit {
- constructor() { }
-
- ngOnInit() { }
-
- ngAfterViewInit(){
-   $('#recipeCarousel').carousel({
-     interval: false
-   })
-
-   $('.carousel .carousel-item').each(function(){
-     var next = $(this).next();
-     if (!next.length) {
-       next = $(this).siblings(':first');
-     }
-     next.children(':first-child').clone().appendTo($(this));
-
-     if (next.next().length>0) {
-       next.next().children(':first-child').clone().appendTo($(this));
-     }
-     else {
-       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-     }
-   });
-
- }
+export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit {
 
 
+    @Input()  data : any;
+
+    elementId : any;
+
+    constructor() {
+      this.elementId = 'multi-item-carousel-' + Math.floor(Math.random()*90000) + 10000;
+    }
+
+    ngOnInit() { }
+
+    ngAfterViewInit(){}
+
+    ngAfterContentInit() {
+
+    }
+
+
+
+    onPreviousClick(){
+      $('#prev-'+this.elementId).click(function() {
+        $(this).blur();
+        $(this).parent().find('.carosel-item').last().insertBefore($(this).parent().find('.carosel-item').first());
+      });
+    }
+
+    onNextClick(){
+      $('#next-'+this.elementId).click(function() {
+        $(this).blur();
+        $(this).parent().find('.carosel-item').first().insertAfter($(this).parent().find('.carosel-item').last());
+      });
+    }
 }
+
