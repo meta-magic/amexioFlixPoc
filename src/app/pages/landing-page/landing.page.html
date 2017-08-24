@@ -2,7 +2,7 @@
     <app-nav-bar></app-nav-bar>
   <div class="container-fluid" style="background-color: black">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12" style="padding-top: 100px">
         <amexio-tab-pane  [closable]="false">
           <amexio-tab title="OVERVIEW" [active]="true">
             <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
@@ -32,13 +32,11 @@
                                    [width]="'250px'">
                   </amexio-dropdown>
                 <br><br>
-                  <div class="row">
                     <amexio-multi-item-carousel>
                       <ng-container *ngFor="let item of data;let i =index">
                         <amexio-media-content [id]="i"></amexio-media-content>
                       </ng-container>
                     </amexio-multi-item-carousel>
-                  </div>
                 </amexio-content>
 
               </amexio-pane-body>
