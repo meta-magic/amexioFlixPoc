@@ -12,35 +12,34 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
       <img class="img-fluid" [attr.src]="bgImgUrl" alt="Featured Content">
 
       <div>
-        <div class="col-lg-6 col-sm-12" style="padding: 70px 0 0 5%;color: white;">
+        <div class="col-lg-6 col-sm-12" style="padding: 10px 0 0 5%;color: white;">
           <h3 *ngIf="title">{{title}}</h3>
           <span *ngIf="description"><p>{{description}}</p></span>
           <ng-container *ngIf="contents">
-            <ul *ngFor="let data of contents">
-              <li><b>{{data.key}}</b> : {{data.value}}</li>
-            </ul>
+            <span  *ngFor="let data of contents" >
+              {{data.key}} : {{data.value}}
+              <br/>
+            </span>
           </ng-container>
-          <ul class="nav">
-            <li class="nav-item" *ngIf="enableWatch">
-              <span class="nav-link"> 
-                <amexio-btn [label]="'Watch'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'watch'" (onClick)="playVideo()"></amexio-btn>
-              </span>
-            </li>
-            <li class="nav-item" *ngIf="enableMyList">
-              <span class="nav-link"><amexio-btn [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" (onClick)="addToList()"></amexio-btn></span>
-            </li>
-          </ul>
-          <br>
-          <ng-container *ngIf="rate && max">
-            <amexio-rating-input [(ngModel)]="rate"
-                                 [max]="max" name="rate"
-                                 [readonly]="isReadonly">
-            </amexio-rating-input>
-          </ng-container>
-
-        </div>
-        <div class="col-lg-12">
-          <ng-content></ng-content><br><br>
+          <br/>
+          <table style="height: 100%">
+            <tr>
+              <td>
+                <amexio-btn *ngIf="enableWatch" [label]="'Watch'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'watch'" (onClick)="playVideo()"></amexio-btn>
+              </td>
+              <td>
+                <amexio-btn *ngIf="enableMyList" [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" (onClick)="addToList()"></amexio-btn>
+              </td>
+            </tr>
+            <tr *ngIf="rate && max">
+              <td>
+                <amexio-rating-input [(ngModel)]="rate"
+                                     [max]="max" name="rate"
+                                     [readonly]="isReadonly">
+                </amexio-rating-input>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
 
@@ -60,6 +59,32 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
         left: 0;
         width: 100%;
       }
+
+      @media screen and (min-width: 1400px){
+        .maincontent div {
+          height: 32vw;
+        }
+      }
+
+      @media (max-width: 799px)
+      {
+        .maincontent div {
+          font-size: 11px;
+        }
+         
+        .maincontent div {
+          top: 10px;
+          width: 33vw;
+          min-width: 330px;
+          color: #999;
+          line-height: 1.3;
+        }
+
+        .maincontent div table {
+          visibility: hidden;
+        }
+      }
+     
     `
   ]
 })
