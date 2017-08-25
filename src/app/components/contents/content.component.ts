@@ -12,7 +12,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
       <img class="img-fluid" [attr.src]="bgImgUrl" alt="Featured Content">
 
       <div>
-        <div class="col-lg-6 col-sm-12" style="padding: 10px 0 0 5%;color: white;">
+        <div class="col-lg-6 col-sm-12" style="color: white;">
           <h3 *ngIf="title">{{title}}</h3>
           <span *ngIf="description"><p>{{description}}</p></span>
           <ng-container *ngIf="contents">
@@ -22,17 +22,15 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
             </span>
           </ng-container>
           <br/>
-          <table style="height: 100%">
-            <tr>
-              <td>
-                <amexio-btn *ngIf="enableWatch" [label]="'Watch'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'watch'" (onClick)="playVideo()"></amexio-btn>
+          <table>
+            <tr >
+              <td *ngIf="enableWatch" >
+                <amexio-btn [label]="'Watch'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'watch'" [size]="size" (onClick)="playVideo()"></amexio-btn>
               </td>
-              <td>
-                <amexio-btn *ngIf="enableMyList" [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" (onClick)="addToList()"></amexio-btn>
+              <td *ngIf="enableMyList" >
+                <amexio-btn [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" [size]="size" (onClick)="addToList()"></amexio-btn>
               </td>
-            </tr>
-            <tr *ngIf="rate && max">
-              <td>
+              <td *ngIf="rate && max">
                 <amexio-rating-input [(ngModel)]="rate"
                                      [max]="max" name="rate"
                                      [readonly]="isReadonly">
@@ -63,6 +61,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
       @media screen and (min-width: 1400px){
         .maincontent div {
           height: 32vw;
+          padding-bottom: 20px;
         }
       }
 
@@ -81,7 +80,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
         }
 
         .maincontent div table {
-          visibility: hidden;
+         height: 50px;
         }
       }
      
@@ -117,12 +116,13 @@ export class ContentComponent implements OnInit {
 
   @Output() onAddListClick: EventEmitter<any>= new EventEmitter<any>();
 
+  size : string;
   bgImageClass: any;
 
   overviewData: any;
 
   constructor() {
-
+    this.size = "default";
   }
 
   ngOnInit() {
@@ -143,6 +143,7 @@ export class ContentComponent implements OnInit {
   }
   onResize() {
     if (window.innerWidth < 995) {
+      this.size = "small";
       this.bgImageClass = {
         //'background-image': 'url(' + this.bgMobileImgUrl + ')',
         'height': 100 + '%',
@@ -150,6 +151,7 @@ export class ContentComponent implements OnInit {
         'background-color': 'black'
     };
     } else {
+      this.size = "default";
       this.bgImageClass = {
         //'background-image': 'url(' + this.bgImgUrl + ')',
         'position': 'absolute',

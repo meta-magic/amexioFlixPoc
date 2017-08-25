@@ -15,9 +15,11 @@ export class LandingPageComponent implements OnInit {
 
   episodeName: string;
   data : any[] = [1,2,3,4,5,6,7,8,9,10];
-  public max = 10;
-  public rate = 7;
+  public max = 5;
+  public rate = 4;
   topRateContent : any;
+  dramas : any;
+  newreleases: any;
  constructor() {
    this.content = [
      {
@@ -72,7 +74,59 @@ export class LandingPageComponent implements OnInit {
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      }
 
-   ]
+   ];
+
+   this.dramas = [
+     {
+       "img" : "assets/images/drama/bahubali2/Bahubali2_main_img.png",
+       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     },{
+       "img" : "assets/images/drama/dangal/Dangal_main_img.png",
+       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     },{
+       "img" : "assets/images/drama/Interstellar/interstellar_main_img.png",
+       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     },{
+       "img" : "assets/images/drama/Raees/Raees_main_img.png",
+       "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     },{
+       "img" : "assets/images/drama/warmachine/war_machine_main_img.png",
+       "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     }
+
+   ];
+
+   this.newreleases = [
+     {
+       "img" : "assets/images/newrelease/a.png",
+       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     },{
+       "img" : "assets/images/newrelease/bankingonbitcoin.png",
+       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     },{
+       "img" : "assets/images/newrelease/naked.png",
+       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     },{
+       "img" : "assets/images/newrelease/rutstom.png",
+       "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     },{
+       "img" : "assets/images/newrelease/sandcatle.png",
+       "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
+       "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
+     }
+
+   ];
+
+
  }
 
  ngOnInit() { }
