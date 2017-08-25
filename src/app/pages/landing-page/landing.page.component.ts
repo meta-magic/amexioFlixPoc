@@ -18,6 +18,7 @@ export class LandingPageComponent implements OnInit {
   public max = 10;
   public rate = 7;
   topRateContent : any;
+  mostWatched : any;
  constructor() {
    this.content = [
      {
@@ -71,7 +72,44 @@ export class LandingPageComponent implements OnInit {
        "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      }
-   ]
+   ];
+   this.mostWatched = [
+     {
+       "img" : "https://art-s.nflximg.net/4c9da/3304be5443093b27a2abc94f0e0b12d7a424c9da.webp",
+       "desc" : "",
+       "video" : ""
+     },
+     {
+       "img" : "https://art-s.nflximg.net/50e13/51436ffdabccb349035384c50d55cd491bc50e13.webp",
+       "desc" : "",
+       "video" : ""
+     },
+     {
+       "img" : "https://art-s.nflximg.net/d851d/c21912319624d3b031ead1dddc37322aa40d851d.webp",
+       "desc" : "",
+       "video" : ""
+     },
+     {
+       "img" : "https://art-s.nflximg.net/946ee/9771a7b34aef9f8710828dab8171b545059946ee.webp",
+       "desc" : "",
+       "video" : ""
+     },
+     {
+       "img" : "https://art-s.nflximg.net/4634f/71ad82b41231f2c8af3734410100eb5d0744634f.webp",
+       "desc" : "",
+       "video" : ""
+     },
+     {
+       "img" : "https://art-s.nflximg.net/9046b/5f048a86d29173368e5ad46256b4cb965249046b.webp",
+       "desc" : "",
+       "video" : ""
+     },
+     {
+       "img" : "https://art-s.nflximg.net/6729a/8798e55d7a52261ef06aaf40972e5e761056729a.webp",
+       "desc" : "",
+       "video" : ""
+     }
+   ];
  }
 
  ngOnInit() { }
