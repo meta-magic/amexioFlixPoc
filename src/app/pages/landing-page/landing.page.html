@@ -1,15 +1,16 @@
 
-    <app-nav-bar></app-nav-bar>
+  <app-nav-bar></app-nav-bar>
   <div class="container-fluid" style="background-color: black;overflow-y: hidden" >
     <div class="row">
       <div class="col-sm-12" style="padding-top: 100px">
         <amexio-tab-pane  [closable]="false">
           <amexio-tab title="OVERVIEW" [active]="true">
             <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
+
               <amexio-pane-body>
-                  <amexio-content [bgImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX1920_.jpg'"
+                  <amexio-content [bgImgUrl]="'assets/images/tvshows/narcos/narcos_main_header_img.png'"
                                   [bgMobileImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX360_.jpg'"
-                    [title]="'Sully'" [description]="'The story of Chesley Sullenberger, who became a hero after gliding his plane along the water in the Hudson River, saving all of his 155 passengers.'"
+                    [title]="'Narcos'" [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
                   [contents]="content" [videoLink]="'demo'"
                   [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onAddListClick)="addToList($event)"></amexio-content>
               </amexio-pane-body>
@@ -74,37 +75,20 @@
       </div>
     </div>
 
-   <!--
-    <br><br><br>
     <div class="row">
-      <amexio-multi-item-carousel>
-        <ng-container *ngFor="let item of data;let i =index">
-          <amexio-media-content [id]="i*2"></amexio-media-content>
-        </ng-container>
-      </amexio-multi-item-carousel>
-    </div>-->
-<!--
-    <br><br><br>
-    <div class="row" pagedefer>
-      <ng-template>
-        <amexio-multi-item-carousel>
-          <ng-container *ngFor="let item of data;let i =index">
-            <amexio-media-content [id]="i*3"></amexio-media-content>
-          </ng-container>
-        </amexio-multi-item-carousel>
-      </ng-template>
-    </div>-->
-
-
-        <amexio-multi-item-carousel [title]="'Top Rated Content'">
+      <div class="col-lg-12">
+        <amexio-multi-item-carousel [title]="'TV Shows'">
           <ng-container *ngFor="let item of topRateContent">
             <amexio-media-content [imgPath]="item.img"></amexio-media-content>
           </ng-container>
         </amexio-multi-item-carousel>
 
+      </div>
+    </div>
 
 
-        <amexio-multi-item-carousel [title]="'Most watched'">
+
+<!--        <amexio-multi-item-carousel [title]="'Most watched'">
           <ng-container *ngFor="let item of topRateContent" >
             <amexio-media-content [imgPath]="item.img"></amexio-media-content>
           </ng-container>
@@ -130,7 +114,7 @@
           <ng-container *ngFor="let item of topRateContent">
             <amexio-media-content [imgPath]="item.img"></amexio-media-content>
           </ng-container>
-        </amexio-multi-item-carousel>
+        </amexio-multi-item-carousel>-->
 
 
 

@@ -43,34 +43,35 @@ export class LandingPageComponent implements OnInit {
      ];
    this.topRateContent = [
      {
-       "img" : "https://art-s.nflximg.net/14920/d3ac1b7cfd14634ce68c442486bccbde33d14920.webp",
-       "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama",
+       "img" : "assets/images/tvshows/house_of_cards/HOC_main_img.png",
+       "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
-       "img" : "https://art-s.nflximg.net/0beb0/8e68d4f6516d8c7a58e06af5d3d3c61e6050beb0.webp",
-       "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama",
+       "img" : "assets/images/tvshows/designatedsurvivor/DS_main_img.png",
+       "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      }, {
-       "img" : "https://art-s.nflximg.net/14920/d3ac1b7cfd14634ce68c442486bccbde33d14920.webp",
-       "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama",
+       "img" : "assets/images/tvshows/narcos/Narcos_main_img.png",
+       "desc" : "The true story of Colombia's infamously violent and powerful drug cartels fuels this gritty gangster drama series.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
-       "img" : "https://art-s.nflximg.net/0beb0/8e68d4f6516d8c7a58e06af5d3d3c61e6050beb0.webp",
-       "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama",
+       "img" : "assets/images/tvshows/shooters/Shooter_main_img.png",
+       "desc" : "A highly decorated ex-Marine sniper returns to action to foil an assassination plot targeting the president, but soon finds himself framed for murder. ",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
-       "img" : "https://art-s.nflximg.net/14920/d3ac1b7cfd14634ce68c442486bccbde33d14920.webp",
-       "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama",
+       "img" : "assets/images/tvshows/ozark/Ozark_main_img.png",
+       "desc" : "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
-       "img" : "https://art-s.nflximg.net/0beb0/8e68d4f6516d8c7a58e06af5d3d3c61e6050beb0.webp",
-       "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama",
+       "img" : "assets/images/tvshows/crown/Crown_main_img.png",
+       "desc" : "This drama follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      }
+
    ]
  }
 
