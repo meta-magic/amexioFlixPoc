@@ -28,7 +28,8 @@
     background-color: whitesmoke;
   }
 
-  .carosel-item:hover {
+  /* Dropping Hover effect */
+ /* .carosel-item:hover {
     box-shadow: 0px 0px 50px #000000;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
@@ -39,6 +40,46 @@
     -moz-transform: scale(1.1);
     transition: all 200ms ease-in;
     transform: scale(1.1);
+  }*/
+
+  /* quick reset and base styles */
+
+
+  /* relevant styles */
+  .img__wrap {
+    position: relative;
+  }
+
+  .img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(36, 62, 206, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+  .img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .img__description {
+    transition: .2s;
+    transform: translateY(1em);
+  }
+
+  .img__wrap:hover .img__description {
+    transform: translateY(0);
   }
 }
 .carosel {
