@@ -25,7 +25,10 @@ export class MultiItemCarousel implements OnInit,AfterViewInit {
 
     ngOnInit() { }
 
-    ngAfterViewInit(){}
+    ngAfterViewInit(){
+      this.onNextClick();
+      this.onPreviousClick();
+    }
 
 
     onPreviousClick(){
