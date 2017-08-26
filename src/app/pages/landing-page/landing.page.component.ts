@@ -51,7 +51,7 @@ export class LandingPageComponent implements OnInit {
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
-       "title" : "Marvels The Defenders",
+       "title" : "Defenders",
        "img" : "assets/images/tvshows/designatedsurvivor/DS_main_img.jpg",
        "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
