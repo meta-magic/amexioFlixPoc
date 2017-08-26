@@ -10,8 +10,8 @@ import {Component, Input, OnInit} from '@angular/core';
     <img src="{{imgPath}}" class="img__img" />
      <div class="img__description_layer">
        <h6 class="img__description" style="color: white">
-         <p style="padding-left: 30%"><i class="fa fa-play fa-5x" aria-hidden="true"></i></p> 
-         <p>This image looks super neat.</p>
+         <p style="justify-content: center;"><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></p>
+         <p>{{title}}</p>
        </h6>
      </div>
    </div>
@@ -23,6 +23,9 @@ import {Component, Input, OnInit} from '@angular/core';
 export class MediaContentItem implements OnInit {
 
   @Input() id : string;
+
+  @Input() title : string;
+
   showText : boolean;
 
   elementId : any;

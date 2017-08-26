@@ -25,13 +25,12 @@
     width: 18%;
     padding-left: 1px;
     padding-right: 1px;
-    background-color: whitesmoke;
+    background-color: black;
   }
 
   /* Dropping Hover effect */
- /* .carosel-item:hover {
-    box-shadow: 0px 0px 50px #000000;
-    z-index: 2;
+  .carosel-item:hover {
+    box-shadow: 50px 50px 50px #000000;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.1);
     -ms-transition: all 200ms ease-in;
@@ -40,7 +39,7 @@
     -moz-transform: scale(1.1);
     transition: all 200ms ease-in;
     transform: scale(1.1);
-  }*/
+  }
 
   /* quick reset and base styles */
 
@@ -51,12 +50,13 @@
   }
 
   .img__description_layer {
+    box-shadow: 5px 5px 5px #888888;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(36, 62, 206, 0.6);
+    background-color: transparent;
     color: #fff;
     visibility: hidden;
     opacity: 0;
@@ -92,6 +92,7 @@
   font-size: 0;
 }
 .carosel-item {
+  box-shadow: 5px 5px 5px #888888;
   display: inline-block;
   background-color: #000;
 }
