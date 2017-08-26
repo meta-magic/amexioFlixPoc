@@ -7,7 +7,7 @@ import {CarouselEventService} from "./carousel.event.service";
 @Component({
  selector: 'amexio-media-content',
  template: `   
-   <div class="carosel-item img__wrap" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()">
+   <div [attr.class]="cClass" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()">
     <img src="{{imgPath}}" class="img__img" />
      <div class="img__description_layer">
        <h6 class="img__description" style="color: white">
@@ -35,10 +35,11 @@ export class MediaContentItem implements OnInit {
 
   @Input() title;
 
-
+  @Input() cClass : string;
 
   constructor(private carouselService : CarouselEventService) {
     this.elementId = 'media-content-item-' + Math.floor(Math.random()*90000) + 10000;
+    this.cClass = "carosel-item img__wrap";
   }
 
   openDetailsSection() {

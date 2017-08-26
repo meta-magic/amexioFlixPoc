@@ -2,9 +2,20 @@
   .carosel-item {
     width: 100%;
   }
+
+  .carosel-item-potrait {
+    width: 100%;
+  }
 }
 @media (min-width: 300px) {
   .carosel-item {
+    width: 50%;
+    padding-left: 1px;
+    padding-right: 1px;
+    background-color: black;
+  }
+
+  .carosel-item-potrait {
     width: 50%;
     padding-left: 1px;
     padding-right: 1px;
@@ -16,7 +27,14 @@
     width: 33.333%;
     padding-left: 1px;
     padding-right: 1px;
-    background-color: whitesmoke;
+    background-color: black;
+  }
+
+  .carosel-item-potrait {
+    width: 33.333%;
+    padding-left: 1px;
+    padding-right: 1px;
+    background-color: black;
   }
 }
 
@@ -28,17 +46,42 @@
     background-color: black;
   }
 
+  .carosel-item-potrait {
+    width: 25%;
+    padding-left: 1px;
+    padding-right: 1px;
+    background-color: black;
+  }
+
   /* Dropping Hover effect */
-  .carosel-item:hover {
-    box-shadow: 50px 50px 50px #000000;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.1);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.1);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.1);
-    transition: all 200ms ease-in;
-    transform: scale(1.1);
+
+
+  .carosel-item:hover
+  {
+    box-shadow: 0px 0px 50px ;
+    z-index: 1;
+    -webkit-transition: all 20ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 20ms ease-in;
+    -ms-transform: scale(0.5);
+    -moz-transition: all 20ms ease-in;
+    -moz-transform: scale(0.5);
+    transition: all 20ms ease-in;
+    transform: scale(1.020);
+  }
+
+  .carosel-item-potrait:hover
+  {
+    box-shadow: 0px 0px 50px ;
+    z-index: 1;
+    -webkit-transition: all 20ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 20ms ease-in;
+    -ms-transform: scale(0.5);
+    -moz-transition: all 20ms ease-in;
+    -moz-transform: scale(0.5);
+    transition: all 20ms ease-in;
+    transform: scale(1.020);
   }
 
   /* quick reset and base styles */
@@ -50,7 +93,7 @@
   }
 
   .img__description_layer {
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 5px #000000;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -92,6 +135,11 @@
   font-size: 0;
 }
 .carosel-item {
+  box-shadow: 5px 5px 5px #888888;
+  display: inline-block;
+  background-color: #000;
+}
+.carosel-item-potrait {
   box-shadow: 5px 5px 5px #888888;
   display: inline-block;
   background-color: #000;
