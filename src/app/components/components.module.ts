@@ -23,6 +23,7 @@ import {PaneHeaderComponent} from "./panes/paneheader.component";
 import {WindowPaneComponent} from "./panes/windowpane.component";
 import {VerticalLeftTabPaneComponent} from "./tabpane/verticallefttab.component";
 import {VerticalRightTabPaneComponent} from "./tabpane/verticalrighttab.component";
+import {CarouselEventService} from "./multi-item-carousel/carousel.event.service";
 
 const COMPONENTS = [
   DeferredLoader,
@@ -36,6 +37,6 @@ const COMPONENTS = [
  imports: [CommonModule, FormsModule],
  exports: COMPONENTS,
  declarations: COMPONENTS,
- providers: [CommonHttpService],
+ providers: [CommonHttpService,CarouselEventService],
 })
 export class ComponentModule { }

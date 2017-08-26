@@ -20,3 +20,17 @@
     </a>
   </div>
 </div>
+
+<div [attr.id]="elementId+'carousel-detail-content'" class="collapse">
+  <i class="fa fa-times fa-2x" (click)="closeDetailPage()" aria-hidden="true"></i>
+  <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
+
+    <amexio-pane-body>
+      <amexio-content [bgImgUrl]="'assets/images/tvshows/narcos/narcos_main_header_img.png'"
+                      [bgMobileImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX360_.jpg'"
+                      [title]="'Narcos'" [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
+                      [contents]="content" [videoLink]="'demo'"
+                      [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onAddListClick)="addToList($event)"></amexio-content>
+    </amexio-pane-body>
+  </amexio-card-pane>
+</div>
