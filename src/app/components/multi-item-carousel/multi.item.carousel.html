@@ -8,9 +8,20 @@
       <span class="sr-only">Previous</span>
     </a>
 
-    <div class="carosel-inner">
-      <ng-content></ng-content>
-    </div>
+      <div class="carosel-inner">
+
+          <div *ngFor="let item of data" class="carosel-item img__wrap" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()">
+            <img [attr.src]="item.img" class="img__img" />
+            <div class="img__description_layer">
+              <h6 class="img__description" style="color: white">
+                <p  style="justify-content: center;cursor: pointer;"><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></p>
+                <p>{{title}}</p>
+                <p style="cursor: pointer;"><i class="fa fa-chevron-down fa-2x" aria-hidden="true" (click)="openDetailsSection()"></i></p>
+              </h6>
+            </div>
+          </div>
+
+      </div>
 
 
     <!-- Right button -->
@@ -21,16 +32,19 @@
   </div>
 </div>
 
+
+<!--<ng-content select="amexio-media-description"></ng-content>-->
 <div [attr.id]="elementId+'carousel-detail-content'" class="collapse">
   <i class="fa fa-times fa-2x" (click)="closeDetailPage()" aria-hidden="true"></i>
   <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
 
     <amexio-pane-body>
-      <amexio-content [bgImgUrl]="'assets/images/tvshows/narcos/narcos_main_header_img.png'"
+      <amexio-content [bgImgUrl]="'assets/images/tvshows/narcos/narcos_main_header_img.jpg'"
                       [bgMobileImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX360_.jpg'"
                       [title]="'Narcos'" [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
                       [contents]="content" [videoLink]="'demo'"
                       [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onAddListClick)="addToList($event)"></amexio-content>
+
     </amexio-pane-body>
   </amexio-card-pane>
 </div>

@@ -21,12 +21,14 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
 
     elementId : any;
 
+    showText : boolean;
+
     @ContentChildren(MediaContentItem) mediaItems : any;
 
 
     constructor(private carouselEventService : CarouselEventService) {
       this.elementId = 'multi-item-carousel-' + Math.floor(Math.random()*90000) + 10000;
-      this.carouselEventService.state$.subscribe(
+     /* this.carouselEventService.state$.subscribe(
         res=>{
           if(res['state'] && (this.elementId+'carousel-detail-content' == res['id'])){
             $('#'+this.elementId+'carousel-detail-content').collapse('show');
@@ -43,10 +45,12 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
             }, 500);
           }
         }
-      )
+      );*/
     }
 
-    ngOnInit() { }
+    ngOnInit() {
+      console.log(this.data);
+    }
 
     ngAfterViewInit(){
       this.onNextClick();
@@ -57,10 +61,10 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
 
     ngAfterContentInit(){
       //Setting the child components  pointing to its parent Description div id
-      let mdComp = this.mediaItems.toArray();
+      /*let mdComp = this.mediaItems.toArray();
       mdComp.forEach( (component)=>{
         component.parentId = this.elementId+'carousel-detail-content';
-      })
+      })*/
     }
 
 
@@ -79,7 +83,27 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
     }
 
     closeDetailPage(){
-        this.carouselEventService.close(this.elementId+'carousel-detail-content');
+      $('#'+this.elementId+'carousel-detail-content').collapse('hide');
+      $('html, body').animate({
+        scrollTop: $('#'+this.elementId).offset().top
+      }, 500);
+    }
+
+    onHoverEnter(){
+      this.showText = true;
+    }
+
+    onHoverLeave(){
+      this.showText = false;
+    }
+
+    openDetailsSection() {
+      $('#'+this.elementId+'carousel-detail-content').collapse('show');
+      setTimeout(()=>{
+        $('html, body').animate({
+          scrollTop: $('#'+this.elementId+'carousel-detail-content').offset().top
+        }, 500);
+      },500)
     }
 }
 

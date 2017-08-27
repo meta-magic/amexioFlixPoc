@@ -47,6 +47,7 @@ export class MediaContentItem implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.imgPath);
   }
 
   onHoverEnter(){
