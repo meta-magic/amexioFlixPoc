@@ -55,6 +55,16 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-lg-12">
+        <amexio-multi-item-carousel [title]="'New Releases'">
+          <ng-container *ngFor="let item of newreleases">
+            <amexio-media-content [imgPath]="item.img" [title]="item.title" [cClass]="'carosel-item-potrait img__wrap'"></amexio-media-content>
+          </ng-container>
+        </amexio-multi-item-carousel>
+      </div>
+    </div>
+
     <br>
     <br>
 
