@@ -1,7 +1,7 @@
 /**
  * Created by dattaram on 23/8/17.
  */
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 declare var $;
 @Component({
   selector: 'amexio-content',
@@ -95,7 +95,7 @@ declare var $;
   ]
 })
 
-export class ContentComponent implements OnInit {
+export class ContentComponent implements OnInit,OnChanges {
 
   @Input() bgImgUrl: any;
 
@@ -131,7 +131,11 @@ export class ContentComponent implements OnInit {
   isMobileView : boolean;
 
   constructor() {
-    this.size = "default";
+    console.log($(window).width());
+    if($(window).width() < 500)
+      this.size = 'small';
+    else
+      this.size = 'default';
   }
 
   ngOnInit() {
@@ -140,6 +144,13 @@ export class ContentComponent implements OnInit {
 
   ngAfterViewInit(){
 
+  }
+
+  ngOnChanges(changes: SimpleChanges){
+    if(changes.videoLink && !changes.videoLink.isFirstChange()){
+      this.videoLink = changes.videoLink.currentValue;
+      console.log(this.videoLink);
+    }
   }
 
   playVideo() {

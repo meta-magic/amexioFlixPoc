@@ -222,7 +222,7 @@ export class LandingPageComponent implements OnInit {
        "title" : "Bahubali 2: The Conclusion",
        "img" : "assets/images/drama/bahubali2/Bahubali2_main_img.jpg",
        "details_img": "assets/images/drama/bahubali2/bahubali2_details.jpg",
-       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
+       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant.",
        "video" : "G62HrubdD6o",
        "content" : [
          {
@@ -231,11 +231,11 @@ export class LandingPageComponent implements OnInit {
          },
          {
            'key': 'Starring',
-           'value': 'Prabhas, Ranna, Tamannah, Ashushka'
+           'value': 'Prabhas, Ranna'
          },
          {
            'key': 'Genres',
-           'value': 'Action & Adventure, Dramas'
+           'value': 'Action '
          },
          {
            'key': 'Subtitles',
