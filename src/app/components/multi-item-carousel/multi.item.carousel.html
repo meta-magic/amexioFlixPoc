@@ -40,8 +40,8 @@
 
     <amexio-pane-body>
       <amexio-content [bgImgUrl]="currentDetailsImagePath"
-                      [title]="'Narcos'" [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
-                      [contents]="content" [videoLink]="'demo'"
+                      [title]="currentDetailsTitle" [description]="currentDetailsDesc"
+                      [contents]="currentContent" [videoLink]="'demo'"
                       [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onAddListClick)="addToList($event)"></amexio-content>
 
     </amexio-pane-body>

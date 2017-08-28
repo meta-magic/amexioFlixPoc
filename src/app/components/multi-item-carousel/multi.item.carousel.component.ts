@@ -25,6 +25,12 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
 
     currentDetailsImagePath : string;
 
+    currentDetailsTitle : string;
+
+    currentDetailsDesc : string;
+
+    currentContent : string;
+
     @ContentChildren(MediaContentItem) mediaItems : any;
 
 
@@ -101,6 +107,9 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
 
     openDetailsSection(item : any) {
       this.currentDetailsImagePath = item.details_img;
+      this.currentDetailsTitle = item.title;
+      this.currentDetailsDesc = item.desc;
+      this.currentContent = item.content;
       $('#'+this.elementId+'carousel-detail-content').collapse('show');
       setTimeout(()=>{
         $('html, body').animate({

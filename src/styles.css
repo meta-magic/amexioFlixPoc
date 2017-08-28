@@ -35,3 +35,12 @@
   line-height: 36px !important;;
   margin-bottom: 12px !important;;
 }
+
+.btn{
+  border-radius: 0.0rem;
+}
+
+.btn-secondary {
+  background-color: #dddddd;
+  color: #292b2c;
+}
