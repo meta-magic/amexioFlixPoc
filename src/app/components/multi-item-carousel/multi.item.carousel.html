@@ -16,7 +16,7 @@
               <h6 class="img__description" style="color: white">
                 <p  style="justify-content: center;cursor: pointer;"><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></p>
                 <p>{{title}}</p>
-                <p style="cursor: pointer;"><i class="fa fa-chevron-down fa-2x" aria-hidden="true" (click)="openDetailsSection()"></i></p>
+                <p style="cursor: pointer;"><i class="fa fa-chevron-down fa-2x" aria-hidden="true" (click)="openDetailsSection(item)"></i></p>
               </h6>
             </div>
           </div>
@@ -39,8 +39,7 @@
   <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
 
     <amexio-pane-body>
-      <amexio-content [bgImgUrl]="'assets/images/tvshows/narcos/narcos_main_header_img.jpg'"
-                      [bgMobileImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX360_.jpg'"
+      <amexio-content [bgImgUrl]="currentDetailsImagePath"
                       [title]="'Narcos'" [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
                       [contents]="content" [videoLink]="'demo'"
                       [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onAddListClick)="addToList($event)"></amexio-content>

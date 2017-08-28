@@ -23,6 +23,8 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
 
     showText : boolean;
 
+    currentDetailsImagePath : string;
+
     @ContentChildren(MediaContentItem) mediaItems : any;
 
 
@@ -97,7 +99,8 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
       this.showText = false;
     }
 
-    openDetailsSection() {
+    openDetailsSection(item : any) {
+      this.currentDetailsImagePath = item.details_img;
       $('#'+this.elementId+'carousel-detail-content').collapse('show');
       setTimeout(()=>{
         $('html, body').animate({
