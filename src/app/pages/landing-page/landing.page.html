@@ -9,23 +9,16 @@
 
               <amexio-pane-body>
                   <amexio-content [bgImgUrl]="'assets/images/tvshows/narcos/narcos_main_header_img.jpg'"
-                                  [bgMobileImgUrl]="'https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GLOBAL/wb-5051888226353_IN-Full-Image_GalleryBackground-rw-RW-1502752057555._RI_VIWL02DwCvH1lDzpKFREvkQ9g04ODUzX0_TTW_SX360_.jpg'"
                     [title]="'Narcos'" [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
-                  [contents]="content" [videoLink]="'demo'"
-                  [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onAddListClick)="addToList($event)"></amexio-content>
+                    [contents]="content" [videoLink]="'demo'"
+                    [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onAddListClick)="addToList($event)"></amexio-content>
               </amexio-pane-body>
             </amexio-card-pane>
           </amexio-tab>
           <amexio-tab title="EPISODES">
-            <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
-              <amexio-pane-body>
-                <amexio-content [bgImgUrl]="'assets/images/tvshows/narcos/narcos_main_header_img.jpg'"
-                                [title]="'Narcos'" [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
-                                [contents]="content" [videoLink]="'demo'"
-                                [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onAddListClick)="addToList($event)"></amexio-content>
-
-              </amexio-pane-body>
-            </amexio-card-pane>
+            <div class="col-lg-12">
+              <amexio-multi-item-carousel [title]="'New Releases'" [data]="newreleases"></amexio-multi-item-carousel>
+            </div>
           </amexio-tab>
         </amexio-tab-pane>
       </div>
