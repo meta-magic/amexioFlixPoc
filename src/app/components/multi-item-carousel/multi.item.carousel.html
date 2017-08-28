@@ -35,10 +35,14 @@
 
 <!--<ng-content select="amexio-media-description"></ng-content>-->
 <div [attr.id]="elementId+'carousel-detail-content'" class="collapse">
-  <i class="fa fa-times fa-2x" (click)="closeDetailPage()" aria-hidden="true"></i>
+
   <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
 
     <amexio-pane-body>
+      <span class="close-button">
+        <i class="fa fa-times fa-2x" (click)="closeDetailPage()" aria-hidden="true"></i>
+      </span>
+
       <amexio-content [bgImgUrl]="currentDetailsImagePath"
                       [title]="currentDetailsTitle" [description]="currentDetailsDesc"
                       [contents]="currentContent" [videoLink]="'demo'"
