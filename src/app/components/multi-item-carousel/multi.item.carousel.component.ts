@@ -65,7 +65,6 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
       this.onNextClick();
       this.onPreviousClick();
       // $('#'+this.elementId+'carousel-detail-content').collapse();
-
     }
 
     ngAfterContentInit(){

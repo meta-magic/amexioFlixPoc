@@ -2,13 +2,13 @@
  * Created by dattaram on 23/8/17.
  */
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-
+declare var $;
 @Component({
   selector: 'amexio-content',
   template: `
 
     <div class="maincontent">
-
+      
       <img class="img-fluid" [attr.src]="bgImgUrl" alt="Featured Content">
 
       <div>
@@ -18,17 +18,15 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
           <ng-container *ngIf="contents">
             <span  *ngFor="let data of contents" >
               {{data.key}} : {{data.value}}
-              <br/>
             </span>
           </ng-container>
-          <br/>
           <table>
             <tr >
               <td *ngIf="enableWatch" >
                 <amexio-btn [label]="'Watch'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'watch'" [size]="size" (onClick)="playVideo()"></amexio-btn>
               </td>
               <td *ngIf="enableMyList" >
-                <amexio-btn [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" [size]="size" (onClick)="addToList()"></amexio-btn>
+                  <amexio-btn [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" [size]="size" (onClick)="addToList()"></amexio-btn>
               </td>
               <td *ngIf="rate && max">
                 <amexio-rating-input [(ngModel)]="rate"
@@ -83,6 +81,15 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
          height: 50px;
         }
       }
+
+      @media(max-width: 480px) {
+        h3 {
+          font-size: 9pt;
+        }
+        span{
+          font-size: 6pt;
+        }
+      }
      
     `
   ]
@@ -121,12 +128,18 @@ export class ContentComponent implements OnInit {
 
   overviewData: any;
 
+  isMobileView : boolean;
+
   constructor() {
     this.size = "default";
   }
 
   ngOnInit() {
     this.onResize();
+  }
+
+  ngAfterViewInit(){
+
   }
 
   playVideo() {
@@ -138,7 +151,7 @@ export class ContentComponent implements OnInit {
       'description': this.description,
       'Video Link': this.videoLink,
       'rate': this.rate
-    }
+    };
   this.onAddListClick.emit(this.overviewData);
   }
   onResize() {
