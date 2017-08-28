@@ -4,6 +4,7 @@
 import {AfterContentInit, AfterViewInit, Component, OnInit, Input, ContentChildren} from '@angular/core';
 import {CarouselEventService} from "./carousel.event.service";
 import {MediaContentItem} from "./media.content.item";
+import {Router} from "@angular/router";
 
 declare var $;
 @Component({
@@ -34,7 +35,7 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
     @ContentChildren(MediaContentItem) mediaItems : any;
 
 
-    constructor(private carouselEventService : CarouselEventService) {
+    constructor(private carouselEventService : CarouselEventService,private router : Router) {
       this.elementId = 'multi-item-carousel-' + Math.floor(Math.random()*90000) + 10000;
      /* this.carouselEventService.state$.subscribe(
         res=>{
@@ -117,5 +118,9 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
         }, 500);
       },500)
     }
+
+  loadVideo(item : any){
+     this.router.navigate(['/player',item.video])
+  }
 }
 

@@ -24,17 +24,20 @@ import {WindowPaneComponent} from "./panes/windowpane.component";
 import {VerticalLeftTabPaneComponent} from "./tabpane/verticallefttab.component";
 import {VerticalRightTabPaneComponent} from "./tabpane/verticalrighttab.component";
 import {CarouselEventService} from "./multi-item-carousel/carousel.event.service";
+import {AmexioYoutubePlayerComponent} from "./video-player/youtube.player.component";
+import {RouterModule} from "@angular/router";
 
 const COMPONENTS = [
   DeferredLoader,
   MultiItemCarousel,  TabPaneComponent, TabComponent,
   CardComponent, PaneBodyComponent, PaneActionComponent, ContentComponent, RatingInputComponent,
   DropDownComponent, ListBoxComponent, ButtonComponent,MediaContentItem,DialogComponent,
-  PaneHeaderComponent,WindowPaneComponent,VerticalLeftTabPaneComponent,VerticalRightTabPaneComponent
+  PaneHeaderComponent,WindowPaneComponent,VerticalLeftTabPaneComponent,VerticalRightTabPaneComponent,
+  AmexioYoutubePlayerComponent
 ];
 
 @NgModule({
- imports: [CommonModule, FormsModule],
+ imports: [CommonModule, FormsModule,RouterModule],
  exports: COMPONENTS,
  declarations: COMPONENTS,
  providers: [CommonHttpService,CarouselEventService],

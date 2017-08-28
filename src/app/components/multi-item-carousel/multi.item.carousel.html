@@ -14,7 +14,7 @@
             <img [attr.src]="item.img" class="img__img" />
             <div class="img__description_layer">
               <h6 class="img__description" style="color: white">
-                <p  style="justify-content: center;cursor: pointer;"><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></p>
+                <p  style="justify-content: center;cursor: pointer;"><i class="fa fa-play-circle-o fa-5x" aria-hidden="true" (click)="loadVideo(item)"></i></p>
                 <p>{{title}}</p>
                 <p style="cursor: pointer;"><i class="fa fa-chevron-down fa-2x" aria-hidden="true" (click)="openDetailsSection(item)"></i></p>
               </h6>
