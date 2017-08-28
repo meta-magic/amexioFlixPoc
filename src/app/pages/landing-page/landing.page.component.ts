@@ -45,48 +45,19 @@ export class LandingPageComponent implements OnInit {
      ];
    this.topRateContent = [
      {
-       "title" : "House Of Cards",
-       "img" : "assets/images/tvshows/house_of_cards/HOC_main_img.jpg",
-       "details_img": "assets/images/tvshows/house_of_cards/house_of_cards_details.jpg",
-       "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama.",
-       "video" : "ULwUzF1q5w4",
+       "title" : "Marco Polo",
+       "img" : "assets/images/tvshows/marcopolo/marco_polo_main_img.jpg",
+       "details_img": "assets/images/tvshows/marcopolo/marco_polo_details.jpg",
+       "desc" : "Set in a world of greed, betrayal, sexual intrigue and rivalry, “Marco Polo” is based on the famed explorer’s adventures in Kublai Khan’s court.",
+       "video" : "hB-ltNasHVw",
        "content" : [
          {
            'key': 'Creator',
-           'value': 'Beau William'
+           'value': 'John Fusco'
          },
          {
            'key': 'Cast',
-           'value': 'Kevin Spacey, Robin Wright,Kate Mara'
-         },
-         {
-           'key': 'Genres',
-           'value': 'TV Programmes'
-         },
-         {
-           'key': 'Subtitles',
-           'value': '	English [CC]'
-         },
-         {
-           'key': 'Audio Languages',
-           'value': 'English'
-         }
-       ]
-     },
-     {
-       "title" : "Defenders",
-       "img" : "assets/images/tvshows/designatedsurvivor/DS_main_img.jpg",
-       "details_img": "assets/images/tvshows/designatedsurvivor/dc_details.jpg",
-       "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
-       "video" : "D_6J9BqgonU",
-       "content" : [
-         {
-           'key': 'Creator',
-           'value': 'David Guggenheim'
-         },
-         {
-           'key': 'Cast',
-           'value': 'Kiefer Sutherland, Maggie Q, Kal Penn'
+           'value': 'Chin Han, Joan Chen, Zhu Zhu, Tom Wu'
          },
          {
            'key': 'Genres',
@@ -141,6 +112,64 @@ export class LandingPageComponent implements OnInit {
          {
            'key': 'Cast',
            'value': 'Rayan Phillepe, Omar Epps, Tom Sizemore'
+         },
+         {
+           'key': 'Genres',
+           'value': 'TV Programmes'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "title" : "House Of Cards",
+       "img" : "assets/images/tvshows/house_of_cards/HOC_main_img.jpg",
+       "details_img": "assets/images/tvshows/house_of_cards/house_of_cards_details.jpg",
+       "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama.",
+       "video" : "ULwUzF1q5w4",
+       "content" : [
+         {
+           'key': 'Creator',
+           'value': 'Beau William'
+         },
+         {
+           'key': 'Cast',
+           'value': 'Kevin Spacey, Robin Wright,Kate Mara'
+         },
+         {
+           'key': 'Genres',
+           'value': 'TV Programmes'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "title" : "Defenders",
+       "img" : "assets/images/tvshows/designatedsurvivor/DS_main_img.jpg",
+       "details_img": "assets/images/tvshows/designatedsurvivor/dc_details.jpg",
+       "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
+       "video" : "D_6J9BqgonU",
+       "content" : [
+         {
+           'key': 'Creator',
+           'value': 'David Guggenheim'
+         },
+         {
+           'key': 'Cast',
+           'value': 'Kiefer Sutherland, Maggie Q, Kal Penn'
          },
          {
            'key': 'Genres',
