@@ -47,36 +47,42 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "House Of Cards",
        "img" : "assets/images/tvshows/house_of_cards/HOC_main_img.jpg",
+       "details_img": "assets/images/tvshows/house_of_cards/house_of_cards_details.jpg",
        "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
        "title" : "Defenders",
        "img" : "assets/images/tvshows/designatedsurvivor/DS_main_img.jpg",
+       "details_img": "assets/images/tvshows/designatedsurvivor/dc_details.jpg",
        "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
        "title" : "Narcos",
        "img" : "assets/images/tvshows/narcos/Narcos_main_img.jpg",
+       "details_img": "assets/images/tvshows/narcos/narcos_details.jpg",
        "desc" : "The true story of Colombia's infamously violent and powerful drug cartels fuels this gritty gangster drama series.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
        "title" : "Shooter",
        "img" : "assets/images/tvshows/shooters/Shooter_main_img.jpg",
+       "details_img": "assets/images/tvshows/shooters/shooter_details.jpg",
        "desc" : "A highly decorated ex-Marine sniper returns to action to foil an assassination plot targeting the president, but soon finds himself framed for murder. ",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
        "title" : "Ozark",
        "img" : "assets/images/tvshows/ozark/Ozark_main_img.jpg",
+       "details_img": "assets/images/tvshows/ozark/ozark_details.jpg",
        "desc" : "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },
      {
        "title" : "Crown",
        "img" : "assets/images/tvshows/crown/Crown_main_img.jpg",
+       "details_img": "assets/images/tvshows/crown/crown_details.jpg",
        "desc" : "This drama follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      }
@@ -87,26 +93,31 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "Bahubali 2: The Conclusion",
        "img" : "assets/images/drama/bahubali2/Bahubali2_main_img.jpg",
+       "details_img": "assets/images/drama/bahubali2/bahubali2_details.jpg",
        "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },{
        "title" : "Dangal",
        "img" : "assets/images/drama/dangal/Dangal_main_img.jpg",
+       "details_img": "assets/images/drama/dangal/dangal_details.jpg",
        "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },{
        "title" : "Interstellar",
        "img" : "assets/images/drama/Interstellar/interstellar_main_img.jpg",
+       "details_img": "assets/images/drama/Interstellar/interstellar_details.jpg",
        "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },{
        "title" : "Raees",
        "img" : "assets/images/drama/Raees/Raees_main_img.jpg",
+       "details_img": "assets/images/drama/Raees/raees_details.jpg",
        "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },{
        "title" : "War Machine",
        "img" : "assets/images/drama/warmachine/war_machine_main_img.jpg",
+       "details_img": "assets/images/drama/warmachine/war_machine_details.jpg",
        "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      }
@@ -117,26 +128,31 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "A Pretty Little Liar",
        "img" : "assets/images/newrelease/a.jpg",
+       "details_img": "assets/images/drama/newrelease/a_details.jpg",
        "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },{
        "titile" : "Banking On Bitcoin",
        "img" : "assets/images/newrelease/bankingonbitcoin.jpg",
+       "details_img": "assets/images/drama/newrelease/bankingonbitcoin_details.jpg",
        "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },{
        "title" : "Naked",
        "img" : "assets/images/newrelease/naked.jpg",
+       "details_img": "assets/images/drama/newrelease/naked_details.jpg",
        "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },{
        "title" : "Rustom",
        "img" : "assets/images/newrelease/rutstom.jpg",
+       "details_img": "assets/images/drama/newrelease/rustom_details.jpg",
        "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      },{
        "title" : "Sand Of Catle",
        "img" : "assets/images/newrelease/sandcatle.jpg",
+       "details_img": "assets/images/drama/newrelease/sand_cattle_details.jpg",
        "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
        "video" : "https://www.youtube.com/watch?v=ULwUzF1q5w4"
      }
