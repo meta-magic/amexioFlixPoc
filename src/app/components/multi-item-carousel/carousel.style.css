@@ -1,60 +1,17 @@
-@media (max-width: 300px) {
-  .carosel-item {
-    width: 100%;
-  }
-
-  .carosel-item-potrait {
-    width: 100%;
+@media (min-width: 300px) and (max-width: 750px) {
+  .img__description{
+    display: none;
+    visibility: hidden;
   }
 }
-@media (min-width: 300px) {
-  .carosel-item {
-    width: 50%;
-    padding-left: 1px;
-    padding-right: 1px;
-    background-color: black;
-  }
 
-  .carosel-item-potrait {
-    width: 50%;
-    padding-left: 1px;
-    padding-right: 1px;
-    background-color: black;
-  }
-}
-@media (min-width: 500px) {
-  .carosel-item {
-    width: 33.333%;
-    padding-left: 1px;
-    padding-right: 1px;
-    background-color: black;
-  }
-
-  .carosel-item-potrait {
-    width: 33.333%;
-    padding-left: 1px;
-    padding-right: 1px;
-    background-color: black;
-  }
-}
 
 @media (min-width: 768px) {
   .carosel-item {
-    width: 18%;
     padding-left: 1px;
     padding-right: 1px;
     background-color: black;
   }
-
-  .carosel-item-potrait {
-    width: 25%;
-    padding-left: 1px;
-    padding-right: 1px;
-    background-color: black;
-  }
-
-  /* Dropping Hover effect */
-
 
   .carosel-item:hover
   {
@@ -69,22 +26,6 @@
     transition: all 20ms ease-in;
     transform: scale(1.020);
   }
-
-  .carosel-item-potrait:hover
-  {
-    box-shadow: 0px 0px 50px ;
-    z-index: 1;
-    -webkit-transition: all 20ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 20ms ease-in;
-    -ms-transform: scale(0.5);
-    -moz-transition: all 20ms ease-in;
-    -moz-transform: scale(0.5);
-    transition: all 20ms ease-in;
-    transform: scale(1.020);
-  }
-
-  /* quick reset and base styles */
 
 
   /* relevant styles */
@@ -124,6 +65,7 @@
   .img__wrap:hover .img__description {
     transform: translateY(0);
   }
+
 }
 .carosel {
   position: relative;

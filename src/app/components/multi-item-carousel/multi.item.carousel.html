@@ -8,15 +8,15 @@
       <span class="sr-only">Previous</span>
     </a>
 
-      <div class="carosel-inner">
+      <div class="carosel-inner" style="cursor: pointer;">
 
-          <div *ngFor="let item of data" class="carosel-item img__wrap" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()">
+          <div *ngFor="let item of data" class="carosel-item img__wrap" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()" (click)="openDetailsSection(item)">
             <img [attr.src]="item.img" class="img__img" />
             <div class="img__description_layer">
               <h6 class="img__description" style="color: white">
                 <p  style="justify-content: center;cursor: pointer;"><i class="fa fa-play-circle-o fa-5x" aria-hidden="true" (click)="loadVideo(item)"></i></p>
-                <p>{{title}}</p>
-                <p style="cursor: pointer;"><i class="fa fa-chevron-down fa-2x" aria-hidden="true" (click)="openDetailsSection(item)"></i></p>
+                <p>{{item.title}}</p>
+                <p style="cursor: pointer;"><i class="fa fa-chevron-down fa-2x" aria-hidden="true" ></i></p>
               </h6>
             </div>
           </div>
@@ -40,7 +40,7 @@
 
     <amexio-pane-body>
       <span class="close-button">
-        <i class="fa fa-times fa-2x" (click)="closeDetailPage()" aria-hidden="true"></i>
+        <i class="fa fa-times fa-1x" (click)="closeDetailPage()" aria-hidden="true"></i>
       </span>
 
       <amexio-content [bgImgUrl]="currentDetailsImagePath"
