@@ -20,6 +20,8 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
 
     @Input() title : any;
 
+    @Input() hasDetail : boolean = true;
+
     elementId : any;
 
     showText : boolean;
@@ -33,6 +35,12 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
     currentContent : string;
 
     @ContentChildren(MediaContentItem) mediaItems : any;
+
+    ratingData : any[] = [1,2,3,4,5,6,7,8,9,10];
+    public max = 5;
+    public rate = 4;
+
+    videoUrl : string;
 
 
     constructor(private carouselEventService : CarouselEventService,private router : Router) {
@@ -106,6 +114,7 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
     }
 
     openDetailsSection(item : any) {
+      this.videoUrl = item.video;
       this.currentDetailsImagePath = item.details_img;
       this.currentDetailsTitle = item.title;
       this.currentDetailsDesc = item.desc;
@@ -120,6 +129,10 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
 
   loadVideo(item : any){
      this.router.navigate(['/player',item.video])
+  }
+
+  playVideo(video : any){
+    this.router.navigate(['player',video]);
   }
 }
 
