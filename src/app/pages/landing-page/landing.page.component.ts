@@ -78,7 +78,7 @@ export class LandingPageComponent implements OnInit {
        "img" : "assets/images/tvshows/designatedsurvivor/DS_main_img.jpg",
        "details_img": "assets/images/tvshows/designatedsurvivor/dc_details.jpg",
        "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
-       "video" : "ULwUzF1q5w4",
+       "video" : "D_6J9BqgonU",
        "content" : [
          {
            'key': 'Creator',
@@ -107,7 +107,7 @@ export class LandingPageComponent implements OnInit {
        "img" : "assets/images/tvshows/narcos/Narcos_main_img.jpg",
        "details_img": "assets/images/tvshows/narcos/narcos_details.jpg",
        "desc" : "The true story of Colombia's infamously violent and powerful drug cartels fuels this gritty gangster drama series.",
-       "video" : "ULwUzF1q5w4",
+       "video" : "U7elNhHwgBU",
        "content" : [
          {
            'key': 'Director',
@@ -136,7 +136,7 @@ export class LandingPageComponent implements OnInit {
        "img" : "assets/images/tvshows/shooters/Shooter_main_img.jpg",
        "details_img": "assets/images/tvshows/shooters/shooter_details.jpg",
        "desc" : "A highly decorated ex-Marine sniper returns to action to foil an assassination plot targeting the president, but soon finds himself framed for murder. ",
-       "video" : "ULwUzF1q5w4",
+       "video" : "X2x6IR3FhbQ",
        "content" : [
          {
            'key': 'Cast',
@@ -161,7 +161,7 @@ export class LandingPageComponent implements OnInit {
        "img" : "assets/images/tvshows/ozark/Ozark_main_img.jpg",
        "details_img": "assets/images/tvshows/ozark/ozark_details.jpg",
        "desc" : "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
-       "video" : "ULwUzF1q5w4",
+       "video" : "5hAXVqrljbs",
        "content" : [
          {
            "key":"Creator",
@@ -190,7 +190,7 @@ export class LandingPageComponent implements OnInit {
        "img" : "assets/images/tvshows/crown/Crown_main_img.jpg",
        "details_img": "assets/images/tvshows/crown/crown_details.jpg",
        "desc" : "This drama follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
-       "video" : "ULwUzF1q5w4",
+       "video" : "JWtnJjn6ng0",
        "content" : [
          {
            "key":"Creator",
@@ -368,7 +368,7 @@ export class LandingPageComponent implements OnInit {
        "img" : "assets/images/newrelease/a.jpg",
        "details_img": "assets/images/newrelease/a_details.jpg",
        "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
-       "video" : "ULwUzF1q5w4",
+       "video" : "Xx---l5CoMQ",
        "content" : [
          {
            "key":"Creator",
@@ -396,7 +396,7 @@ export class LandingPageComponent implements OnInit {
        "img" : "assets/images/newrelease/bankingonbitcoin.jpg",
        "details_img": "assets/images/newrelease/bitcoin_details.jpg",
        "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
-       "video" : "ULwUzF1q5w4",
+       "video" : "CTbyaj8Y-Co",
        "content" : [
          {
            "key":"Creator",
@@ -420,7 +420,7 @@ export class LandingPageComponent implements OnInit {
        "img" : "assets/images/newrelease/naked.jpg",
        "details_img": "assets/images/newrelease/naked_details.jpg",
        "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
-       "video" : "ULwUzF1q5w4",
+       "video" : "nIgeVoVMv90",
        "content" : [
          {
            "key":"Starring",
@@ -448,7 +448,7 @@ export class LandingPageComponent implements OnInit {
        "img" : "assets/images/newrelease/rutstom.jpg",
        "details_img": "assets/images/newrelease/rustom_details.jpg",
        "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
-       "video" : "ULwUzF1q5w4",
+       "video" : "L83qMnbJ198",
        "content" : [
          {
            "key":"Starring",
@@ -472,11 +472,11 @@ export class LandingPageComponent implements OnInit {
          }
        ]
      },{
-       "title" : "Sand Of Catle",
+       "title" : "Sand Of Castle",
        "img" : "assets/images/newrelease/sandcatle.jpg",
        "details_img": "assets/images/newrelease/sand_cattle_details.jpg",
        "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
-       "video" : "ULwUzF1q5w4",
+       "video" : "8hq28cZ938E",
        "content" : [
          {
            "key":"Starring",
