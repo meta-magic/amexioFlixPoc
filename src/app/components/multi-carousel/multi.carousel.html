@@ -1,0 +1,19 @@
+
+    <div [attr.id]="elementId" class="carousel slide w-100" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+
+        <div *ngFor="let item of data;let i = index" class="carousel-item {{(i==0) ? 'active' : ''}} media-item">
+          <img class="d-block col-lg-4 col-sm-12 img-fluid" [attr.src]="item.img">
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" (click)="onPrevious()" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" (click)="onNext()" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+

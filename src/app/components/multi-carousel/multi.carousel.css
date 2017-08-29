@@ -1,0 +1,35 @@
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33.33%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33.33%)
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+  transform: translateX(0);
+}
+
+.carousel-item:hover{
+  box-shadow: 0px 0px 50px ;
+  z-index: 1;
+  -webkit-transition: all 20ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 20ms ease-in;
+  -ms-transform: scale(0.5);
+  -moz-transition: all 20ms ease-in;
+  -moz-transform: scale(0.5);
+  transition: all 20ms ease-in;
+  transform: scale(1.020);
+}
+
+.media-item{
+  height: 200px;
+  width: 500px; -webkit-transition: all 2s ease; -moz-transition: all 2s ease; -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.media-item img:hover { width: 300px; height: 300px; }
