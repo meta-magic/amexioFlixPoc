@@ -14,11 +14,19 @@ declare var $;
       <div>
         <div class="col-lg-6 col-sm-12" style="color: white;">
           <h3 *ngIf="title">{{title}}</h3>
+          <table>
+            <tr>
+              <td style="color: lightgreen">96% Match</td>&nbsp;
+              <td>2016</td>&nbsp;
+              <td style="border: 1px solid gray">16+</td>&nbsp;
+              <td>1 Season</td>&nbsp;
+            </tr>
+          </table><br>
           <span *ngIf="description"><p>{{description}}</p></span>
           <ng-container *ngIf="contents">
-            <span  *ngFor="let data of contents" >
-              {{data.key}} : {{data.value}}
-            </span>
+              <ul *ngFor="let data of contents">
+            <li><b>{{data.key}}</b> : {{data.value}}</li>
+          </ul>
           </ng-container>
           <table>
             <tr >
