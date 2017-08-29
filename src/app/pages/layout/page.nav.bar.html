@@ -27,12 +27,12 @@
             </div>
           </span>
     </form>
-    <form *ngIf="!isMobile" class="form-inline my-2 my-lg-0">
+    <form  class="form-inline my-2 my-lg-0">
       <span class="nav-item dropdown">
         <a style="color: white" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          <i class="fa fa-bell-o" aria-hidden="true"></i>
         </a>
-        <div style="width: 300px" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink11">
+        <div style="width: 300px" class="dropdown-menu" [ngClass]="alignClass" aria-labelledby="navbarDropdownMenuLink11">
            <amexio-listbox [data]="bindData" [listWidth]="'300px'"
                            [dataReader]="'response.data'"
                            [displayField]="'name'">
