@@ -7,30 +7,26 @@ declare var $;
   selector: 'amexio-content',
   template: `
 
-    <div class="maincontent">
-      
-      <img class="img-fluid" [attr.src]="bgImgUrl" alt="Featured Content">
-
+    <div class="maincontent"  [ngStyle]="{'background-image':'url('+bgImgUrl+')'}">
+    
       <div>
         <div class="col-lg-6 col-sm-12" style="color: white;">
           <h3 *ngIf="title">{{title}}</h3>
-          <table>
-            <tr>
-              <td style="color: lightgreen">96% Match</td>&nbsp;
-              <td>2016</td>&nbsp;
-              <td style="border: 1px solid gray">16+</td>&nbsp;
-              <td>1 Season</td>&nbsp;
-            </tr>
-          </table><br>
+          <span style="display: inline">
+            <li style="display: inline;color: lightgreen">{{matchPercentage}} Match</li>
+            <li style="display: inline">{{releaseYear}}</li>
+            <li style="display: inline;border: 1px solid gray">{{ageLimit}}+</li>
+            <li style="display: inline">{{seasonNo}} Season</li>
+          </span>
           <span *ngIf="description"><p>{{description}}</p></span>
           <ng-container *ngIf="contents">
-              <ul *ngFor="let data of contents">
-            <li><b>{{data.key}}</b> : {{data.value}}</li>
-          </ul>
+              <span>
+            <li *ngFor="let data of contents"><b>{{data.key}}</b> : {{data.value}}</li>
+          </span>
           </ng-container>
           <table>
-            <tr >
-              <td *ngIf="enableWatch" >
+            <tr>
+              <td *ngIf="enableWatch">
                 <amexio-btn [label]="'Watch'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'watch'" [size]="size" (onClick)="playVideo()"></amexio-btn>
               </td>
               <td *ngIf="enableMyList" >
@@ -46,7 +42,6 @@ declare var $;
           </table>
         </div>
       </div>
-
     </div>
    
   `,
@@ -55,6 +50,10 @@ declare var $;
       .maincontent {
         position: relative;
         width: 100%; /* for IE 6 */
+        height: 80vh;
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
       }
 
       .maincontent div {
@@ -97,6 +96,20 @@ declare var $;
         span{
           font-size: 6pt;
         }
+        li b{
+          font-size: 6pt;
+        }
+        li {
+          font-size: 6pt;
+        }
+        .maincontent {
+          position: relative;
+          width: 100%; /* for IE 6 */
+          height: 30vh;
+          width: 100%;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
       }
      
     `
@@ -126,6 +139,14 @@ export class ContentComponent implements OnInit,OnChanges {
   @Input() enableWatch: boolean = false;
 
   @Input() enableMyList: boolean = false;
+
+  @Input() ageLimit: any;
+
+  @Input() releaseYear: any;
+
+  @Input() seasonNo: number;
+
+  @Input() matchPercentage: any;
 
   @Output() onWatchClick: EventEmitter<any>= new EventEmitter<any>();
 

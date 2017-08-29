@@ -14,7 +14,7 @@ export class AppNavBarComponent implements OnInit {
 
   isMobile: boolean;
 
-  alignClass: string='dropdown-menu-right'
+  alignClass: string = 'dropdown-menu-right';
 
  constructor() {
    this.bindData = {
@@ -51,6 +51,7 @@ export class AppNavBarComponent implements OnInit {
       this.alignClass = 'dropdown-menu-left';
     } else {
       this.isMobile = false;
+      this.alignClass = 'dropdown-menu-right';
     }
   }
 }

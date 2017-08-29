@@ -34,6 +34,16 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
 
     currentContent : string;
 
+    ageLimit: any;
+
+    releaseYear: any;
+
+    seasonNo: number;
+
+    matchPercentage: any;
+
+
+
     @ContentChildren(MediaContentItem) mediaItems : any;
 
     ratingData : any[] = [1,2,3,4,5,6,7,8,9,10];
@@ -119,6 +129,11 @@ export class MultiItemCarousel implements OnInit,AfterViewInit,AfterContentInit 
       this.currentDetailsTitle = item.title;
       this.currentDetailsDesc = item.desc;
       this.currentContent = item.content;
+      this.seasonNo = item.seasonNo;
+      this.matchPercentage = item.matchPercentage;
+      this.ageLimit = item.ageLimit;
+      this.releaseYear = item.releaseYear;
+
       $('#'+this.elementId+'carousel-detail-content').collapse('show');
       setTimeout(()=>{
         $('html, body').animate({

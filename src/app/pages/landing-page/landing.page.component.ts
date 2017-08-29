@@ -50,6 +50,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/tvshows/marcopolo/marco_polo_details.jpg",
        "desc" : "Set in a world of greed, betrayal, sexual intrigue and rivalry, “Marco Polo” is based on the famed explorer’s adventures in Kublai Khan’s court.",
        "video" : "hB-ltNasHVw",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
        "content" : [
          {
            'key': 'Creator',
@@ -79,6 +83,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/tvshows/narcos/narcos_details.jpg",
        "desc" : "The true story of Colombia's infamously violent and powerful drug cartels fuels this gritty gangster drama series.",
        "video" : "U7elNhHwgBU",
+       "matchPercentage" : "95",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "3",
        "content" : [
          {
            'key': 'Director',
@@ -108,6 +116,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/tvshows/shooters/shooter_details.jpg",
        "desc" : "A highly decorated ex-Marine sniper returns to action to foil an assassination plot targeting the president, but soon finds himself framed for murder. ",
        "video" : "X2x6IR3FhbQ",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
        "content" : [
          {
            'key': 'Cast',
@@ -133,6 +145,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/tvshows/house_of_cards/house_of_cards_details.jpg",
        "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama.",
        "video" : "ULwUzF1q5w4",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
        "content" : [
          {
            'key': 'Creator',
@@ -162,6 +178,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/tvshows/designatedsurvivor/dc_details.jpg",
        "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
        "video" : "D_6J9BqgonU",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
        "content" : [
          {
            'key': 'Creator',
@@ -191,6 +211,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/tvshows/ozark/ozark_details.jpg",
        "desc" : "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
        "video" : "5hAXVqrljbs",
+       "matchPercentage" : "95",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "3",
        "content" : [
          {
            "key":"Creator",
@@ -220,6 +244,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/tvshows/crown/crown_details.jpg",
        "desc" : "This drama follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
        "video" : "JWtnJjn6ng0",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
        "content" : [
          {
            "key":"Creator",
@@ -253,6 +281,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/drama/bahubali2/bahubali2_details.jpg",
        "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant.",
        "video" : "G62HrubdD6o",
+       "matchPercentage" : "94",
+       "releaseYear" : "2017",
+       "ageLimit" : "13",
+       "seasonNo" : "1",
        "content" : [
          {
            "key":"Director",
@@ -281,6 +313,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/drama/dangal/dangal_details.jpg",
        "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
        "video" : "91ZI3IrojMU",
+       "matchPercentage" : "95",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "3",
        "content" : [
          {
            "key":"Director",
@@ -309,6 +345,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/drama/Interstellar/interstellar_details.jpg",
        "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
        "video" : "0vxOhd4qlnA",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
        "content" : [
          {
            "key":"Director",
@@ -337,6 +377,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/drama/Raees/raees_details.jpg",
        "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
        "video" : "lpdRqn6xwiM",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
        "content" : [
          {
            "key":"Director",
@@ -365,6 +409,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/drama/warmachine/war_machine_details.jpg",
        "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
        "video" : "a9Jg20Ukf4E",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
        "content" : [
          {
            "key":"Director",
@@ -398,6 +446,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/newrelease/a_details.jpg",
        "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
        "video" : "Xx---l5CoMQ",
+       "matchPercentage" : "95",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "3",
        "content" : [
          {
            "key":"Creator",
@@ -426,6 +478,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/newrelease/bitcoin_details.jpg",
        "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
        "video" : "CTbyaj8Y-Co",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
        "content" : [
          {
            "key":"Creator",
@@ -450,6 +506,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/newrelease/naked_details.jpg",
        "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
        "video" : "nIgeVoVMv90",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
        "content" : [
          {
            "key":"Starring",
@@ -478,6 +538,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/newrelease/rustom_details.jpg",
        "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
        "video" : "L83qMnbJ198",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
        "content" : [
          {
            "key":"Starring",
@@ -506,6 +570,10 @@ export class LandingPageComponent implements OnInit {
        "details_img": "assets/images/newrelease/sand_cattle_details.jpg",
        "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
        "video" : "8hq28cZ938E",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
        "content" : [
          {
            "key":"Starring",

@@ -6,11 +6,10 @@
         <amexio-tab-pane  [closable]="false">
           <amexio-tab title="OVERVIEW" [active]="true">
             <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
-
               <amexio-pane-body>
                   <amexio-content [bgImgUrl]="'assets/images/tvshows/narcos/narcos_main_header_img.jpg'"
                     [title]="'Narcos'" [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
-                    [contents]="content" [videoLink]="'demo'"
+                    [contents]="content" [videoLink]="'demo'" [matchPercentage]="'90%'" [ageLimit]="'16'" [releaseYear]="'2016'" [seasonNo]="1"
                     [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onAddListClick)="addToList($event)"></amexio-content>
               </amexio-pane-body>
             </amexio-card-pane>
@@ -38,8 +37,6 @@
       <div class="col-lg-12">
         <amexio-multi-item-carousel [title]="'New Releases'" [data]="newreleases"></amexio-multi-item-carousel>
       </div>
-
-
     <br>
     <br>
 
