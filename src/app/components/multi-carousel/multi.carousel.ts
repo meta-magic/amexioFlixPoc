@@ -33,21 +33,16 @@ declare var $;
       }
     }
     
+    .hover-in{
+      transition: 1s ease;
+    }
     
-    /*.hover-item:hover{
-      box-shadow: 0px 0px 50px ;
-      z-index: 3;
-      -webkit-transition: all 20ms ease-in;
-      -webkit-transform: scale(1.5);
-      -ms-transition: all 20ms ease-in;
-      -ms-transform: scale(0.5);
-      -moz-transition: all 20ms ease-in;
-      -moz-transform: scale(0.5);
-      transition: all 20ms ease-in;
-      transform: scale(1.020);
-      height: 500px;
-      width: 300px;
-    }*/
+    .hover-in:hover{
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.1);
+      transition: 1s ease;
+    }
 
   `]
 })
