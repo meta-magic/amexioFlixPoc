@@ -1,4 +1,4 @@
-
+<div style="color: white; padding-top: 30px; padding-bottom: 10px;"><h3>{{title}}</h3></div>
     <div [attr.id]="elementId" class="carousel slide w-100" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
 
@@ -19,6 +19,8 @@
                 <amexio-content [title]="item.title" [matchPercentage]="item.matchPercentage" [ageLimit]="item.ageLimit" [releaseYear]="item.releaseYear"
                                 [description]="item.desc" ></amexio-content>
               </span>-->
+            <div class="d-block col-lg-4 col-sm-12 maincontent" [style.height.px]="height" [style.background-image]="'url('+ item.img + ')'+''" style="background-repeat: no-repeat;background-size: 99%;" [attr.id]="elementId+'-index-'+i">
+              <h5>{{text}}</h5>
             </div>
           <!--<img class="d-block col-lg-4 col-sm-12 img-fluid" [attr.src]="item.img">-->
         </div>
