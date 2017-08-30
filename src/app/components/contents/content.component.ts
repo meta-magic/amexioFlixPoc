@@ -13,10 +13,10 @@ declare var $;
         <div class="col-lg-6 col-sm-12" style="color: white;">
           <h3 *ngIf="title">{{title}}</h3>
           <span style="display: inline">
-            <li style="display: inline;color: lightgreen">{{matchPercentage}} Match</li>
+            <li style="display: inline;color: lightgreen" *ngIf="matchPercentage">{{matchPercentage}} Match</li>
             <li style="display: inline">{{releaseYear}}</li>
-            <li style="display: inline;border: 1px solid gray">{{ageLimit}}+</li>
-            <li style="display: inline">{{seasonNo}} Season</li>
+            <li style="display: inline;border: 1px solid gray" *ngIf="ageLimit">{{ageLimit}}+</li>
+            <li style="display: inline" *ngIf="seasonNo">{{seasonNo}} Season</li>
           </span>
           <span *ngIf="description"><p>{{description}}</p></span>
           <ng-container *ngIf="contents">
