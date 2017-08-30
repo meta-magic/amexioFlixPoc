@@ -24,6 +24,31 @@ declare var $;
       transform: translateX(0);
     }
 
+    @media(max-width: 480px) {
+      .maincontent {
+        position: relative;
+        width: 100%; /* for IE 6 */
+        height: 30vh;
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+    /*.hover-item:hover{
+      box-shadow: 0px 0px 50px ;
+      z-index: 3;
+      -webkit-transition: all 20ms ease-in;
+      -webkit-transform: scale(1.5);
+      -ms-transition: all 20ms ease-in;
+      -ms-transform: scale(0.5);
+      -moz-transition: all 20ms ease-in;
+      -moz-transform: scale(0.5);
+      transition: all 20ms ease-in;
+      transform: scale(1.020);
+      height: 500px;
+      width: 300px;
+    }*/
+
   `]
 })
 
@@ -33,6 +58,10 @@ export class AmexioMultiMediaCarouselComponent implements OnInit {
   @Input()  data : any;
 
   @Input()  title : any;
+
+  hoverClass : string;
+
+  text : string;
 
   constructor() {
 
@@ -44,7 +73,9 @@ export class AmexioMultiMediaCarouselComponent implements OnInit {
 
   ngAfterViewInit(){
     $('#'+this.elementId).carousel({
-      interval: false
+      interval: false,
+      slide : false,
+      pause : false
     });
 
     $('.carousel .carousel-item').each(function(){
@@ -62,6 +93,14 @@ export class AmexioMultiMediaCarouselComponent implements OnInit {
       }
     });
 
+/*    $(document).on('mouseenter','.carousel-item', ()=>{
+      this.text = 'hover-item';
+    });
+
+    $(document).on('mouseleave','.carousel-item', ()=>{
+      this.text = 'gone';
+    });*/
+
   }
 
   onPrevious(){
@@ -70,5 +109,12 @@ export class AmexioMultiMediaCarouselComponent implements OnInit {
 
   onNext(){
     $('#'+this.elementId).carousel('next');
+  }
+
+  onHoverEnter(){
+
+  }
+  onHoverLeave(){
+    this.hoverClass = '';
   }
 }
