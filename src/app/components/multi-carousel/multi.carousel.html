@@ -4,8 +4,8 @@
 
         <div *ngFor="let item of data;let i = index" class="carousel-item {{(i==0) ? 'active' : ''}}">
 
-            <div class="d-block col-lg-4 col-sm-12 hover-in" [style.height.px]="191" [style.width.px]="width" [style.background-image]="'url('+ item.img + ')'+''" style="background-repeat: no-repeat;background-size: 99%; " [attr.id]="elementId+'-index-'+i">
-            <div style="padding-top: 80px">
+            <div class="d-block col-lg-4 col-sm-12 hover-in"  [style.height.px]="191" [style.width.px]="width" [style.background-image]="'url('+ item.img + ')'+''" style="background-repeat: no-repeat;background-size: 99%; " [attr.id]="elementId+'-index-'+i">
+            <div class="showContent" style="padding-top: 80px">
               <h6 style="color: white">{{item.title}}</h6>
               <span style="display: inline;font-size: 9pt;color: white">
             <li style="display: inline;color: lightgreen" *ngIf="item.matchPercentage">{{item.matchPercentage}} Match</li>

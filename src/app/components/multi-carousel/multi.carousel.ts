@@ -21,20 +21,16 @@ declare var $;
     .carousel-inner .carousel-item-left{
       transform: translateX(0);
     }
-
-    @media(max-width: 480px) {
-      .maincontent {
-        position: relative;
-        width: 100%; /* for IE 6 */
-        height: 30vh;
-        width: 100%;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-      }
-    }
+    
     
     .hover-in{
       transition: 1s ease;
+    }
+    .showContent{
+      display: none;
+    }
+    .hover-in:hover .showContent{
+      display: block;
     }
     
     .hover-in:hover{
@@ -61,6 +57,7 @@ export class AmexioMultiMediaCarouselComponent implements OnInit {
   hoverClass : string;
 
   text : string;
+
 
   constructor() {
 
@@ -116,4 +113,5 @@ export class AmexioMultiMediaCarouselComponent implements OnInit {
   onHoverLeave(){
     this.hoverClass = '';
   }
+
 }
