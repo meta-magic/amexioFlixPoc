@@ -6,9 +6,7 @@ declare var $;
 @Component({
   selector: 'amexio-ee-multi-carousel',
   templateUrl : 'multi.carousel.html',
-  styles: [`
-
-
+  styles: [`    
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(33.33%);
@@ -34,6 +32,8 @@ declare var $;
         background-repeat: no-repeat;
       }
     }
+    
+    
     /*.hover-item:hover{
       box-shadow: 0px 0px 50px ;
       z-index: 3;
@@ -58,6 +58,10 @@ export class AmexioMultiMediaCarouselComponent implements OnInit {
   @Input()  data : any;
 
   @Input()  title : any;
+
+  @Input()  height : any;
+
+  @Input()  width : any;
 
   hoverClass : string;
 
