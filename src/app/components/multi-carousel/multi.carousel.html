@@ -15,7 +15,11 @@
           </span>
               <span *ngIf="item.desc" style="font-size: 9pt;color: white"><p>{{item.desc}}</p></span>
             </div>
-        </div>
+              <div class="showContent">
+              <p  style="justify-content: center;padding-left:50%;padding-top:75px;cursor: pointer;color: white"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></p>
+              <p  style="cursor: pointer;padding-left:50%;padding-top: 20px;color: white"><i class="fa fa-angle-down fa-2x" aria-hidden="true" ></i></p>
+              </div>
+              </div>
 
       </div>
       <a class="carousel-control-prev" (click)="onPrevious()" role="button" data-slide="prev">
