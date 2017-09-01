@@ -27,6 +27,7 @@ import {CarouselEventService} from "./multi-item-carousel/carousel.event.service
 import {AmexioYoutubePlayerComponent} from "./video-player/youtube.player.component";
 import {RouterModule} from "@angular/router";
 import {AmexioMultiMediaCarouselComponent} from "./multi-carousel/multi.carousel";
+import {AmexioCarouselComponent} from "./carousel/carousel.component";
 
 const COMPONENTS = [
   DeferredLoader,
@@ -34,7 +35,7 @@ const COMPONENTS = [
   CardComponent, PaneBodyComponent, PaneActionComponent, ContentComponent, RatingInputComponent,
   DropDownComponent, ListBoxComponent, ButtonComponent,MediaContentItem,DialogComponent,
   PaneHeaderComponent,WindowPaneComponent,VerticalLeftTabPaneComponent,VerticalRightTabPaneComponent,
-  AmexioYoutubePlayerComponent,AmexioMultiMediaCarouselComponent
+  AmexioYoutubePlayerComponent,AmexioMultiMediaCarouselComponent, AmexioCarouselComponent
 ];
 
 @NgModule({

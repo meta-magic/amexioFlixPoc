@@ -1,0 +1,136 @@
+
+.crasouelpane-wrapper {
+  position:relative;
+  overflow:hidden;
+
+}
+
+.crasouelpane-scroller-potrait {
+  border: 1px solid black;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.crasouelpane-scroller-landscape {
+  border: 1px solid black;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.crasouelpane-scroller-right{
+  float:right;
+}
+
+.crasouelpane-scroller-left {
+  float:left;
+}
+
+.crasouelblock{
+  list-style: none;
+  display: flex;
+  padding: 1px;
+
+}
+
+/** POTRAIT SETTINGS **/
+
+.crasouelinner-potrait{
+  padding: 2px;
+  background-color: black;
+  height: 200px;
+  width: 350px;
+}
+
+.crasouelinner-potrait div{
+  width: 350px;
+}
+
+.crasouelinner-potrait:hover div{
+  width: 450px;
+  padding-top: 5px;
+}
+
+
+.crasouelinner-potrait:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+  transition-timing-function:cubic-bezier(0.5, 0, 0.1, 1);
+  transition-duration:400ms;
+  box-shadow: 5px 5px 5px 5px black;
+  background-color: black;
+  height: 300px;
+  color: white;
+
+}
+
+
+.crasouelinner-potrait:hover .showContent{
+  display: block;
+  height: 300px;
+
+}
+
+/** LANDSCAPE SETTINGS **/
+.crasouelinner-landscape{
+  padding: 2px;
+  background-color: black;
+  height: 450px;
+  width: 225px;
+}
+
+.crasouelinner-landscape div{
+  width: 230px;
+}
+
+.crasouelinner-landscape:hover div{
+  width: 330px;
+  padding-top: 50px;
+}
+
+.crasouelinner-landscape:hover{
+  z-index: 100;
+  cursor:pointer;
+  transform: scale(1.1);
+  transition-timing-function:cubic-bezier(0.5, 0, 0.1, 1);
+  transition-duration:400ms;
+  box-shadow: 5px 5px 5px 5px black;
+  border-bottom: 2px solid black;
+  background-color: black;
+  height: 500px;
+  color: white;
+
+}
+
+
+.crasouelinner-landscape:hover .showContent{
+  display: block;
+
+
+}
+
+.transbox {
+
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  text-align: center;
+  color: white;
+
+}
+
+.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: white;
+
+}
+
+.showContent{
+  display: none;
+  color: white;
+  height: 100%;
+
+}

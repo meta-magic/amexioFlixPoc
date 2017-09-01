@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style type="text/css">
+
+
+    .crasouelpane-wrapper {
+      position:relative;
+      margin:0 auto;
+      overflow:hidden;
+      border: 1px solid green;
+
+    }
+
+    .crasouelpane-scroller {
+      border: 1px solid black;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+
+    }
+
+
+
+
+    .crasouelpane-scroller-right{
+      float:right;
+    }
+
+    .crasouelpane-scroller-left {
+      float:left;
+    }
+
+
+   .crasouelblock{
+     list-style: none;
+     display: flex;
+     padding: 1px;
+
+   }
+
+    .crasouelinner{
+      padding: 2px;
+      background-color: black;
+    }
+
+    .crasouelinner:hover{
+      cursor:pointer;
+      transform: scale(1.1);
+
+      transition-timing-function:cubic-bezier(0.5, 0, 0.1, 1);
+      transition-duration:400ms;
+      box-shadow: 5px 5px 5px 5px black;
+
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="application/javascript">
+
+    var right = false;
+    var left = false;
+    function leftClick(){
+      var ts = document.getElementById('crasouelpane-wrapper');
+      ts.scrollLeft -= 400;
+      if (ts.scrollLeft == 0 ) {
+        document.getElementById("crasouelpane-scroller-left-inner").style.visibility = 'hidden';
+
+      }
+      document.getElementById("crasouelpane-scroller-right-inner").style.visibility = 'visible';
+    }
+
+    function rightClick(){
+        var ts = document.getElementById('crasouelpane-wrapper');
+        ts.scrollLeft += 400;
+        if ((ts.scrollWidth - ts.offsetWidth - ts.scrollLeft ) <= 0) {
+          document.getElementById("crasouelpane-scroller-right-inner").style.visibility = 'hidden';
+        }
+        document.getElementById("crasouelpane-scroller-left-inner").style.visibility = 'visible';
+    }
+
+
+
+  </script>
+</head>
+<body>
+<div id="elementId">
+  <div onclick="leftClick()" class="crasouelpane-scroller crasouelpane-scroller-left" >
+    <span style="visibility: hidden;" id="crasouelpane-scroller-left-inner"><button>LEFT</button></span>
+
+  </div>
+  <div onclick="rightClick()" class="crasouelpane-scroller crasouelpane-scroller-right">
+    <span style="visibility: visible;" id="crasouelpane-scroller-right-inner"><button>RIGHT</button></span>
+  </div>
+
+  <div class="crasouelpane-wrapper" id="crasouelpane-wrapper">
+    <ul class="crasouelblock" id="crasouelblock">
+      <li class="crasouelinner">
+        <div style="width: 350px;">
+          <img src="http://placehold.it/350x151">
+        </div>
+      </li>
+      <li class="crasouelinner">
+        <div style="width: 350px;background-image: url(http://localhost:4200/assets/images/newrelease/naked.jpg); background-repeat: no-repeat;">
+          <!--<div style="height: 200px;">Example of a DIV element with a background image:</div>-->
+          <img src="http://localhost:4200/assets/images/newrelease/naked.jpg"/>
+        </div>
+      </li>
+      <li class="crasouelinner">
+        <div style="width: 350px;">
+          <img src="http://placehold.it/350x153">
+        </div>
+      </li>
+      <li class="crasouelinner">
+        <div style="width: 350px;">
+          <img src="http://placehold.it/350x154">
+        </div>
+      </li>
+      <li class="crasouelinner">
+        <div style="width: 350px;">
+          <img src="http://placehold.it/350x155">
+        </div>
+      </li>
+      <li class="crasouelinner">
+        <div style="width: 350px;">
+          <img src="http://placehold.it/350x156">
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+</body>
+</html>
