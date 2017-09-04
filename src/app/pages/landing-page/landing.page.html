@@ -31,18 +31,24 @@
     </div>
     <br><br>
 
-      <div class="col-lg-12">
-       <!-- <amexio-ee-multi-carousel [width]="250" [height]="'550'" [title]="'TV Shows'" [data]="topRateContent"></amexio-ee-multi-carousel>-->
+    <!--  <div class="col-lg-12">
+       &lt;!&ndash; <amexio-ee-multi-carousel [width]="250" [height]="'550'" [title]="'TV Shows'" [data]="topRateContent"></amexio-ee-multi-carousel>&ndash;&gt;
         <amexio-carousel [title]="'TV Shows'"  [data]="topRateContent"  [size]="'landscape'"></amexio-carousel>
       </div>
       <br>
       <div class="col-lg-12">
-        <!--<amexio-ee-multi-carousel [height]="'191'" [title]="'Dramas'" [data]="dramas"></amexio-ee-multi-carousel>-->
+        &lt;!&ndash;<amexio-ee-multi-carousel [height]="'191'" [title]="'Dramas'" [data]="dramas"></amexio-ee-multi-carousel>&ndash;&gt;
         <amexio-carousel [title]="'Dramas'"  [data]="dramas" [size]="'potrait'"></amexio-carousel>
       </div>
-      <br>
+      <br>-->
+
+    <div class="col-lg-12">
+      <amexio-ee-carousel [title]="'TV Shows'"  [data]="topRateContent"  [cClass]="'vertical'"></amexio-ee-carousel>
+    </div>
+    <br>
+
     <div  class="col-lg-12">
-      <amexio-carousel [title]="'New Releases'"  [data]="newreleases"  [size]="'potrait'"></amexio-carousel>
+      <amexio-ee-carousel [title]="'New Releases'"  [data]="dramas" [cClass]="'horizontal'"></amexio-ee-carousel>
 
     </div>
 
