@@ -36,8 +36,6 @@ export class AmexioCarouselXComponent implements OnInit {
     this.data = this.items;
     if(this.data != null && this.data.length > 0)
       this.makeCarouselItemSet();
-
-    console.log(this.data);
   }
 
   /**
