@@ -1,0 +1,25 @@
+@keyframes SlideLeft {
+  0% {
+    padding-left: 100px;
+  }
+  100% {
+    padding-left: 0px;
+  }
+}
+
+@keyframes SlideRight {
+  0% {
+    padding-right: 100px;
+  }
+  100% {
+    padding-right: 0px;
+  }
+}
+
+.amexio-left-slide {
+  animation: SlideLeft 1s;
+}
+
+.amexio-right-slide{
+  animation: SlideRight 1s;
+}

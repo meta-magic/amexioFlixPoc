@@ -1,0 +1,6 @@
+Make Me!
+<div *ngFor="let data of viewDataArray" [attr.class]="animationClass">
+  <p style="color: white">{{data}}</p>
+</div>
+<button (click)="previousItemSet()">Previous</button>
+<button (click)="nextItemSet()">Next</button>
