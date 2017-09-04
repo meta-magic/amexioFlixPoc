@@ -16,37 +16,38 @@ declare var $;
 @Component({
   selector: 'amexio-btn',
   template : `
-      <div>
-          <button type="button" (click)="btnClick($event)"
-                  [class]="btnStyleClass"
-                  [attr.fieldName] = "fieldName"
-                  [attr.disabled] = "disabled ? true: null"
-                  data-toggle="tooltip" [attr.data-placement]="popoverPlacement" [attr.title]="tooltipMessage">
-              <ng-container *ngIf="isLoading">
-                <i class="fa fa-refresh fa-spin " aria-hidden="true"></i>&nbsp;
-              </ng-container>
-              <ng-container *ngIf="icon!=null">
-                <i [class]="iconStyleClass" aria-hidden="true"></i>                
-              </ng-container>
-            {{label}}
-          </button>
-      </div>
+    <div>
+      <button type="button" (click)="btnClick($event)"
+              [class]="btnStyleClass"
+              [attr.fieldName] = "fieldName"
+              [attr.disabled] = "disabled ? true: null"
+              data-toggle="tooltip" [attr.data-placement]="popoverPlacement" [attr.title]="tooltipMessage">
+        <ng-container *ngIf="isLoading">
+          <i class="fa fa-refresh fa-spin " aria-hidden="true"></i>&nbsp;
+        </ng-container>
+
+        <ng-container *ngIf="icon!=null">
+          <i [class]="iconStyleClass" aria-hidden="true"></i>
+        </ng-container>
+        {{label}}
+      </button>
+    </div>
   `,
   styles : [`
-  .glyphicon-refresh-animate {
-    -animation: spin .7s infinite linear;
-    -webkit-animation: spin2 .7s infinite linear;
-}
+    .glyphicon-refresh-animate {
+      -animation: spin .7s infinite linear;
+      -webkit-animation: spin2 .7s infinite linear;
+    }
 
-@-webkit-keyframes spin2 {
-    from { -webkit-transform: rotate(0deg);}
-    to { -webkit-transform: rotate(360deg);}
-}
+    @-webkit-keyframes spin2 {
+      from { -webkit-transform: rotate(0deg);}
+      to { -webkit-transform: rotate(360deg);}
+    }
 
-@keyframes spin {
-    from { transform: scale(1) rotate(0deg);}
-    to { transform: scale(1) rotate(360deg);}
-}`
+    @keyframes spin {
+      from { transform: scale(1) rotate(0deg);}
+      to { transform: scale(1) rotate(360deg);}
+    }`
   ]
 })
 export class ButtonComponent implements OnInit , OnChanges, AfterViewInit {
@@ -73,6 +74,8 @@ export class ButtonComponent implements OnInit , OnChanges, AfterViewInit {
 
   @Input()   popoverPlacement: string;
 
+  @Input() cClass:string;
+
   btnStyleClass: string;
 
   iconStyleClass: string;
@@ -91,7 +94,11 @@ export class ButtonComponent implements OnInit , OnChanges, AfterViewInit {
   }
 
   ngOnInit() {
-    this.btnStyleClass = 'btn ';
+    if(this.cClass){
+      this.btnStyleClass = this.cClass+'  btn ';
+    }else{
+      this.btnStyleClass = 'btn ';
+    }
     this.btnSizeStyleClass = '';
     if (this.type.toLocaleLowerCase() === 'warning') {
       this.btnStyleClass = this.btnStyleClass + 'btn-warning';
@@ -120,22 +127,22 @@ export class ButtonComponent implements OnInit , OnChanges, AfterViewInit {
     if (this.block) {
       this.btnStyleClass = this.btnStyleClass.concat(' btn-block');
     }
-      if (this.popoverPlacement == null) {
-          this.popoverPlacement = 'bottom';
-      }
+    if (this.popoverPlacement == null) {
+      this.popoverPlacement = 'bottom';
+    }
 
   }
 
   ngOnChanges(change: SimpleChanges) {
     /*console.log(change.isLoading);
-      if(change.isLoading){
-        this.disabled = true;
-      }*/ // TODO : Fix
+     if(change.isLoading){
+     this.disabled = true;
+     }*/ // TODO : Fix
   }
 
-    ngAfterViewInit() {
-       // $('[data-toggle="popover"]').popover();
-    }
+  ngAfterViewInit() {
+    // $('[data-toggle="popover"]').popover();
+  }
 
   btnClick(event: any) {
     this.onClick.emit(event);

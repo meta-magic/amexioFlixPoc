@@ -8,29 +8,25 @@ declare var $;
   template: `
 
     <div class="maincontent"  [ngStyle]="{'background-image':'url('+bgImgUrl+')'}">
-    
-      <div>
-        <div class="col-lg-6 col-sm-12" style="color: white;">
-          <h3 *ngIf="title">{{title}}</h3>
-          <span style="display: inline">
-            <li style="display: inline;color: lightgreen" *ngIf="matchPercentage">{{matchPercentage}} Match</li>
-            <li style="display: inline">{{releaseYear}}</li>
-            <li style="display: inline;border: 1px solid gray" *ngIf="ageLimit">{{ageLimit}}+</li>
-            <li style="display: inline" *ngIf="seasonNo">{{seasonNo}} Season</li>
-          </span>
-          <span *ngIf="description"><p>{{description}}</p></span>
+      <div >
+        <div class="col-lg-6 col-sm-12 content-area" style="color: white;">
+          <img src="assets/img/logo.jpg" width="383" ><br>
+          <span class="subtitle"><span class="match">{{matchPercentage}} Match</span> {{releaseYear}} <span class="age">{{ageLimit}}+</span> {{seasonNo}} Season</span><br>
+          {{description}}<br>
+          
           <ng-container *ngIf="contents">
-              <span>
-            <li *ngFor="let data of contents"><b>{{data.key}}</b> : {{data.value}}</li>
+              <span style="font-size: 80%;color:#fff ">
+                <li *ngFor="let data of contents"><strong>{{data.key}}: </strong> <strong>  {{data.value}}</strong></li><br>
           </span>
           </ng-container>
           <table>
             <tr>
               <td *ngIf="enableWatch">
-                <amexio-btn [label]="'Watch'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'watch'" [size]="size" (onClick)="playVideo()"></amexio-btn>
+                <amexio-btn [cClass]="'buttoncustom'" [label]="'Play'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'play'" [size]="size" (onClick)="playVideo()"></amexio-btn>
               </td>
+              <td>&nbsp;&nbsp;</td>
               <td *ngIf="enableMyList" >
-                  <amexio-btn [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" [size]="size" (onClick)="addToList()"></amexio-btn>
+                  <amexio-btn [cClass]="'secondarybutton'" [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" [size]="size" (onClick)="addToList()"></amexio-btn>
               </td>
               <td *ngIf="rate && max">
                 <amexio-rating-input [(ngModel)]="rate"
@@ -43,9 +39,8 @@ declare var $;
         </div>
       </div>
     </div>
-   
   `,
-  styles:[
+  styles: [
     `
       .maincontent {
         position: relative;
@@ -90,6 +85,10 @@ declare var $;
       }
 
       @media(max-width: 480px) {
+        img{
+          width: 170px;
+          height: 35px;
+        }
         h3 {
           font-size: 9pt;
         }
@@ -111,7 +110,70 @@ declare var $;
           background-repeat: no-repeat;
         }
       }
-     
+
+
+      header{
+        width: 100%;
+        padding: 0px 48px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.0), #141414);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+      header .billboard{
+        margin-top: 40px;
+        width: 40%;
+        padding: 2px;
+        font-size: 110%;
+        line-height: 160%;
+      }
+      header .billboard .tab-area a{
+        width: 120px;
+        float: left;
+        font-size: 90%;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 8px;
+        margin-right: .75em;
+        margin-bottom: 30px;
+        transition: border 0.5s;
+      }
+      header .billboard .tab-area a:hover{
+        border-bottom: solid 2px #eeeeee;
+      }
+      header .billboard .tab-area .active{
+        border-bottom: solid 2px #e50914;
+      }
+      /* Text Related CSS */
+      header .billboard .content-area{
+        color: #999;
+        font-size: 100%;
+      }
+      header .billboard .content-area .subtitle{
+        font-size: 120%;
+        line-height: 200%;
+      }
+      header .billboard .content-area .credits{
+        font-size: 80%;
+      }
+      header .billboard .content-area .credits strong{
+        color: #fff;
+      }
+      /* Button Related CSS */
+      header .billboard .button{
+        display: inline-block;
+        margin-right: .75em;
+        margin-top: 20px;
+        padding: 5px 20px;
+        font-size: 70%;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      
     `
   ]
 })
