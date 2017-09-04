@@ -8,8 +8,8 @@ declare var $;
   template: `
 
     <div class="maincontent"  [ngStyle]="{'background-image':'url('+bgImgUrl+')'}">
-      <div >
-        <div class="col-lg-6 col-sm-12 content-area" style="color: white;">
+      <div>
+        <div class="col-lg-6 col-sm-12 content-area" style="color: white;padding-left: 30px;">
           <span class="title">{{title}}</span><br>
           <span class="subtitle"><span class="match">{{matchPercentage}} Match</span> {{releaseYear}} <span class="age">{{ageLimit}}+</span> {{seasonNo}} Season</span><br>
           {{description}}<br>
@@ -59,8 +59,12 @@ declare var $;
       }
       
       .title{
-        font-style: normal;
-        font-size: 250%;
+        width: 100%;
+        font-size: 180%;
+        font-weight: 700;
+        line-height: 130%;
+        color: #fff;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
       }
 
       @media screen and (min-width: 1400px){
@@ -95,8 +99,12 @@ declare var $;
           height: 35px;
         }
         .title{
-          font-style: normal;
-          font-size: 250%;
+          width: 100%;
+          font-size: 180%;
+          font-weight: 700;
+          line-height: 130%;
+          color: #fff;
+          text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
         }
         h3 {
           font-size: 9pt;
