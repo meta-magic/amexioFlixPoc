@@ -13,6 +13,7 @@ const LARGE_SCREEN_MAX_ITEM = 5;
 export class AmexioCarouselXComponent implements OnInit {
 
   items : Array<any>;
+
   loopIndex : any;
 
   carouselItemSet : Array<any> = [];
@@ -20,6 +21,8 @@ export class AmexioCarouselXComponent implements OnInit {
   @Input()   data : any;
 
   @Input()   cClass : any;
+
+  @Input() title : string;
 
   renderedDeviceHeight : number;
 
