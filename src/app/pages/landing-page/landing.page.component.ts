@@ -497,9 +497,40 @@ export class LandingPageComponent implements OnInit {
            'value': 'English'
          }
        ]
+     },
+     {
+       "title" : "Naked",
+       "img" : "assets/images/newrelease/naked.jpg",
+       "details_img": "assets/images/newrelease/naked_details.jpg",
+       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
+       "video" : "nIgeVoVMv90",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
+       "content" : [
+         {
+           "key":"Starring",
+           "value":"Marlon Wayans, Dennis, Eliza"
+         },
+         {
+           "key":"Creator",
+           "value":"Michale Tiddes"
+         },
+         {
+           'key': 'Genres',
+           'value': 'International Movie, Comedies'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
      }
-
-
    ];
 
    this.dramas = [
@@ -669,93 +700,27 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Bahubali 2: The Conclusion",
-       "img" : "assets/images/drama/bahubali2/Bahubali2_main_img.jpg",
-       "details_img": "assets/images/drama/bahubali2/bahubali2_details.jpg",
-       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant.",
-       "video" : "G62HrubdD6o",
-       "matchPercentage" : "94",
-       "releaseYear" : "2017",
-       "ageLimit" : "13",
-       "seasonNo" : "1",
-       "content" : [
-         {
-           "key":"Director",
-           "value":"S.S Rajamouli"
-         },
-         {
-           'key': 'Starring',
-           'value': 'Prabhas, Ranna'
-         },
-         {
-           'key': 'Genres',
-           'value': 'Action '
-         },
-         {
-           'key': 'Subtitles',
-           'value': '	English [CC]'
-         },
-         {
-           'key': 'Audio Languages',
-           'value': 'Hindi'
-         }
-       ]
-     },
-     {
-       "title" : "Dangal",
-       "img" : "assets/images/drama/dangal/Dangal_main_img.jpg",
-       "details_img": "assets/images/drama/dangal/dangal_details.jpg",
-       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
-       "video" : "91ZI3IrojMU",
+       "title" : "A Pretty Little Liar",
+       "img" : "assets/images/newrelease/a.jpg",
+       "details_img": "assets/images/newrelease/a_details.jpg",
+       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
+       "video" : "Xx---l5CoMQ",
        "matchPercentage" : "95",
        "releaseYear" : "2017",
        "ageLimit" : "16",
        "seasonNo" : "3",
        "content" : [
          {
-           "key":"Director",
-           "value":"Nitesh Tiwari"
+           "key":"Creator",
+           "value":"I Malene King"
          },
          {
            'key': 'Starring',
-           'value': 'Aamir Khan, Sakshi, Fatima'
+           'value': 'Troian, Ashely, Lucy'
          },
          {
            'key': 'Genres',
-           'value': 'Dramas, Biography'
-         },
-         {
-           'key': 'Subtitles',
-           'value': '	English [CC]'
-         },
-         {
-           'key': 'Audio Languages',
-           'value': 'Hindi'
-         }
-       ]
-     },
-     {
-       "title" : "Interstellar",
-       "img" : "assets/images/drama/Interstellar/interstellar_main_img.jpg",
-       "details_img": "assets/images/drama/Interstellar/interstellar_details.jpg",
-       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
-       "video" : "0vxOhd4qlnA",
-       "matchPercentage" : "94",
-       "releaseYear" : "2015",
-       "ageLimit" : "13",
-       "seasonNo" : "2",
-       "content" : [
-         {
-           "key":"Director",
-           "value":"Christopher Nolan"
-         },
-         {
-           'key': 'Starring',
-           'value': 'Matthwe, Anne, Jessica'
-         },
-         {
-           'key': 'Genres',
-           'value': 'International Movie, Award Winning Movie'
+           'value': 'TV Programmes'
          },
          {
            'key': 'Subtitles',
@@ -768,27 +733,89 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Raees",
-       "img" : "assets/images/drama/Raees/Raees_main_img.jpg",
-       "details_img": "assets/images/drama/Raees/raees_details.jpg",
-       "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
-       "video" : "lpdRqn6xwiM",
+       "titile" : "Banking On Bitcoin",
+       "img" : "assets/images/newrelease/bankingonbitcoin.jpg",
+       "details_img": "assets/images/newrelease/bitcoin_details.jpg",
+       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
+       "video" : "CTbyaj8Y-Co",
        "matchPercentage" : "94",
        "releaseYear" : "2015",
        "ageLimit" : "13",
        "seasonNo" : "2",
        "content" : [
          {
-           "key":"Director",
-           "value":"Rahul Dholakia"
-         },
-         {
-           'key': 'Starring',
-           'value': 'Sharukh Khan, Mahir Khan'
+           "key":"Creator",
+           "value":"Christopher Cannucciar"
          },
          {
            'key': 'Genres',
-           'value': 'Crime, Action & Adventure'
+           'value': 'Documentary'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "title" : "Naked",
+       "img" : "assets/images/newrelease/naked.jpg",
+       "details_img": "assets/images/newrelease/naked_details.jpg",
+       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
+       "video" : "nIgeVoVMv90",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
+       "content" : [
+         {
+           "key":"Starring",
+           "value":"Marlon Wayans, Dennis, Eliza"
+         },
+         {
+           "key":"Creator",
+           "value":"Michale Tiddes"
+         },
+         {
+           'key': 'Genres',
+           'value': 'International Movie, Comedies'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "title" : "Rustom",
+       "img" : "assets/images/newrelease/rutstom.jpg",
+       "details_img": "assets/images/newrelease/rustom_details.jpg",
+       "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
+       "video" : "L83qMnbJ198",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
+       "content" : [
+         {
+           "key":"Starring",
+           "value":"Akshay Kumar, Esha Gupta, Pavan Malhotra"
+         },
+         {
+           "key":"Director",
+           "value":"Dharmendra"
+         },
+         {
+           'key': 'Genres',
+           'value': 'Crime'
          },
          {
            'key': 'Subtitles',
@@ -801,27 +828,27 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "War Machine",
-       "img" : "assets/images/drama/warmachine/war_machine_main_img.jpg",
-       "details_img": "assets/images/drama/warmachine/war_machine_details.jpg",
+       "title" : "Sand Of Castle",
+       "img" : "assets/images/newrelease/sandcatle.jpg",
+       "details_img": "assets/images/newrelease/sand_cattle_details.jpg",
        "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
-       "video" : "a9Jg20Ukf4E",
+       "video" : "8hq28cZ938E",
        "matchPercentage" : "90",
        "releaseYear" : "2017",
        "ageLimit" : "16",
        "seasonNo" : "1",
        "content" : [
          {
-           "key":"Director",
-           "value":"David Michod"
+           "key":"Starring",
+           "value":"Nicholos Hoult, Logan, Neil"
          },
          {
-           'key': 'Starring',
-           'value': 'Brad Pitt, Topher Grace'
+           "key":"Director",
+           "value":"Fernado Coimara"
          },
          {
            'key': 'Genres',
-           'value': 'International Movie, Drama'
+           'value': 'Internation Movie, British Movie, Adventure'
          },
          {
            'key': 'Subtitles',
@@ -833,7 +860,6 @@ export class LandingPageComponent implements OnInit {
          }
        ]
      }
-
    ];
 
    this.newreleases = [
