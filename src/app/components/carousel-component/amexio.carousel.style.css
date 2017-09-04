@@ -1,25 +1,326 @@
-@keyframes SlideLeft {
-  0% {
-    padding-left: 100px;
-  }
-  100% {
-    padding-left: 0px;
-  }
+
+.section-header{
+  font-weight: 700;
+  padding: 1em;
+  font-size: 100%;
+  color: #eee;
 }
 
-@keyframes SlideRight {
-  0% {
-    padding-right: 100px;
-  }
-  100% {
-    padding-right: 0px;
-  }
+.match{
+  color: lightgreen;
+}
+.age{
+  display: inline-block;
+  border: solid 2px #666;
+  padding: 0 10px 0 10px;
+  font-size: 100%;
+
+}
+.mini{
+  border: solid 1px #666;
+  padding: 0 5px 0 5px;
 }
 
-.amexio-left-slide {
-  animation: SlideLeft 1s;
+
+/* -------------------------------------- */
+/*  Horizontal Carousel CSS Starts Here   */
+/* -------------------------------------- */
+
+
+.horizontal-carousel{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+
+}
+/* Carousel Controls */
+.horizontal-carousel .content .controls{
+
+  padding: 0.5em;
+  float: left;
+  width: 3%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+/* Carousel Area */
+.horizontal-carousel .content .scrollpanel{
+  width: 94%;
+  float: left;
 }
 
-.amexio-right-slide{
-  animation: SlideRight 1s;
+.horizontal-carousel .content .scrollpanel .ul_wrapper {
+  width: 100%;
+  list-style: none;
 }
+
+
+
+.horizontal-carousel li{
+  float: left;
+  width: 20%;
+  border: solid 2px #141414;
+}
+.horizontal-carousel li:last-child{
+  margin-right: 0
+}
+/* Promotion Unit in Carousel */
+.horizontal-carousel .prom-photo{
+  margin: 0;
+  overflow: scroll;
+  transition: transform 0.5s, opacity 1s;
+  background-size: cover;
+  background-position: center;
+  height: 160px;
+  width:100%;
+  /*background-color: #000;*/
+
+}
+
+
+.horizontal-carousel .ul_wrapper:hover li .prom-photo {
+  /* color:green;transform: scale(.70);*/
+  /*color:green; width: 200px;*/
+}
+
+
+.horizontal-carousel .ul_wrapper li .prom-photo:hover{
+  transform: scale(1.50);
+  opacity: 1;
+  z-index: 1;
+
+  /*transform: scale(1.1);color:red;filter: none;  width: 400px; border: 1px solid green;*/
+}
+
+/* Promotion Unit in Synopsis Block - APPEARS ON HOVER */
+.horizontal-carousel .prom-photo .synopsis{
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 40%;
+  line-height: 160%;
+  text-align: center;
+  color: white !important;
+}
+.horizontal-carousel .prom-photo .synopsis:hover{
+  opacity: 1;
+}
+.horizontal-carousel .prom-photo .synopsis .playpanel{
+  padding: 20px 0 20px 0;
+  background-size: cover;
+  background-position: center;
+
+}
+.horizontal-carousel .prom-photo .synopsis .playpanel .playbutton{
+  display: inline-block;
+  border: solid 1px #ffffff;
+  padding: 5px;
+  height:30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}
+.horizontal-carousel .prom-photo .synopsis .playpanel .playbutton:hover{
+  color: #e50914;
+}
+.horizontal-carousel .prom-photo .synopsis .playpanel .playbutton i{
+  font-size: 12px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.horizontal-carousel .prom-photo .synopsis .title{
+  font-size: 130%;
+  font-weight: 600;
+}
+.horizontal-carousel .prom-photo .synopsis .subtitle{
+  font-size: 110%;
+  font-weight: 600;
+}
+.horizontal-carousel .prom-photo .synopsis .textonly{
+  padding: 0px 7px 2px 7px;
+  width: 100%;
+  text-align: left;
+  color: white;
+  /*background-color: #000;*/
+}
+.horizontal-carousel .prom-photo .synopsis .actionpanel{
+  /*background-color: #FFF;*/
+  color:  #e50914;
+}
+.horizontal-carousel .prom-photo .synopsis .actionpanel i{
+  color: #e50914;
+  padding: 0 0 3px 0;
+}
+
+/* -------------------------------------- */
+/*   Horizontal Carousel CSS Ends Here    */
+/* -------------------------------------- */
+
+
+/* -------------------------------------- */
+/*  Vertical Carousel CSS Starts Here   */
+/* -------------------------------------- */
+
+
+.vertical-carousel{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+/* Carousel Controls */
+.vertical-carousel .content .controls{
+  /*display: block;
+  padding: 0.5em;
+  width: 3%;
+  height: auto;
+  float: left;*/
+
+
+  padding: 0.5em;
+  float: left;
+  width: 3%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+/* Carousel Area */
+.vertical-carousel .content .scrollpanel{
+  width: 94%;
+  float: left;
+}
+
+.vertical-carousel .content .scrollpanel .ul_wrapper {
+  width: 100%;
+  list-style: none;
+}
+
+.vertical-carousel li{
+  display: block;
+  float: left;
+  background-color: #000;
+  border: solid 2px #141414;
+  width: 20%;
+}
+.vertical-carousel li:last-child{
+  margin-right: 0
+}
+/* Promotion Unit in Carousel */
+.vertical-carousel .prom-photo{
+  /*display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  transition: transform 0.5s, opacity 1s;
+  background-size: cover;
+  background-position: center;
+  height: 475px;
+  width:100%;*/
+
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 460px;
+  background-color: #000;
+
+  transition: transform 0.5s, opacity 1s;
+
+  /*background-color: #000;*/
+
+}
+
+
+.vertical-carousel .ul_wrapper:hover li .prom-photo {
+  /* color:green;transform: scale(.70);*/
+  /*color:green; width: 200px;*/
+}
+
+
+.vertical-carousel .ul_wrapper li .prom-photo:hover{
+  /*transform: scale(1.10);
+  opacity: 1;
+  z-index: 1;*/
+  transform: scale(1.20);
+  opacity: 1;
+  /*transform: scale(1.1);color:red;filter: none;  width: 400px; border: 1px solid green;*/
+}
+
+/* Promotion Unit in Synopsis Block - APPEARS ON HOVER */
+.vertical-carousel .prom-photo .synopsis{
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 70%;
+  line-height: 160%;
+  text-align: center;
+  color: white !important;
+
+}
+
+.vertical-carousel .prom-photo .synopsis:hover{
+  opacity: 1;
+}
+.vertical-carousel .prom-photo .synopsis .playpanel{
+
+  padding: 130px 0 155px 0;
+  background-size: cover;
+  background-position: center;
+
+}
+.vertical-carousel .prom-photo .synopsis .playpanel .playbutton{
+  display: inline-block;
+  border: solid 1px #ffffff;
+  padding: 5px;
+  height:30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}
+.vertical-carousel .prom-photo .synopsis .playpanel .playbutton:hover{
+  color: #e50914;
+}
+
+
+.vertical-carousel .prom-photo .synopsis .playpanel .playbutton i{
+  font-size: 12px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.vertical-carousel .prom-photo .synopsis .title{
+  font-size: 130%;
+  font-weight: 600;
+}
+.vertical-carousel .prom-photo .synopsis .subtitle{
+  font-size: 110%;
+  font-weight: 600;
+}
+.vertical-carousel .prom-photo .synopsis .textonly{
+  padding: 0px 7px 2px 7px;
+  width: 100%;
+  text-align: left;
+  /*background-color: #000;*/
+}
+.vertical-carousel .prom-photo .synopsis .actionpanel{
+  /*background-color: #FFF;*/
+  color:  #e50914;
+}
+.vertical-carousel .prom-photo .synopsis .actionpanel i{
+  color: #e50914;
+  font-size: 12px;
+  padding: 0 0 3px 0;
+}
+
+/* -------------------------------------- */
+/*   Vertical Carousel CSS Ends Here    */
+/* -------------------------------------- */
+

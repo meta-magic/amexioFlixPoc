@@ -19,6 +19,8 @@ export class AmexioCarouselXComponent implements OnInit {
 
   @Input()   data : any;
 
+  @Input()   cClass : any;
+
   renderedDeviceHeight : number;
 
   renderedDeviceWidth : number;
@@ -28,12 +30,18 @@ export class AmexioCarouselXComponent implements OnInit {
   animationClass : any;
 
   constructor() {
+    this.cClass = "horizontal-carousel";
   }
 
   ngOnInit() {
+    if(this.cClass == "vertical"){
+      this.cClass = "vertical-carousel";
+    }else{
+      this.cClass = "horizontal-carousel";
+    }
     this.loopIndex = 0;
-    this.items = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; // demo purpose
-    this.data = this.items;
+    /*this.items = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; // demo purpose
+    this.data = this.items;*/
     if(this.data != null && this.data.length > 0)
       this.makeCarouselItemSet();
   }
