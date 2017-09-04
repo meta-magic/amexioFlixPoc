@@ -36,19 +36,21 @@
     <br><br>
 
       <div class="col-lg-12">
-        <amexio-ee-multi-carousel [width]="250" [height]="'450'" [title]="'TV Shows'" [data]="topRateContent"></amexio-ee-multi-carousel>
+       <!-- <amexio-ee-multi-carousel [width]="250" [height]="'550'" [title]="'TV Shows'" [data]="topRateContent"></amexio-ee-multi-carousel>-->
+        <amexio-carousel [title]="'TV Shows'"  [data]="topRateContent"  [size]="'landscape'"></amexio-carousel>
       </div>
       <br>
       <div class="col-lg-12">
-        <amexio-ee-multi-carousel [height]="'191'" [title]="'Dramas'" [data]="dramas"></amexio-ee-multi-carousel>
+        <!--<amexio-ee-multi-carousel [height]="'191'" [title]="'Dramas'" [data]="dramas"></amexio-ee-multi-carousel>-->
+        <amexio-carousel [title]="'Dramas'"  [data]="dramas" [size]="'potrait'"></amexio-carousel>
       </div>
       <br>
-      <div class="col-lg-12">
-        <amexio-ee-multi-carousel [height]="'191'" [title]="'New Releases'" [data]="newreleases"></amexio-ee-multi-carousel>
-      </div>
+    <div  class="col-lg-12">
+      <amexio-carousel [title]="'New Releases'"  [data]="newreleases"  [size]="'potrait'"></amexio-carousel>
 
+    </div>
 
-
+    <br><br><br>
 
   </div>
 

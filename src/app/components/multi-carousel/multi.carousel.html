@@ -4,25 +4,23 @@
 
         <div *ngFor="let item of data;let i = index" class="carousel-item {{(i==0) ? 'active' : ''}}">
 
-            <div class="d-block col-lg-4 col-sm-12 hover-in"  [style.height.px]="191" [style.width.px]="width" [style.background-image]="'url('+ item.img + ')'+''" style="background-repeat: no-repeat;background-size: 99%; " [attr.id]="elementId+'-index-'+i">
+            <div class="d-block col-lg-4 col-sm-12 hover-in"  [style.height.px]="height" [style.width.px]="width" [style.background-image]="'url('+ item.img + ')'+''" style="background-repeat: no-repeat;background-size: 99%; " [attr.id]="elementId+'-index-'+i">
             <div class="showContent" style="padding-top: 70px">
-              <i style="padding-left: 45%;color: white" class="fa fa-play-circle-o fa-2x" (click)="playVideo(item.video)" aria-hidden="true"></i>
+              <i style="padding-left: 45%;color: white" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
               <h6 style="color: white">{{item.title}}</h6>
               <span style="display: inline;font-size: 9pt;color: white">
             <li style="display: inline;color: lightgreen" *ngIf="item.matchPercentage">{{item.matchPercentage}} Match</li>
             <li style="display: inline">{{item.releaseYear}}</li>
             <li style="display: inline;border: 1px solid gray" *ngIf="item.ageLimit">{{item.ageLimit}}+</li>
             <li style="display: inline" *ngIf="item.seasonNo">{{item.seasonNo}} Season</li>
-            <li style="display: inline" ><i class="fa fa-angle-down fa-2x" aria-hidden="true" (click)="openDetailsSection(item)" ></i></li>
           </span>
               <span *ngIf="item.desc" style="font-size: 9pt;color: white"><p>{{item.desc}}</p>
               </span>
-
             </div>
-              <div class="showContent">
-             <!-- <p  style="justify-content: center;padding-left:50%;padding-top:75px;cursor: pointer;color: white"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></p>-->
-              <!--<p  style="cursor: pointer;padding-left:50%;padding-top: 20px;color: white"><i class="fa fa-angle-down fa-2x" aria-hidden="true" (click)="openDetailsSection(item)" ></i></p>-->
-              </div>
+             <!-- <div class="showContent1">
+              <p  style="justify-content: center;cursor: pointer;color: white"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></p>
+              <p  style="cursor: pointer;color: white"><i class="fa fa-angle-down fa-2x" aria-hidden="true" ></i></p>
+              </div>-->
               </div>
 
       </div>
