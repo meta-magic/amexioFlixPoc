@@ -1,4 +1,4 @@
-<div  [attr.class]="cClass">
+<div  [attr.class]="cClass == 'vertical' ? 'vertical-carousel' : 'horizontal-carousel'">
   <div class="section-header">{{title}}</div>
   <div class="content">
     <div class="controls" (click)="previousItemSet();"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
@@ -11,7 +11,7 @@
                 <div class="synopsis">
                   <!--<div class="playpanel" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0), #000000)">-->
                   <div class="playpanel">
-                    <a href="" class="playbutton"><i class="fa fa-play" aria-hidden="true"></i></a>
+                    <div style="cursor: pointer" (click)="loadVideo(item)" class="playbutton"><i class="fa fa-play" aria-hidden="true"></i></div>
                   </div>
                   <div class="textonly">
                     <span class="title">{{item.title}}</span><br>
@@ -22,7 +22,7 @@
                     <br>
                   </div>
                   <div class="actionpanel">
-                    <a href=""><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></a>
+                    <div style="cursor: pointer;" (click)="openDetailsSection(item)"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></div>
                   </div>
                 </div>
               </div>
@@ -32,11 +32,10 @@
         <ng-container *ngIf="isDeviceMobile()">
 
             <li *ngFor="let item of viewDataArray;let i = index">
-              <div class="prom-photo" [style.background-image]="'url('+ item.img + ')'+''" >
                 <div class="synopsis">
                   <!--<div class="playpanel" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0), #000000)">-->
                   <div class="playpanel">
-                    <a href="" class="playbutton"><i class="fa fa-play" aria-hidden="true"></i></a>
+                    <a style="cursor: pointer;" class="playbutton"><i class="fa fa-play" (click)="loadVideo(item)" aria-hidden="true"></i></a>
                   </div>
                   <div class="textonly">
                     <span class="title">{{item.title}}</span><br>
@@ -47,14 +46,37 @@
                     <br>
                   </div>
                   <div class="actionpanel">
-                    <a href=""><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></a>
+                    <div style="cursor: pointer"><i class="fa fa-chevron-down fa-2x" (click)="openDetailsSection(item)" aria-hidden="true"></i></div>
                   </div>
                 </div>
-              </div>
+
             </li>
           </ng-container>
       </ul>
     </div>
     <div class="controls" (click)="nextItemSet();"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
   </div>
+</div>
+
+
+
+<div [attr.id]="elementId+'carousel-detail-content'" class="collapse" *ngIf="hasDetail">
+
+  <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
+
+    <amexio-pane-body>
+      <span class="close-button">
+        <i class="fa fa-times fa-1x" (click)="closeDetailPage()" aria-hidden="true"></i>
+      </span>
+
+      <amexio-content [bgImgUrl]="currentDetailsImagePath"
+                      [title]="currentDetailsTitle" [description]="currentDetailsDesc"
+                      [contents]="currentContent" [videoLink]="videoUrl"
+                      (onWatchClick)="playVideo(videoUrl)"
+                      [rate]="rate" [enableWatch]="true" [enableMyList]="true"
+                      [seasonNo]="seasonNo" [releaseYear]="releaseYear" [ageLimit]="ageLimit" [matchPercentage]="matchPercentage"
+      ></amexio-content>
+
+    </amexio-pane-body>
+  </amexio-card-pane>
 </div>
