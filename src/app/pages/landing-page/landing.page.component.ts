@@ -274,7 +274,7 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "13 Reasons Why",
        "img" : "assets/images/tvshows/shows/13_reasons_why_img.jpg",
-       "details_img": "assets/images/tvshows/shows/13_reasons_why_img.jpg",
+       "details_img": "assets/images/tvshows/shows/13_reasons_details.jpg",
        "desc" : "Set in a world of greed, betrayal, sexual intrigue and rivalry, “Marco Polo” is based on the famed explorer’s adventures in Kublai Khan’s court.",
        "video" : "hB-ltNasHVw",
        "matchPercentage" : "90",
@@ -307,7 +307,7 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "Death Note",
        "img" : "assets/images/tvshows/shows/death_note.jpg",
-       "details_img": "assets/images/tvshows/shows/death_noteimg.jpg",
+       "details_img": "assets/images/tvshows/shows/death_notes_details.jpg",
        "desc" : "The true story of Colombia's infamously violent and powerful drug cartels fuels this gritty gangster drama series.",
        "video" : "U7elNhHwgBU",
        "matchPercentage" : "95",
@@ -340,7 +340,7 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "Little Evil",
        "img" : "assets/images/tvshows/shows/little_evil_img.jpg",
-       "details_img": "assets/images/tvshows/shows/little_evil_img.jpg",
+       "details_img": "assets/images/tvshows/shows/little_evil_details.jpg",
        "desc" : "A highly decorated ex-Marine sniper returns to action to foil an assassination plot targeting the president, but soon finds himself framed for murder. ",
        "video" : "X2x6IR3FhbQ",
        "matchPercentage" : "94",
@@ -369,7 +369,7 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "Orange Black",
        "img" : "assets/images/tvshows/shows/orange_black.jpg",
-       "details_img": "assets/images/tvshows/house_of_cards/house_of_cards_details.jpg",
+       "details_img": "assets/images/tvshows/shows/the_orange_details.jpg",
        "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama.",
        "video" : "ULwUzF1q5w4",
        "matchPercentage" : "90",
@@ -402,7 +402,7 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "Aditi Mittal",
        "img" : "assets/images/tvshows/shows/aditi_mittal.jpg",
-       "details_img": "assets/images/tvshows/shows/aditi_mittal.jpg",
+       "details_img": "assets/images/tvshows/shows/aditi_mittal_details.jpg",
        "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
        "video" : "D_6J9BqgonU",
        "matchPercentage" : "94",
@@ -435,7 +435,7 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "Fauda",
        "img" : "assets/images/tvshows/shows/fauda.jpg",
-       "details_img": "assets/images/tvshows/ozark/ozark_details.jpg",
+       "details_img": "assets/images/tvshows/shows/fauda_details.jpg",
        "desc" : "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
        "video" : "5hAXVqrljbs",
        "matchPercentage" : "95",
@@ -468,7 +468,7 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "The Mist",
        "img" : "assets/images/tvshows/shows/the_mist.jpg",
-       "details_img": "assets/images/tvshows/crown/crown_details.jpg",
+       "details_img": "assets/images/tvshows/shows/the_mist_details.jpg",
        "desc" : "This drama follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
        "video" : "JWtnJjn6ng0",
        "matchPercentage" : "94",
@@ -501,7 +501,7 @@ export class LandingPageComponent implements OnInit {
      {
        "title" : "The Siege",
        "img" : "assets/images/tvshows/shows/the_siege.jpg",
-       "details_img": "assets/images/newrelease/naked_details.jpg",
+       "details_img": "assets/images/tvshows/shows/the_seige_details.jpg",
        "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
        "video" : "nIgeVoVMv90",
        "matchPercentage" : "90",
