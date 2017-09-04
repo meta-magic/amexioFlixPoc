@@ -2,7 +2,11 @@
  * Created by pratik on 4/9/17.
  */
 import {Component, Input, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
+
+declare var $;
 const LARGE_SCREEN_MAX_ITEM = 5;
+
 @Component({
   moduleId: module.id,
   selector: 'amexio-ee-carousel',
@@ -12,17 +16,21 @@ const LARGE_SCREEN_MAX_ITEM = 5;
 
 export class AmexioCarouselXComponent implements OnInit {
 
-  items : Array<any>;
-
-  loopIndex : any;
-
-  carouselItemSet : Array<any> = [];
-
   @Input()   data : any;
 
   @Input()   cClass : any;
 
   @Input() title : string;
+
+  @Input() hasDetail : boolean = true;
+
+  elementId : any;
+
+  items : Array<any>;
+
+  loopIndex : any;
+
+  carouselItemSet : Array<any> = [];
 
   renderedDeviceHeight : number;
 
@@ -32,19 +40,24 @@ export class AmexioCarouselXComponent implements OnInit {
 
   animationClass : any;
 
-  constructor() {
-    this.cClass = "horizontal-carousel";
+  currentDetailsImagePath : any;
+  currentDetailsTitle : any;
+  currentDetailsDesc : any;
+  currentContent : any;
+  videoUrl : any;
+  rate : any;
+  seasonNo : any;
+  releaseYear : any;
+  ageLimit : any;
+  matchPercentage : any;
+
+  constructor(private router : Router) {
+    this.cClass = 'horizontal-carousel';
+    this.elementId = 'multi-item-carousel-' + Math.floor(Math.random()*90000) + 10000;
   }
 
   ngOnInit() {
-    if(this.cClass == "vertical"){
-      this.cClass = "vertical-carousel";
-    }else{
-      this.cClass = "horizontal-carousel";
-    }
     this.loopIndex = 0;
-    /*this.items = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; // demo purpose
-    this.data = this.items;*/
     if(this.data != null && this.data.length > 0)
       this.makeCarouselItemSet();
   }
@@ -108,14 +121,12 @@ export class AmexioCarouselXComponent implements OnInit {
     this.animationClass = 'amexio-right-slide';
     this.viewDataArray = [];
     this.viewDataArray.push(this.getPreviousItemSet());
-    console.log(this.viewDataArray);
   }
 
   nextItemSet(){
     this.viewDataArray = [];
     this.animationClass = 'amexio-left-slide';
     this.viewDataArray.push(this.getNextItemSet());
-    console.log(this.viewDataArray);
   }
 
   /**
@@ -152,4 +163,39 @@ export class AmexioCarouselXComponent implements OnInit {
     return this.getcurrentItemSet();
   }
 
+
+  closeDetailPage(){
+    $('#'+this.elementId+'carousel-detail-content').collapse('hide');
+    $('html, body').animate({
+      scrollTop: $('#'+this.elementId).offset().top
+    }, 500);
+  }
+
+  openDetailsSection(item : any) {
+    debugger;
+    this.videoUrl = item.video;
+    this.currentDetailsImagePath = item.details_img;
+    this.currentDetailsTitle = item.title;
+    this.currentDetailsDesc = item.desc;
+    this.currentContent = item.content;
+    this.seasonNo = item.seasonNo;
+    this.matchPercentage = item.matchPercentage;
+    this.ageLimit = item.ageLimit;
+    this.releaseYear = item.releaseYear;
+
+    $('#'+this.elementId+'carousel-detail-content').collapse('show');
+    setTimeout(()=>{
+      $('html, body').animate({
+        scrollTop: $('#'+this.elementId+'carousel-detail-content').offset().top
+      }, 500);
+    },500)
+  }
+
+  loadVideo(item : any){
+    this.router.navigate(['/player',item.video])
+  }
+
+  playVideo(video : any){
+    this.router.navigate(['player',video]);
+  }
 }

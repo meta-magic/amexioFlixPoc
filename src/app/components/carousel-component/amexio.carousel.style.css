@@ -75,9 +75,9 @@
   transition: transform 0.5s, opacity 1s;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: center;
   height: 160px;
   width:100%;
-
   /*background-color: #000;*/
 
 }
@@ -303,4 +303,5 @@
 /* -------------------------------------- */
 /*   Vertical Carousel CSS Ends Here    */
 /* -------------------------------------- */
+
 

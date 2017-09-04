@@ -59,8 +59,8 @@ declare var $;
       }
       
       .title{
-        font-style: oblique;
-        font-size: 500%;
+        font-style: normal;
+        font-size: 250%;
       }
 
       @media screen and (min-width: 1400px){
@@ -95,7 +95,7 @@ declare var $;
           height: 35px;
         }
         .title{
-          font-style: oblique;
+          font-style: normal;
           font-size: 250%;
         }
         h3 {
