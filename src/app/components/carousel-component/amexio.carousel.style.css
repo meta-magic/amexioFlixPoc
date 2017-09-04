@@ -2,8 +2,9 @@
 .section-header{
   font-weight: 700;
   padding: 1em;
-  font-size: 100%;
+  font-size: 150%;
   color: white;
+
 }
 
 .match{
@@ -45,6 +46,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  font-size: 2em;
 }
 /* Carousel Area */
 .horizontal-carousel .content .scrollpanel{
@@ -62,7 +64,7 @@
 .horizontal-carousel li{
   float: left;
   width: 20%;
-  border: solid 2px #141414;
+
 }
 .horizontal-carousel li:last-child{
   margin-right: 0
@@ -175,13 +177,7 @@
 }
 /* Carousel Controls */
 .vertical-carousel .content .controls{
-  /*display: block;
-  padding: 0.5em;
-  width: 3%;
-  height: auto;
-  float: left;*/
-
-
+  font-size: 2em;
   padding: 0.5em;
   float: left;
   width: 3%;
@@ -190,6 +186,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+
 }
 
 /* Carousel Area */
@@ -206,7 +203,6 @@
 .vertical-carousel li{
   display: block;
   float: left;
-  border: solid 2px #141414;
   width: 20%;
 }
 .vertical-carousel li:last-child{
@@ -221,7 +217,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 480px;
+  height: 550px;
   transition: transform 0.5s, opacity 1s;
 
 }
