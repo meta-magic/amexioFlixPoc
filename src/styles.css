@@ -167,3 +167,9 @@ nav .logo img{
 .secondarybutton:hover{
   background-color: rgba(255, 255, 255, 0.1);
 }
+ .dropdown-menu .dropdown-item:hover{
+   color: white!important;
+   text-decoration: underline!important;
+   background-color: #222222;
+}
+
