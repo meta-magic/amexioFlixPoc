@@ -37,12 +37,9 @@ export class AmexioCarouselComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    console.log(this.size);
-    if(this.size === "potrait"){
-      this.size = "crasouelinner-potrait";
+      if(this.size === "potrait"){
       this.navigationClass = "crasouelpane-scroller-potrait";
     }else if(this.size == "landscape"){
-      this.size = "crasouelinner-landscape";
       this.navigationClass = "crasouelpane-scroller-landscape";
     }
   }

@@ -12,7 +12,7 @@
   <div class="crasouelpane-wrapper" [attr.id]="elementId+'-crasouelpane-wrapper'">
 
     <ul class="crasouelblock" >
-      <li *ngFor="let item of data;let i = index"  [ngClass]="size">
+      <li *ngFor="let item of data;let i = index"  [attr.class]="size== 'potrait' ? 'crasouelinner-potrait' : 'crasouelinner-landscape'">
         <!--<div  [style.background-image]="'url('+ item.img + ')'+''" style="background-repeat: no-repeat;height: 100%;background-size: cover;"  [attr.id]="elementId+'-'+i+'-crasouelinner'">-->
         <div  [style.background-image]="'url('+ item.img + ')'+''" style="background-repeat: no-repeat;height: 100%;background-size: cover;"  [attr.id]="elementId+'-'+i+'-crasouelinner'">
 

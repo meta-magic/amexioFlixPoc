@@ -71,10 +71,11 @@
 .horizontal-carousel .prom-photo{
   margin: 0;
   transition: transform 0.5s, opacity 1s;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   height: 160px;
   width:100%;
+
   /*background-color: #000;*/
 
 }

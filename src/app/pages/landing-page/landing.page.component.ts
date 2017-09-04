@@ -1196,10 +1196,8 @@ export class LandingPageComponent implements OnInit {
    // $('myModal').fullscreen();
  }
   loadContent(){
-   console.log('push content');
   }
 
   addToList(data: any) {
-    console.log(data);
   }
 }
