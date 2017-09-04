@@ -59,8 +59,12 @@ declare var $;
       }
       
       .title{
-        font-style: normal;
-        font-size: 250%;
+        width: 100%;
+        font-size: 180%;
+        font-weight: 700;
+        line-height: 130%;
+        color: #fff;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
       }
 
       @media screen and (min-width: 1400px){
@@ -95,8 +99,12 @@ declare var $;
           height: 35px;
         }
         .title{
-          font-style: normal;
-          font-size: 250%;
+          width: 100%;
+          font-size: 180%;
+          font-weight: 700;
+          line-height: 130%;
+          color: #fff;
+          text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
         }
         h3 {
           font-size: 9pt;
