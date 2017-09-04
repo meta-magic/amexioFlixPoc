@@ -32,7 +32,7 @@
   display: inline-block;
   width: 100%;
   height: auto;
-  padding-bottom: 10px;
+  padding-top: 10px;
 
 }
 /* Carousel Controls */
@@ -174,7 +174,7 @@
   display: inline-block;
   width: 100%;
   height: auto;
-  padding-bottom: 40px;
+  padding-top: 40px;
 }
 /* Carousel Controls */
 .vertical-carousel .content .controls{
