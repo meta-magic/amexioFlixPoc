@@ -10,13 +10,13 @@ declare var $;
     <div class="maincontent"  [ngStyle]="{'background-image':'url('+bgImgUrl+')'}">
       <div >
         <div class="col-lg-6 col-sm-12 content-area" style="color: white;">
-          <img src="assets/img/logo.jpg" width="383" ><br>
+          <span class="title">{{title}}</span><br>
           <span class="subtitle"><span class="match">{{matchPercentage}} Match</span> {{releaseYear}} <span class="age">{{ageLimit}}+</span> {{seasonNo}} Season</span><br>
           {{description}}<br>
           
           <ng-container *ngIf="contents">
-              <span style="font-size: 80%;color:#fff ">
-                <li *ngFor="let data of contents"><strong>{{data.key}}: </strong> <strong>  {{data.value}}</strong></li><br>
+              <span>
+                <li *ngFor="let data of contents"><strong style="color: #999;">{{data.key}}: </strong> <strong>  {{data.value}}</strong></li><br>
           </span>
           </ng-container>
           <table>
@@ -45,7 +45,7 @@ declare var $;
       .maincontent {
         position: relative;
         width: 100%; /* for IE 6 */
-        height: 80vh;
+        height: 65vh;
         width: 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -56,6 +56,11 @@ declare var $;
         top: 10px;
         left: 0;
         width: 100%;
+      }
+      
+      .title{
+        font-style: oblique;
+        font-size: 500%;
       }
 
       @media screen and (min-width: 1400px){
@@ -89,6 +94,10 @@ declare var $;
           width: 170px;
           height: 35px;
         }
+        .title{
+          font-style: oblique;
+          font-size: 250%;
+        }
         h3 {
           font-size: 9pt;
         }
@@ -104,7 +113,7 @@ declare var $;
         .maincontent {
           position: relative;
           width: 100%; /* for IE 6 */
-          height: 30vh;
+          height: 35vh;
           width: 100%;
           background-size: 100% 100%;
           background-repeat: no-repeat;
