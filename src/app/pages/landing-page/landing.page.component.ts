@@ -20,6 +20,7 @@ export class LandingPageComponent implements OnInit {
   topRateContent : any;
   dramas : any;
   newreleases: any;
+  documentries:any;
  constructor() {
    this.content = [
      {
@@ -1153,8 +1154,8 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "A Pretty Little Liar",
-       "img" : "assets/images/newrelease/a.jpg",
+       "title" : "The World War II",
+       "img" : "assets/images/newrelease/world_war.jpg",
        "details_img": "assets/images/newrelease/a_details.jpg",
        "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
        "video" : "Xx---l5CoMQ",
@@ -1185,6 +1186,329 @@ export class LandingPageComponent implements OnInit {
          }
        ]
      }
+   ];
+
+
+   this.documentries = [
+     {
+       "title" : "The 80's India",
+       "img" : "assets/images/documentory/80_india.jpg",
+       "details_img": "assets/images/documentory/80_details.jpg",
+       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
+       "video" : "Xx---l5CoMQ",
+       "matchPercentage" : "95",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "3",
+       "content" : [
+         {
+           "key":"Creator",
+           "value":"I Malene King"
+         },
+         {
+           'key': 'Starring',
+           'value': 'Troian, Ashely, Lucy'
+         },
+         {
+           'key': 'Genres',
+           'value': 'TV Programmes'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "titile" : "India - BSF",
+       "img" : "assets/images/documentory/bsf.jpg",
+       "details_img": "assets/images/documentory/bsf_details.jpg",
+       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
+       "video" : "CTbyaj8Y-Co",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
+       "content" : [
+         {
+           "key":"Creator",
+           "value":"Christopher Cannucciar"
+         },
+         {
+           'key': 'Genres',
+           'value': 'Documentary'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "title" : "Saudi Arabia",
+       "img" : "assets/images/documentory/saudi_arabi.jpg",
+       "details_img": "assets/images/documentory/saudi_arabi_details.jpg",
+       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
+       "video" : "nIgeVoVMv90",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
+       "content" : [
+         {
+           "key":"Starring",
+           "value":"Marlon Wayans, Dennis, Eliza"
+         },
+         {
+           "key":"Creator",
+           "value":"Michale Tiddes"
+         },
+         {
+           'key': 'Genres',
+           'value': 'International Movie, Comedies'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "title" : "Steve Jobs",
+       "img" : "assets/images/documentory/steve_jobs.jpg",
+       "details_img": "assets/images/documentory/steve_jobs_details.jpg",
+       "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
+       "video" : "L83qMnbJ198",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
+       "content" : [
+         {
+           "key":"Starring",
+           "value":"Akshay Kumar, Esha Gupta, Pavan Malhotra"
+         },
+         {
+           "key":"Director",
+           "value":"Dharmendra"
+         },
+         {
+           'key': 'Genres',
+           'value': 'Crime'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'Hindi'
+         }
+       ]
+     },
+     {
+       "title" : "Alcohol",
+       "img" : "assets/images/documentory/alcohol.jpg",
+       "details_img": "assets/images/documentory/alcohol_details.jpg",
+       "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
+       "video" : "8hq28cZ938E",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
+       "content" : [
+         {
+           "key":"Starring",
+           "value":"Nicholos Hoult, Logan, Neil"
+         },
+         {
+           "key":"Director",
+           "value":"Fernado Coimara"
+         },
+         {
+           'key': 'Genres',
+           'value': 'Internation Movie, British Movie, Adventure'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "title" : "Conspiracies",
+       "img" : "assets/images/documentory/conspiracies.jpg",
+       "details_img": "assets/images/documentory/conspiracies_details.jpg",
+       "desc" : "This drama series chronicles the true story of the rise, capture and escape of notorious Mexican drug lord Joaquín 'El Chapo' Guzmán.",
+       "video" : "Xx---l5CoMQ",
+       "matchPercentage" : "95",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "3",
+       "content" : [
+         {
+           "key":"Creator",
+           "value":"I Malene King"
+         },
+         {
+           'key': 'Starring',
+           'value': 'Troian, Ashely, Lucy'
+         },
+         {
+           'key': 'Genres',
+           'value': 'TV Programmes'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "titile" : "Kedarnath",
+       "img" : "assets/images/documentory/kedarnath.jpg",
+       "details_img": "assets/images/documentory/kedarnath_details.jpg",
+       "desc" : "With a new member in the fold, the Four Horsemen use their power of illusion in a heist involving a shady tycoon and revolutionary tech device.",
+       "video" : "CTbyaj8Y-Co",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
+       "content" : [
+         {
+           "key":"Creator",
+           "value":"Christopher Cannucciar"
+         },
+         {
+           'key': 'Genres',
+           'value': 'Documentary'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "title" : "Roman Empire",
+       "img" : "assets/images/documentory/roman_empire.jpg",
+       "details_img": "assets/images/documentory/roman_empire_details.jpg",
+       "desc" : "After turning himself in, a brilliant fugitive offers to help the FBI bag other baddies, but only if rookie profiler Elizabeth Keen is his partner.",
+       "video" : "nIgeVoVMv90",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
+       "content" : [
+         {
+           "key":"Starring",
+           "value":"Marlon Wayans, Dennis, Eliza"
+         },
+         {
+           "key":"Creator",
+           "value":"Michale Tiddes"
+         },
+         {
+           'key': 'Genres',
+           'value': 'International Movie, Comedies'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "titile" : "India - BSF",
+       "img" : "assets/images/documentory/bsf.jpg",
+       "details_img": "assets/images/documentory/bsf_details.jpg",
+       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
+       "video" : "CTbyaj8Y-Co",
+       "matchPercentage" : "94",
+       "releaseYear" : "2015",
+       "ageLimit" : "13",
+       "seasonNo" : "2",
+       "content" : [
+         {
+           "key":"Creator",
+           "value":"Christopher Cannucciar"
+         },
+         {
+           'key': 'Genres',
+           'value': 'Documentary'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     },
+     {
+       "title" : "Saudi Arabia",
+       "img" : "assets/images/documentory/saudi_arabi.jpg",
+       "details_img": "assets/images/documentory/saudi_arabi_details.jpg",
+       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
+       "video" : "nIgeVoVMv90",
+       "matchPercentage" : "90",
+       "releaseYear" : "2017",
+       "ageLimit" : "16",
+       "seasonNo" : "1",
+       "content" : [
+         {
+           "key":"Starring",
+           "value":"Marlon Wayans, Dennis, Eliza"
+         },
+         {
+           "key":"Creator",
+           "value":"Michale Tiddes"
+         },
+         {
+           'key': 'Genres',
+           'value': 'International Movie, Comedies'
+         },
+         {
+           'key': 'Subtitles',
+           'value': '	English [CC]'
+         },
+         {
+           'key': 'Audio Languages',
+           'value': 'English'
+         }
+       ]
+     }
+
    ];
 
 
