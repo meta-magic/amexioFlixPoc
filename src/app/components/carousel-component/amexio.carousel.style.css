@@ -70,7 +70,6 @@
 /* Promotion Unit in Carousel */
 .horizontal-carousel .prom-photo{
   margin: 0;
-  overflow: scroll;
   transition: transform 0.5s, opacity 1s;
   background-size: cover;
   background-position: center;
