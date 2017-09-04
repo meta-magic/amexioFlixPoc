@@ -703,7 +703,7 @@ export class LandingPageComponent implements OnInit {
        "title" : "A Big Short",
        "img" : "assets/images/drama/the_big_short.jpg",
        "details_img": "assets/images/drama/the_big_short_details.jpg",
-       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
+       "desc" : "TA group of wily opportunists make a fortune off of the U.S. economic crash by sniffing out the situation in advance and betting against the banks.",
        "video" : "Xx---l5CoMQ",
        "matchPercentage" : "95",
        "releaseYear" : "2017",
@@ -736,7 +736,7 @@ export class LandingPageComponent implements OnInit {
        "titile" : "American Sniper",
        "img" : "assets/images/drama/american_sniper.jpg",
        "details_img": "assets/images/drama/american_sniper_details.jpg",
-       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
+       "desc" : "U.S. Navy SEAL marksman Chris Kyle racks up an unprecedented number of kills in Iraq, even as his home life starts to slip away from him.",
        "video" : "CTbyaj8Y-Co",
        "matchPercentage" : "94",
        "releaseYear" : "2015",
@@ -765,7 +765,7 @@ export class LandingPageComponent implements OnInit {
        "title" : "Dilwale",
        "img" : "assets/images/drama/dilwale.jpg",
        "details_img": "assets/images/drama/diwale_details.jpg",
-       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
+       "desc" : "A young couple falls in love, but conflicting loyalties drive them apart. Years later, fate intervenes and hands them a second chance.",
        "video" : "nIgeVoVMv90",
        "matchPercentage" : "90",
        "releaseYear" : "2017",
@@ -798,7 +798,7 @@ export class LandingPageComponent implements OnInit {
        "title" : "Queen",
        "img" : "assets/images/drama/queen.jpg",
        "details_img": "assets/images/drama/queen_details.jpg",
-       "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
+       "desc" : "A jilted bride decides to go on her European honeymoon anyway -- by herself -- and ends up embarking on a journey of self-discovery.",
        "video" : "L83qMnbJ198",
        "matchPercentage" : "94",
        "releaseYear" : "2015",
@@ -831,7 +831,7 @@ export class LandingPageComponent implements OnInit {
        "title" : "Focus",
        "img" : "assets/images/drama/focus.jpg",
        "details_img": "assets/images/drama/focus_details.jpg",
-       "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
+       "desc" : "Three years after breaking off a romance with his protégé, expert con man Nicky Spurgeon finds her on the other side of his elaborate new scam.",
        "video" : "8hq28cZ938E",
        "matchPercentage" : "90",
        "releaseYear" : "2017",
@@ -1025,10 +1025,10 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "A Pretty Little Liar",
-       "img" : "assets/images/newrelease/a.jpg",
-       "details_img": "assets/images/newrelease/a_details.jpg",
-       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
+       "title" : "EL Chapo",
+       "img" : "assets/images/newrelease/el_chapo.jpg",
+       "details_img": "assets/images/newrelease/el_chapo_details.jpg",
+       "desc" : "This drama series chronicles the true story of the rise, capture and escape of notorious Mexican drug lord Joaquín 'El Chapo' Guzmán.",
        "video" : "Xx---l5CoMQ",
        "matchPercentage" : "95",
        "releaseYear" : "2017",
@@ -1058,10 +1058,10 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "titile" : "Banking On Bitcoin",
-       "img" : "assets/images/newrelease/bankingonbitcoin.jpg",
-       "details_img": "assets/images/newrelease/bitcoin_details.jpg",
-       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
+       "titile" : "Now You See Me 2",
+       "img" : "assets/images/newrelease/now_you_see.jpg",
+       "details_img": "assets/images/newrelease/you_see_me_details.jpg",
+       "desc" : "With a new member in the fold, the Four Horsemen use their power of illusion in a heist involving a shady tycoon and revolutionary tech device.",
        "video" : "CTbyaj8Y-Co",
        "matchPercentage" : "94",
        "releaseYear" : "2015",
@@ -1087,10 +1087,10 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Naked",
-       "img" : "assets/images/newrelease/naked.jpg",
-       "details_img": "assets/images/newrelease/naked_details.jpg",
-       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
+       "title" : "Black List",
+       "img" : "assets/images/newrelease/the_black_list.jpg",
+       "details_img": "assets/images/newrelease/the_black_list_details.jpg",
+       "desc" : "After turning himself in, a brilliant fugitive offers to help the FBI bag other baddies, but only if rookie profiler Elizabeth Keen is his partner.",
        "video" : "nIgeVoVMv90",
        "matchPercentage" : "90",
        "releaseYear" : "2017",
@@ -1120,10 +1120,10 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Rustom",
-       "img" : "assets/images/newrelease/rutstom.jpg",
-       "details_img": "assets/images/newrelease/rustom_details.jpg",
-       "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
+       "title" : "The Soul",
+       "img" : "assets/images/newrelease/the_soul.jpg",
+       "details_img": "assets/images/newrelease/the_soul_details.jpg",
+       "desc" : "This Emmy-nominated prequel to Breaking Bad follows small-time attorney Jimmy McGill as he transforms into morally challenged lawyer Saul Goodman.",
        "video" : "L83qMnbJ198",
        "matchPercentage" : "94",
        "releaseYear" : "2015",
@@ -1153,27 +1153,27 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Sand Of Castle",
-       "img" : "assets/images/newrelease/sandcatle.jpg",
-       "details_img": "assets/images/newrelease/sand_cattle_details.jpg",
-       "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
-       "video" : "8hq28cZ938E",
-       "matchPercentage" : "90",
+       "title" : "A Pretty Little Liar",
+       "img" : "assets/images/newrelease/a.jpg",
+       "details_img": "assets/images/newrelease/a_details.jpg",
+       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
+       "video" : "Xx---l5CoMQ",
+       "matchPercentage" : "95",
        "releaseYear" : "2017",
        "ageLimit" : "16",
-       "seasonNo" : "1",
+       "seasonNo" : "3",
        "content" : [
          {
-           "key":"Starring",
-           "value":"Nicholos Hoult, Logan, Neil"
+           "key":"Creator",
+           "value":"I Malene King"
          },
          {
-           "key":"Director",
-           "value":"Fernado Coimara"
+           'key': 'Starring',
+           'value': 'Troian, Ashely, Lucy'
          },
          {
            'key': 'Genres',
-           'value': 'Internation Movie, British Movie, Adventure'
+           'value': 'TV Programmes'
          },
          {
            'key': 'Subtitles',
