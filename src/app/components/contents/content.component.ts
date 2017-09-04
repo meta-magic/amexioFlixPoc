@@ -60,7 +60,7 @@ declare var $;
       
       .title{
         font-style: normal;
-        font-size: 400%;
+        font-size: 250%;
       }
 
       @media screen and (min-width: 1400px){
