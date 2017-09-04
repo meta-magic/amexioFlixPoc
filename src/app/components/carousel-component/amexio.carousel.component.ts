@@ -3,6 +3,7 @@
  */
 import {Component, Input, OnInit} from '@angular/core';
 const LARGE_SCREEN_MAX_ITEM = 5;
+
 @Component({
   moduleId: module.id,
   selector: 'amexio-ee-carousel',
