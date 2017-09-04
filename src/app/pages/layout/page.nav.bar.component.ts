@@ -43,10 +43,12 @@ export class AppNavBarComponent implements OnInit {
    };
  }
 
- ngOnInit() { }
+ ngOnInit() {
+   this.onResize();
+ }
 
-  onResize(event: any) {
-    if (event.target.innerWidth < 995) {
+  onResize() {
+    if (window.innerWidth < 995) {
       this.isMobile = true;
       this.alignClass = 'dropdown-menu-left';
     } else {
