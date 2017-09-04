@@ -307,3 +307,21 @@
 /* -------------------------------------- */
 
 
+.close-button{
+  position: absolute; right: 0;
+  top: 0;
+  padding: 20px 20px 40px 40px;
+  z-index: 12;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transform-origin: 60% 35%;
+  -moz-transform-origin: 60% 35%;
+  -ms-transform-origin: 60% 35%;
+  -o-transform-origin: 60% 35%;
+  transform-origin: 60% 35%;
+  background: -webkit-radial-gradient(top right ellipse,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%);
+  background: -moz-radial-gradient(top right ellipse,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%);
+  background: -o-radial-gradient(top right ellipse,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%);
+  background: radial-gradient(ellipse at top right,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%);
+  background-position: 50% -50%;
+}
