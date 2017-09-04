@@ -272,9 +272,9 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Marco Polo",
-       "img" : "assets/images/tvshows/marcopolo/marco_polo_main_img.jpg",
-       "details_img": "assets/images/tvshows/marcopolo/marco_polo_details.jpg",
+       "title" : "13 Reasons Why",
+       "img" : "assets/images/tvshows/shows/13_reasons_why_img.jpg",
+       "details_img": "assets/images/tvshows/shows/13_reasons_why_img.jpg",
        "desc" : "Set in a world of greed, betrayal, sexual intrigue and rivalry, “Marco Polo” is based on the famed explorer’s adventures in Kublai Khan’s court.",
        "video" : "hB-ltNasHVw",
        "matchPercentage" : "90",
@@ -305,9 +305,9 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Narcos",
-       "img" : "assets/images/tvshows/narcos/Narcos_main_img.jpg",
-       "details_img": "assets/images/tvshows/narcos/narcos_details.jpg",
+       "title" : "Death Note",
+       "img" : "assets/images/tvshows/shows/death_note.jpg",
+       "details_img": "assets/images/tvshows/shows/death_noteimg.jpg",
        "desc" : "The true story of Colombia's infamously violent and powerful drug cartels fuels this gritty gangster drama series.",
        "video" : "U7elNhHwgBU",
        "matchPercentage" : "95",
@@ -338,9 +338,9 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Shooter",
-       "img" : "assets/images/tvshows/shooters/Shooter_main_img.jpg",
-       "details_img": "assets/images/tvshows/shooters/shooter_details.jpg",
+       "title" : "Little Evil",
+       "img" : "assets/images/tvshows/shows/little_evil_img.jpg",
+       "details_img": "assets/images/tvshows/shows/little_evil_img.jpg",
        "desc" : "A highly decorated ex-Marine sniper returns to action to foil an assassination plot targeting the president, but soon finds himself framed for murder. ",
        "video" : "X2x6IR3FhbQ",
        "matchPercentage" : "94",
@@ -367,8 +367,8 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "House Of Cards",
-       "img" : "assets/images/tvshows/house_of_cards/HOC_main_img.jpg",
+       "title" : "Orange Black",
+       "img" : "assets/images/tvshows/shows/orange_black.jpg",
        "details_img": "assets/images/tvshows/house_of_cards/house_of_cards_details.jpg",
        "desc" : "A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama.",
        "video" : "ULwUzF1q5w4",
@@ -400,9 +400,9 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Defenders",
-       "img" : "assets/images/tvshows/designatedsurvivor/DS_main_img.jpg",
-       "details_img": "assets/images/tvshows/designatedsurvivor/dc_details.jpg",
+       "title" : "Aditi Mittal",
+       "img" : "assets/images/tvshows/shows/aditi_mittal.jpg",
+       "details_img": "assets/images/tvshows/shows/aditi_mittal.jpg",
        "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
        "video" : "D_6J9BqgonU",
        "matchPercentage" : "94",
@@ -433,8 +433,8 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Ozark",
-       "img" : "assets/images/tvshows/ozark/Ozark_main_img.jpg",
+       "title" : "Fauda",
+       "img" : "assets/images/tvshows/shows/fauda.jpg",
        "details_img": "assets/images/tvshows/ozark/ozark_details.jpg",
        "desc" : "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
        "video" : "5hAXVqrljbs",
@@ -466,8 +466,8 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Crown",
-       "img" : "assets/images/tvshows/crown/Crown_main_img.jpg",
+       "title" : "The Mist",
+       "img" : "assets/images/tvshows/shows/the_mist.jpg",
        "details_img": "assets/images/tvshows/crown/crown_details.jpg",
        "desc" : "This drama follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
        "video" : "JWtnJjn6ng0",
@@ -499,8 +499,8 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Naked",
-       "img" : "assets/images/newrelease/naked.jpg",
+       "title" : "The Siege",
+       "img" : "assets/images/tvshows/shows/the_siege.jpg",
        "details_img": "assets/images/newrelease/naked_details.jpg",
        "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
        "video" : "nIgeVoVMv90",
@@ -1196,8 +1196,10 @@ export class LandingPageComponent implements OnInit {
    // $('myModal').fullscreen();
  }
   loadContent(){
+   console.log('push content');
   }
 
   addToList(data: any) {
+    console.log(data);
   }
 }

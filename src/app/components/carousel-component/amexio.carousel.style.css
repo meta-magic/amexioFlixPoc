@@ -15,7 +15,7 @@
   border: solid 2px #666;
   padding: 0 10px 0 10px;
   font-size: 100%;
-
+  color: white;
 }
 .mini{
   border: solid 1px #666;
@@ -64,6 +64,7 @@
 .horizontal-carousel li{
   float: left;
   width: 20%;
+  border: 1px solid black;
 
 }
 .horizontal-carousel li:last-child{
@@ -204,6 +205,7 @@
   display: block;
   float: left;
   width: 20%;
+  border: 1px solid black;
 }
 .vertical-carousel li:last-child{
   margin-right: 0
