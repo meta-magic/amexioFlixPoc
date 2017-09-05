@@ -83,6 +83,16 @@
 
 }
 
+.prom-photo-mobile{
+
+  position: relative;
+  width: 100%; /* for IE 6 */
+  height: 30vh;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 
 .horizontal-carousel .ul_wrapper:hover li .prom-photo {
   /* color:green;transform: scale(.70);*/
@@ -324,4 +334,28 @@
   background: -o-radial-gradient(top right ellipse,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%);
   background: radial-gradient(ellipse at top right,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%);
   background-position: 50% -50%;
+}
+
+
+@media(max-width: 480px) {
+  .title{
+    font-size: 15pt;
+    color: white;
+  }
+  .subtitle{
+    font-size: 6pt;
+    color: white;
+  }
+  .textonly{
+    font-size: 10pt;
+    color: white;
+  }
+  .prom-photo-mobile-v{
+    position: relative;
+    height: 55vh;
+    width: 80%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+  }
 }
