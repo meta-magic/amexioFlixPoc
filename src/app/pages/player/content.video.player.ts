@@ -3,13 +3,15 @@
  */
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import {fadeInAnimation} from "./fade-in.animation";
 
 @Component({
   selector: 'app-player',
-  template : `
-    
+  template : `    
     <amexio-youtube-player [videoId]="vidId"></amexio-youtube-player>
-  `
+  `,
+  animations: [fadeInAnimation],
+  host: { '[@fadeInAnimation]': '' }
 })
 
 export class PlayerComponent implements OnInit {

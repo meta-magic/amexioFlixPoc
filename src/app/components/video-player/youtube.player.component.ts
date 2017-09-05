@@ -7,7 +7,8 @@ import {Router} from "@angular/router";
 declare var $;
 @Component({
  selector: 'amexio-youtube-player',
- template: `   
+ template: `
+   <div style="background-color: #666666">
      <div class="pull-right" style="cursor: pointer;" (click)="routeBackToApp()">
        <i class="fa fa-times fa-2x"  aria-hidden="true"></i>
      </div>
@@ -19,7 +20,7 @@ declare var $;
          
        </iframe>
      </div>
-   
+   </div>
  `
 })
 

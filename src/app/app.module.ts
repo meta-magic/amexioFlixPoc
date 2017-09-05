@@ -5,9 +5,8 @@ import { AppComponent } from './app.component';
 import {RouterModule} from "@angular/router";
 import {ROUTES} from "./app.routes";
 import {PlayerComponent} from "./pages/player/content.video.player";
-import {SharedModule} from "./shared.module";
-import {AmexioYoutubePlayerComponent} from "./components/video-player/youtube.player.component";
 import {ComponentModule} from "./components/components.module";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -16,6 +15,7 @@ import {ComponentModule} from "./components/components.module";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES, { useHash: true }),
     ComponentModule
   ],
