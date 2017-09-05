@@ -1,0 +1,27 @@
+{
+  "data":[
+    {
+      "text": "Browse",
+      "icon" : "fa fa-simplybuilt",
+      "childrens": [
+        {
+          "text": "Accessories",
+          "icon" : "fa fa-sitemap"
+        },
+        {
+          "text": "Camera",
+          "icon" : "fa fa-camera"
+        },
+        {
+          "text": "Mobile",
+          "icon" : "fa fa-mobile"
+        }
+
+      ]
+    },
+    {
+      "text": "Kids",
+      "icon" : "fa fa-home"
+    }
+  ]
+}

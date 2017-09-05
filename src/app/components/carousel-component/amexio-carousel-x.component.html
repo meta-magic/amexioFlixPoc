@@ -32,6 +32,9 @@
                   </div>
                 </div>
               </div>
+              <div *ngIf="item.selected" [ngClass]="item.selected" >
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
             </li>
           </ng-container>
         </ng-container>

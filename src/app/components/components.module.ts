@@ -28,6 +28,8 @@ import {AmexioYoutubePlayerComponent} from './video-player/youtube.player.compon
 import {RouterModule} from '@angular/router';
 import {AmexioMultiMediaCarouselComponent} from './multi-carousel/multi.carousel';
 import {AmexioCarouselXComponent} from './carousel-component/amexio.carousel.component';
+import {NavbarComponent} from "./navbar/navbar.component";
+import {NavbarSubMenuComponent} from "./navbar/navbarsubmenu.component";
 
 const COMPONENTS = [
   DeferredLoader,
@@ -35,7 +37,8 @@ const COMPONENTS = [
   CardComponent, PaneBodyComponent, PaneActionComponent, ContentComponent, RatingInputComponent,
   DropDownComponent, ListBoxComponent, ButtonComponent, MediaContentItem, DialogComponent,
   PaneHeaderComponent, WindowPaneComponent, VerticalLeftTabPaneComponent, VerticalRightTabPaneComponent,
-  AmexioYoutubePlayerComponent, AmexioMultiMediaCarouselComponent, AmexioCarouselXComponent
+  AmexioYoutubePlayerComponent, AmexioMultiMediaCarouselComponent, AmexioCarouselXComponent,
+  NavbarComponent, NavbarSubMenuComponent
 ];
 
 @NgModule({
