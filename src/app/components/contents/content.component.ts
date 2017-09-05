@@ -34,6 +34,11 @@ declare var $;
                                      [readonly]="isReadonly">
                 </amexio-rating-input>
               </td>
+              
+              <td>
+                <a class="button"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></a>
+                <a class="button"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></a>
+              </td>
             </tr>
           </table>
         </div>
@@ -42,6 +47,16 @@ declare var $;
   `,
   styles: [
     `
+
+      .button{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: .75em;
+        font-size: 80%;
+      }
+      
+      
       .maincontent {
         position: relative;
         width: 100%; /* for IE 6 */
