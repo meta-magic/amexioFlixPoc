@@ -35,8 +35,8 @@ declare var $;
                 </amexio-rating-input>
               </td>
               
-              <td>
-                <a class="button"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></a>
+              <td style="padding-bottom: 20px">
+               &nbsp; <a class="button"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></a>
                 <a class="button"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></a>
               </td>
             </tr>
@@ -204,6 +204,25 @@ declare var $;
         text-decoration: none;
         text-transform: uppercase;
         color: #fff;
+      }
+       .button i{
+        display: inline-block;
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+        padding: 10px 0 0 11px;
+        border: solid 2px rgba(255,255,255,.4);
+        border-radius: 100px;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        transition: transform 0.5s;
+      }
+       .button i:hover{
+        border: solid 2px #fff;
+        transform: scale(1.1);
       }
       
     `
