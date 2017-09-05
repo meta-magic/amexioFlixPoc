@@ -127,7 +127,7 @@
   opacity: 1;
 }
 .horizontal-carousel .prom-photo .synopsis .playpanel{
-  padding: 10px 0 10px 0;
+  padding: 40px 0 0 0;
   background-size: cover;
   background-position: center;
 
@@ -352,6 +352,7 @@
 }
 
 
+
 @media(max-width: 480px) {
   .title{
     font-size: 15pt;
@@ -437,3 +438,4 @@
     padding-left: 8px;
   }
 }
+
