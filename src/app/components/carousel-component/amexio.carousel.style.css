@@ -336,6 +336,16 @@
   background-position: 50% -50%;
 }
 
+.left-arrow{
+  width: 3%;
+}
+.right-arrow{
+  width: 5%;
+}
+.center-content{
+  width: 92%;
+}
+
 
 @media(max-width: 480px) {
   .title{
@@ -353,9 +363,72 @@
   .prom-photo-mobile-v{
     position: relative;
     height: 55vh;
-    width: 80%;
+    width: 200px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position: center;
 
+  }
+  .left-arrow{
+    width: 10%;
+  }
+  .right-arrow{
+    width: 5%;
+  }
+  .center-content{
+    width: 85%;
+  }
+
+   .playpanel-v{
+    padding: 130px 0 20px 80px;
+    background-size: cover;
+    background-position: center;
+
+  }
+   .playpanel-v .playbutton{
+    display: inline-block;
+    border: solid 1px #ffffff;
+    padding: 2px;
+    height:30px;
+    width: 30px;
+    border-radius: 70px;
+    background-color: rgba(0,0,0,.5);
+     color: #e50914;
+     position: center;
+
+   }
+   .playpanel-v .playbutton:hover{
+    color: #e50914;
+  }
+   .playpanel-v .playbutton i{
+    font-size: 13px;
+    padding-left: 8px;
+  }
+
+
+  .playpanel-h{
+    padding: 80px 0 20px 130px;
+    background-size: cover;
+    background-position: center;
+
+  }
+  .playpanel-h .playbutton{
+    display: inline-block;
+    border: solid 1px #ffffff;
+    padding: 2px;
+    height:30px;
+    width: 30px;
+    border-radius: 70px;
+    background-color: rgba(0,0,0,.5);
+    color: #e50914;
+    position: center;
+
+  }
+  .playpanel-h .playbutton:hover{
+    color: #e50914;
+  }
+  .playpanel-h .playbutton i{
+    font-size: 13px;
+    padding-left: 8px;
   }
 }
