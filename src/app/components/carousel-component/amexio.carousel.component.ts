@@ -3,6 +3,8 @@
  */
 import {Component, Input, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
+import {animate, state, style, transition, trigger} from "@angular/animations";
+import {debug} from "util";
 
 declare var $;
 const LARGE_SCREEN_MAX_ITEM = 5;
@@ -11,7 +13,34 @@ const LARGE_SCREEN_MAX_ITEM = 5;
   moduleId: module.id,
   selector: 'amexio-ee-carousel',
   templateUrl: 'amexio-carousel-x.component.html',
-  styleUrls : ['amexio.carousel.style.css']
+  styleUrls : ['amexio.carousel.style.css'],
+  /*animations: [
+    trigger('flyInOut', [
+      state('in', style({transform: 'translateX(0)'})),
+      transition('void => *', [
+        style({transform: 'translateX(-100%)'}),
+        animate('200ms ease-in')
+      ]),
+      transition('* => void', [
+        animate('200ms ease-out', style({transform: 'translateX(100%)'}))
+      ])
+    ])
+  ]*/
+  /*animations : [
+    state('previous',style({
+      //transition l2r
+    })),
+    state('next',style({
+      //transition r2l
+    })),
+    transition('previous => next',
+    [
+      //animate here
+    ]),
+    transition('next => previous',[
+      //animate here
+    ])
+  ]*/
 })
 
 export class AmexioCarouselXComponent implements OnInit {
@@ -97,7 +126,36 @@ export class AmexioCarouselXComponent implements OnInit {
         }
       }
       else{
-        //Chop the items in a recusrive way
+        let lengthOfData = this.data.length;
+        let itemDifference = lengthOfData % LARGE_SCREEN_MAX_ITEM;
+
+        if(itemDifference + LARGE_SCREEN_MAX_ITEM != lengthOfData){  //case where data is greater than chop size
+          let numberOfChoppedItem = Math.round(lengthOfData / LARGE_SCREEN_MAX_ITEM) + 1;   //round off to nearest non decimal
+          let numberOfItemsToFill = (numberOfChoppedItem * LARGE_SCREEN_MAX_ITEM) - this.data.length;
+
+          let uniqueSetLength = this.data.length - itemDifference;
+          let choppedSingleData = [];
+          let beginChopIndex = 0;
+          let currentItemsToChop = LARGE_SCREEN_MAX_ITEM;
+          for(let i =0 ;i < numberOfChoppedItem;i++){
+            if( i != numberOfChoppedItem - 1){
+              for(let i = beginChopIndex; i < currentItemsToChop;i++){
+                choppedSingleData.push(this.data[i]);
+              }
+            }
+            else{
+              choppedSingleData.push(this.data[this.data.length-1]);
+              for(let i = 0; i < numberOfItemsToFill; i++){
+                choppedSingleData.push(this.data[i]);
+              }
+            }
+
+            this.carouselItemSet.push(choppedSingleData);
+            choppedSingleData = [];
+            beginChopIndex = beginChopIndex + LARGE_SCREEN_MAX_ITEM;
+            currentItemsToChop = currentItemsToChop + LARGE_SCREEN_MAX_ITEM;
+          }
+        }
       }
     }
 
