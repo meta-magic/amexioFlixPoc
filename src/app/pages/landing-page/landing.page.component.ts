@@ -109,7 +109,58 @@ export class LandingPageComponent implements OnInit {
            'key': 'Audio Languages',
            'value': 'English'
          }
-       ]
+       ],
+       "episode":[{
+         "img" : "assets/images/tvshows/narcos/episode/n1.jpg",
+         "title":"Descenso",
+         "video" : "U7elNhHwgBU",
+         "desc":"Chilean drug chemist Cockroach brings his product to Colombian smuggler Pablo Escobar. DEA agent Steve Murphy joins the war on drugs in Bogotá."
+       },{
+         "img" : "assets/images/tvshows/narcos/episode/n2.jpg",
+         "video" : "U7elNhHwgBU",
+         "title":"The Sword of Simón Bolívar",
+         "desc":"Communist radical group M-19 makes a move against the narcos, while Murphy gets an education in Colombian law enforcement from his new partner Peña."
+       },{
+         "img" : "assets/images/tvshows/narcos/episode/n3.jpg",
+         "title":"The Men of Always",
+         "video" : "U7elNhHwgBU",
+         "desc":"Murphy encounters the depths of government corruption when he and Peña try to derail Escobar's political ambitions by proving he's a narco."
+       },{
+         "img" : "assets/images/tvshows/narcos/episode/n4.jpg",
+         "title":"The Palace in Flames",
+         "video" : "U7elNhHwgBU",
+         "desc":"Despite a new extradition treaty, the U.S. puts more money into fighting communism, creating new challenges for Murphy and Peña in the hunt for Pablo."
+       },{
+         "img" : "assets/images/tvshows/narcos/episode/n5.jpg",
+         "title":"There Will Be a Future",
+         "video" : "U7elNhHwgBU",
+         "desc":"Pablo's extreme methods put the narcos on the brink of war with Carrillo and the government. Peña tries to protect his witness, Elisa."
+       },{
+         "img" : "assets/images/tvshows/narcos/episode/n6.jpg",
+         "title":"Explosivos",
+         "video" : "U7elNhHwgBU",
+         "desc":"Peña and Carrillo close in on Gacha, while Murphy tries to protect pro-extradition candidate Gaviria from a notorious assassin connected to Pablo."
+       },{
+         "img" : "assets/images/tvshows/narcos/episode/n7.jpg",
+         "title":"You Will Cry Tears of Blood",
+         "video" : "U7elNhHwgBU",
+         "desc":"Pablo goes into hiding as the political tide turns against him, but he finds a way to strike back. Murphy and Peña finally get the CIA to help them."
+       },{
+         "img" : "assets/images/tvshows/narcos/episode/n8.jpg",
+         "title":"La Gran Mentira",
+         "video" : "U7elNhHwgBU",
+         "desc":"A tragic mistake forces the government to change tactics in the fight against Pablo. But Pablo faces bigger threats from inside his empire."
+       },{
+         "img" : "assets/images/tvshows/narcos/episode/n9.jpg",
+         "title":"La Catedral",
+         "video" : "U7elNhHwgBU",
+         "desc":"The hunt for Pablo seems to be over after he makes a deal with the government, but Murphy and Peña -- and the Cali Cartel -- have other plans."
+       },{
+         "img" : "assets/images/tvshows/narcos/episode/n10.jpg",
+         "title":"Despegue",
+         "video" : "U7elNhHwgBU",
+         "desc":"Pablo's activities in prison provoke the government into taking extreme action. Murphy and Peña face a situation of their own."
+       }]
      },
      {
        "title" : "Shooter",
