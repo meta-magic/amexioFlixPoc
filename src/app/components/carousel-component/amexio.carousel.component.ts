@@ -165,14 +165,22 @@ export class AmexioCarouselXComponent implements OnInit {
 
 
   closeDetailPage(){
+    for(let i=0; i<this.viewDataArray.length;i++){
+      for
+      (let j=0; j<this.viewDataArray[i].length;j++){
+        delete this.viewDataArray[i][j].selected;
+      }
+
+    }
+
     $('#'+this.elementId+'carousel-detail-content').collapse('hide');
     $('html, body').animate({
       scrollTop: $('#'+this.elementId).offset().top
     }, 500);
+
   }
 
   openDetailsSection(item : any) {
-    debugger;
     this.videoUrl = item.video;
     this.currentDetailsImagePath = item.details_img;
     this.currentDetailsTitle = item.title;
@@ -182,6 +190,16 @@ export class AmexioCarouselXComponent implements OnInit {
     this.matchPercentage = item.matchPercentage;
     this.ageLimit = item.ageLimit;
     this.releaseYear = item.releaseYear;
+
+    for(let i=0; i<this.viewDataArray.length;i++){
+      for
+      (let j=0; j<this.viewDataArray[i].length;j++){
+        delete this.viewDataArray[i][j].selected;
+      }
+
+    }
+
+    item.selected = "selected";
 
     $('#'+this.elementId+'carousel-detail-content').collapse('show');
     setTimeout(()=>{
