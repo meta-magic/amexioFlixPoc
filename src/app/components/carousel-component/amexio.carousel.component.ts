@@ -4,7 +4,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {animate, state, style, transition, trigger} from "@angular/animations";
-import {debug} from "util";
 
 declare var $;
 const LARGE_SCREEN_MAX_ITEM = 5;
@@ -91,6 +90,11 @@ export class AmexioCarouselXComponent implements OnInit {
       this.makeCarouselItemSet();
   }
 
+  resizeCarousel(){
+    this.loopIndex = 0;
+    this.makeCarouselItemSet();
+  }
+
   /**
    * Get device Width & Height
    */
@@ -103,10 +107,11 @@ export class AmexioCarouselXComponent implements OnInit {
    * Render data based on Device Size
    */
   makeCarouselItemSet(){
+    this.carouselItemSet = [];
     if(this.isDeviceMobile()){    //If mobile, Display single Data only
       this.data.forEach( (item)=>{
         this.carouselItemSet.push(item);
-      })
+      });
     }
     else{     //Group set of data into LARGE_SCREEN_MAX_ITEM
       let itemSetLength = this.data.length;
@@ -160,10 +165,8 @@ export class AmexioCarouselXComponent implements OnInit {
     }
 
     //Finally Display data to view with current items on screen
-    this.viewDataArray.length == 0 ? this.viewDataArray.push(this.getcurrentItemSet()) : ()=>{
-      this.viewDataArray = [];
-      this.viewDataArray.push(this.getcurrentItemSet());
-    };
+    this.viewDataArray = [];
+    this.viewDataArray.push(this.getcurrentItemSet());
   }
 
   isDeviceMobile() : boolean{
