@@ -2,6 +2,7 @@
  * Created by pratik on 23/8/17.
  */
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 declare var $;
 @Component({
  selector: 'landing-page',
@@ -21,7 +22,7 @@ export class LandingPageComponent implements OnInit {
   dramas : any;
   newreleases: any;
   documentries:any;
- constructor() {
+ constructor(private router: Router) {
    this.content = [
      {
        'key': 'Director',
@@ -1574,7 +1575,10 @@ export class LandingPageComponent implements OnInit {
    console.log('push content');
   }
 
-  addToList(data: any) {
-    console.log(data);
+
+  playVideo(video : any){
+    this.router.navigate(['player',video]);
   }
 }
+
+
