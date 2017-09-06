@@ -28,7 +28,7 @@
   width: 94%;
   float: left;
   display: flex;
-
+  overflow: hidden;
 }
 
 
@@ -36,6 +36,8 @@
   width: 100%;
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -56,26 +58,44 @@
   background-position: center;
   width:350px;
   height: 190px;
+  background-size: 100% auto;
   /*background-color: #000;*/
 
 }
 
 
 
-.horizontal-carousel .ul_wrapper:hover li .prom-photo {
+.horizontal-carousel .ul_wrapper:hover li {
   /* color:green;transform: scale(.70);*/
   /*color:green; width: 200px;*/
+
+  /*height:250px!important;
+  width:450px;*/
+
+  transform: scale(1);
+  /*border: 1px solid green;*/
 }
 
 
 .horizontal-carousel .ul_wrapper li .prom-photo:hover{
+
+  height:250px!important;
+  transition: height,width ease-in 200ms;
+  width:450px;
   /*transform: scale(1.50);*/
-  height:250px;
+/*  -webkit-transition: 1s time;
+  -moz-transition: 1s time;
+  -ms-transition: 1s time;
+  -o-transition: 1s time;
+  transition: 1s time height:250px;*/
+  /*height:250px!important;
+  transition: height,width ease-in 200ms;
   width:450px;
   opacity: 1;
   z-index: 1;
-  border: 1px solid red;
-
+  padding-bottom: 100px;
+ !* border: 1px solid red;*!
+*/
   /*transform: scale(1.1);color:red;filter: none;  width: 400px; border: 1px solid green;*/
 }
 
