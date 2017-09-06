@@ -1,51 +1,19 @@
-<!--<div  [attr.class]="carouselStyle == 'vertical' ? 'vertical-carousel' : 'horizontal-carousel'" (window:resize)="resizeComponent()">-->
-  <!--<div class="section-header">{{title}}</div>-->
-  <!--<div class="col-lg-12">-->
-    <!--<div class="row">-->
-      <!--<div class="content left-arrow" style="cursor: pointer"> <div class="controls" (click)="previousItemSet();"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </div>-->
-      <!--<div class="center-content">-->
-        <!--<div class="scrollpanel">-->
-          <!--<ul class="ul_wrapper" style="display: inline-flex;list-style: none;overflow-x: scroll;overflow-y:hidden;width: 430px;">-->
-                <!--<li *ngFor="let item of data;let i = index" >-->
-                  <!--<div class="prom-photo" [style.background-image]="'url('+ item.img + ')'+''" >-->
-                    <!--<div class="synopsis">-->
-                      <!--&lt;!&ndash;<div class="playpanel" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0), #000000)">&ndash;&gt;-->
-                      <!--<div class="playpanel">-->
-                        <!--<div style="cursor: pointer" (click)="loadVideo(item)" class="playbutton"><i class="fa fa-play" aria-hidden="true"></i></div>-->
-                      <!--</div>-->
-                      <!--<div class="textonly">-->
-                        <!--<span class="title" *ngIf="item.title">{{item.title}}</span><br>-->
-                        <!--<span class="subtitle">-->
-                      <!--<ng-container  *ngIf="item.matchPercentage">-->
-                      <!--<span class="match">{{item.matchPercentage}}  Match</span>-->
-                      <!--{{item.releaseYear}} <span class="age mini">+{{item.ageLimit}}</span> {{item.seasonNo}} Season-->
-                      <!--</ng-container>-->
-                    <!--</span>-->
-                        <!--<br>-->
-                        <!--{{item.desc}}-->
-                        <!--<br>-->
-                      <!--</div>-->
-                      <!--<div class="actionpanel"   *ngIf="item.content">-->
-                        <!--<div style="cursor: pointer;" (click)="openDetailsSection(item)"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></div>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</div>-->
-                  <!--<div *ngIf="item.selected" style="cursor: pointer" [ngClass]="item.selected" >-->
-                    <!--<i class="fa fa-caret-down" aria-hidden="true"></i>-->
-                  <!--</div>-->
-                <!--</li>-->
-          <!--</ul>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div class="content right-arrow" style="cursor: pointer"> <div class="controls" (click)="nextItemSet();"><i class="fa fa-chevron-right" aria-hidden="true"></i></div></div>-->
 
-    <!--</div>-->
+<div  [attr.class]="cClass == 'vertical' ? 'vertical-carousel' : 'horizontal-carousel'" (window:resize)="resizeCarousel()">
 
-  <!--</div>-->
-<!--</div>-->
+  <div class="scrollpanel" [attr.id]="elementId">
+    <ul class="ul_wrapper">
+      <li *ngFor="let item of data;let i = index" >
+        <div class="prom-photo" [style.background-image]="'url('+ item.img + ')'+''" >
+            WORLD IN PROGESS
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
 
 
-<!--
 
 <div [attr.id]="elementId+'carousel-detail-content'" class="collapse" *ngIf="hasDetail">
 
@@ -66,10 +34,12 @@
 
     </amexio-pane-body>
   </amexio-card-pane>
-</div>-->
+</div>
 
 
 
+
+<!--
 <div id="elementId">
   <div (click)="leftClick()" class="crasouelpane-scroller crasouelpane-scroller-left" >
     <span style="visibility: hidden;cursor: pointer"  id="crasouelpane-scroller-left-inner"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
@@ -82,22 +52,14 @@
   <div class="crasouelpane-wrapper" id="crasouelpane-wrapper">
     <ul class="crasouelblock" id="crasouelblock">
 
-      <li *ngFor="let item of data">
-        <div class="crasouelinner">
-          <div class="prom-photo" [style.background-image]="'url('+ item.img + ')'+''" >
-
-        </div>
+      <li class="crasouelinner" *ngFor="let item of data">
+        <div style="width: 350px;  height:190px;" [style.background-image]="'url('+ item.img + ')'+''">
+          155
         </div>
       </li>
 
     </ul>
   </div>
 </div>
+-->
 
-
-<!--<ul style="display: inline-flex;list-style: none;overflow-x: scroll;width: 430px;">
-    <li *ngFor="let item of data;let i = index" >
-      <div class="prom-photo" [style.background-image]="'url('+ item.img + ')'+''" style="height: 191px;width: 341px;">
-      </div>
-    </li>
-</ul>-->

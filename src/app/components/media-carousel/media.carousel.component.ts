@@ -234,22 +234,22 @@ export class MediaCarouselComponent implements OnInit,AfterViewInit {
   right = false;
   left = false;
   leftClick(){
-  var ts = document.getElementById('crasouelpane-wrapper');
+  var ts = document.getElementById(this.elementId);
   ts.scrollLeft -= 400;
   if (ts.scrollLeft == 0 ) {
-    document.getElementById("crasouelpane-scroller-left-inner").style.visibility = 'hidden';
+    document.getElementById(this.elementId+'leftarrow').style.visibility = 'hidden';
 
   }
-  document.getElementById("crasouelpane-scroller-right-inner").style.visibility = 'visible';
+  document.getElementById(this.elementId+'rightarrow').style.visibility = 'visible';
 }
 
   rightClick(){
-  var ts = document.getElementById('crasouelpane-wrapper');
+  var ts = document.getElementById(this.elementId);
   ts.scrollLeft += 400;
   if ((ts.scrollWidth - ts.offsetWidth - ts.scrollLeft ) <= 0) {
-    document.getElementById("crasouelpane-scroller-right-inner").style.visibility = 'hidden';
+    document.getElementById(this.elementId+'rightarrow').style.visibility = 'hidden';
   }
-  document.getElementById("crasouelpane-scroller-left-inner").style.visibility = 'visible';
+  document.getElementById(this.elementId+'leftarrow').style.visibility = 'visible';
 }
 
 
