@@ -30,7 +30,7 @@ export class MediaCarouselComponent implements OnInit,AfterViewInit {
 
   @Input()    data : any;
 
-  @Input()    hasDetail : boolean;
+  @Input()    hasDetail : boolean = true;
 
   @Input()    title : any;
 
@@ -196,6 +196,7 @@ export class MediaCarouselComponent implements OnInit,AfterViewInit {
 
     item.selected = "selected";
 
+    debugger;
     $('#'+this.elementId+'carousel-detail-content').collapse('show');
     setTimeout(()=>{
       $('html, body').animate({

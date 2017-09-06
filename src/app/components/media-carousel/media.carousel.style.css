@@ -162,6 +162,143 @@
 /*   Horizontal Carousel CSS Ends Here    */
 /* -------------------------------------- */
 
+
+.vertical-carousel{
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+
+}
+/* Carousel Controls */
+.vertical-carousel .controls{
+  padding: 0.5em;
+  float: left;
+  width: 3%;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2em;
+
+}
+
+/* Carousel Area */
+.vertical-carousel .scrollpanel{
+  width: 90%;
+  float: left;
+  display: flex;
+  overflow: hidden;
+}
+
+.vertical-carousel  .scrollpanel .ul_wrapper {
+  width: 100%;
+  list-style: none;
+  display: flex;
+}
+
+.vertical-carousel li{
+  display: block;
+  float: left;
+  width: 20%;
+  border: 1px solid black;
+}
+.vertical-carousel li:last-child{
+  margin-right: 0
+}
+/* Promotion Unit in Carousel */
+.vertical-carousel .prom-photo{
+  margin: 0;
+  transition: transform 0.5s, opacity 1s;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 550px;
+  background-size: 100% auto;
+
+}
+
+
+.vertical-carousel .ul_wrapper:hover li .prom-photo {
+}
+
+
+.vertical-carousel .ul_wrapper li .prom-photo:hover{
+  transform: scale(1.20);
+  opacity: 1;
+}
+
+/* Promotion Unit in Synopsis Block - APPEARS ON HOVER */
+.vertical-carousel .prom-photo .synopsis{
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 70%;
+  line-height: 160%;
+  text-align: center;
+  color: white !important;
+
+
+}
+
+.vertical-carousel .prom-photo .synopsis:hover{
+  opacity: 1;
+}
+.vertical-carousel .prom-photo .synopsis .playpanel{
+
+  padding: 130px 0 155px 0;
+  background-size: cover;
+  background-position: center;
+
+}
+.vertical-carousel .prom-photo .synopsis .playpanel .playbutton{
+  display: inline-block;
+  border: solid 2px #ffffff;
+  padding: 5px;
+  height:50px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}
+.vertical-carousel .prom-photo .synopsis .playpanel .playbutton:hover{
+  color: #e50914;
+}
+
+
+.vertical-carousel .prom-photo .synopsis .playpanel .playbutton i{
+  font-size: 18px;
+  padding-left: 6px;
+  padding-top: 10px;
+}
+
+.vertical-carousel .prom-photo .synopsis .title{
+  font-size: 130%;
+  font-weight: 600;
+}
+.vertical-carousel .prom-photo .synopsis .subtitle{
+  font-size: 110%;
+  font-weight: 600;
+}
+.vertical-carousel .prom-photo .synopsis .textonly{
+  padding: 0px 10px 10px 10px;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+}
+.vertical-carousel .prom-photo .synopsis .actionpanel{
+  color:  #e50914;
+  background-color: transparent;
+}
+.vertical-carousel .prom-photo .synopsis .actionpanel i{
+  color: #e50914;
+  font-size: 12px;
+  padding: 0 0 10px 0;
+}
+
+
+
+
 .left-arrow{
   float: left;
   width: 7%;
