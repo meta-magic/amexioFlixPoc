@@ -72,7 +72,7 @@
   /*height:250px!important;
   width:450px;*/
 
-  transform: scale(1);
+  transform: scale(1.0);
   /*border: 1px solid green;*/
 }
 
@@ -80,7 +80,7 @@
 .horizontal-carousel .ul_wrapper li .prom-photo:hover{
 
   height:250px!important;
-  transition: height,width ease-in 200ms;
+  transition: height,width ease-in 300ms;
   width:450px;
   /*transform: scale(1.50);*/
 /*  -webkit-transition: 1s time;
@@ -98,6 +98,67 @@
 */
   /*transform: scale(1.1);color:red;filter: none;  width: 400px; border: 1px solid green;*/
 }
+
+
+.horizontal-carousel .prom-photo .synopsis{
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 80%;
+  line-height: 160%;
+  text-align: center;
+  color: white !important;
+}
+.horizontal-carousel .prom-photo .synopsis:hover{
+  opacity: 1;
+}
+.horizontal-carousel .prom-photo .synopsis .playpanel{
+  padding: 40px 0 0 0;
+  background-size: cover;
+  background-position: center;
+
+}
+.horizontal-carousel .prom-photo .synopsis .playpanel .playbutton{
+  display: inline-block;
+  border: solid 1px #ffffff;
+  padding: 5px;
+  height:30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}
+.horizontal-carousel .prom-photo .synopsis .playpanel .playbutton:hover{
+  color: #e50914;
+}
+.horizontal-carousel .prom-photo .synopsis .playpanel .playbutton i{
+
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.horizontal-carousel .prom-photo .synopsis .title{
+
+}
+.horizontal-carousel .prom-photo .synopsis .subtitle{
+
+}
+.horizontal-carousel .prom-photo .synopsis .textonly{
+  padding: 0px 7px 2px 7px;
+  width: 100%;
+  text-align: left;
+  color: white;
+  background-color: transparent;
+}
+.horizontal-carousel .prom-photo .synopsis .actionpanel{
+  color:  #e50914;
+  background-color: transparent;
+}
+.horizontal-carousel .prom-photo .synopsis .actionpanel i{
+  color: #e50914;
+  padding: 0 0 3px 0;
+}
+
 
 /* -------------------------------------- */
 /*   Horizontal Carousel CSS Ends Here    */

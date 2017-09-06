@@ -1,15 +1,38 @@
 
-<div  [attr.class]="cClass == 'vertical' ? 'vertical-carousel' : 'horizontal-carousel'" (window:resize)="resizeCarousel()">
+<div  [attr.class]="carouselStyle == 'vertical' ? 'vertical-carousel' : 'horizontal-carousel'" (window:resize)="resizeCarousel()">
+  <div class="content left-arrow" [attr.id]="elementId+'leftarrow'" style="cursor: pointer"> <div class="controls" (click)="leftClick();"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </div>
 
   <div class="scrollpanel" [attr.id]="elementId">
     <ul class="ul_wrapper">
       <li *ngFor="let item of data;let i = index" >
         <div class="prom-photo" [style.background-image]="'url('+ item.img + ')'+''" >
-            WORLD IN PROGESS
+          <div class="synopsis">
+            <!--<div class="playpanel" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0), #000000)">-->
+            <div class="playpanel">
+              <div style="cursor: pointer" (click)="loadVideo(item)" class="playbutton"><i class="fa fa-play" aria-hidden="true"></i></div>
+            </div>
+            <div class="textonly">
+              <span class="title" *ngIf="item.title">{{item.title}}</span><br>
+              <span class="subtitle">
+                      <ng-container  *ngIf="item.matchPercentage">
+                      <span class="match">{{item.matchPercentage}}  Match</span>
+                      {{item.releaseYear}} <span class="age mini">+{{item.ageLimit}}</span> {{item.seasonNo}} Season
+                      </ng-container>
+                    </span>
+              <br>
+              {{item.desc}}
+              <br>
+            </div>
+            <div class="actionpanel"   *ngIf="item.content">
+              <div style="cursor: pointer;" (click)="openDetailsSection(item)"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></div>
+            </div>
+          </div>
         </div>
       </li>
     </ul>
   </div>
+
+  <div class="content right-arrow" [attr.id]="elementId+'rightarrow'" style="cursor: pointer"> <div class="controls" (click)="rightClick();"><i class="fa fa-chevron-right" aria-hidden="true"></i></div></div>
 
 </div>
 

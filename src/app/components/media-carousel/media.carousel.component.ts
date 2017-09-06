@@ -238,7 +238,6 @@ export class MediaCarouselComponent implements OnInit,AfterViewInit {
   ts.scrollLeft -= 400;
   if (ts.scrollLeft == 0 ) {
     document.getElementById(this.elementId+'leftarrow').style.visibility = 'hidden';
-
   }
   document.getElementById(this.elementId+'rightarrow').style.visibility = 'visible';
 }
