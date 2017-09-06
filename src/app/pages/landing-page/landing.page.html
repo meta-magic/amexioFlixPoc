@@ -1,23 +1,44 @@
-
-  <div class="container-fluid" style="background-color: black;overflow-y: hidden" >
-
-    <div  class="col-lg-12">
-      <amexio-ee-carousel [title]="'New Releases'"  [data]="newreleases" [cClass]="'horizontal'"></amexio-ee-carousel>
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid" style="background-color: black;overflow-y: hidden" >
+  <div class="row">
+    <div class="col-sm-12 mainpagepadding">
+      <amexio-tab-pane  [closable]="false">
+        <amexio-tab title="OVERVIEW" [active]="true">
+          <amexio-content [bgImgUrl]="'assets/images/tvshows/narcos/narcos_main_header_img.jpg'"
+                          [title]="'Narcos'" [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
+                          [contents]="content" [videoLink]="'U7elNhHwgBU'" [matchPercentage]="'90%'" [ageLimit]="'16'" [releaseYear]="'2016'" [seasonNo]="1"
+                          [rate]="rate" [max]="max" [enableWatch]="true" [enableMyList]="true" (onWatchClick)="playVideo('U7elNhHwgBU')"></amexio-content>
+        </amexio-tab>
+        <amexio-tab title="EPISODES">
+          <div class="col-lg-12"><br>
+            <h3 style="color: white">Narcos</h3>
+            <amexio-dropdown [(ngModel)]="episodeName"
+                             [placeholder]="'Season 1'"
+                             name="episodeName"
+                             [dataReader]="'data'"
+                             [httpUrl]="'assets/data/episode.json'"
+                             [httpMethod]="'get'"
+                             [displayField]="'episode'"
+                             [valueField]="'code'"
+                             [width]="'250px'">
+            </amexio-dropdown>
+            <amexio-ee-carousel [title]="'Season 1'"  [data]="topRateContent[1].episode" [cClass]="'horizontal'"></amexio-ee-carousel>
+          </div>
+        </amexio-tab>
+      </amexio-tab-pane>
     </div>
-    <div  class="col-lg-12">
-      <amexio-ee-carousel [title]="'Documentaries'"  [data]="documentries" [cClass]="'horizontal'"></amexio-ee-carousel>
-    </div>
-<br><br>
-    <div  class="col-lg-12">
-      <amexio-media-ee-carousel [title]="'Documentaries'"  [data]="documentries">
-
-      </amexio-media-ee-carousel>
-    </div>
-
-    <br><br>
-
-
-
   </div>
 
+
+  <br><br>
+  <amexio-media-ee-carousel mediaHeight="191" mediaWidth="341" carouselStyle="horizontal" [data]="dramas"></amexio-media-ee-carousel>
+
+  <div  class="col-lg-12">
+    <amexio-media-ee-carousel [title]="'Documentaries'"  [data]="documentries">
+
+    </amexio-media-ee-carousel>
+  </div>
+
+
+</div>
 
