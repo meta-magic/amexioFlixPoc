@@ -1,10 +1,10 @@
 
-<div  [attr.class]="carouselStyle == 'vertical' ? 'vertical-carousel' : 'horizontal-carousel'" (window:resize)="resizeCarousel()">
-  <div class="content left-arrow" [attr.id]="elementId+'leftarrow'" style="cursor: pointer"> <div class="controls" (click)="leftClick();"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </div>
+<div  [attr.class]="carouselStyle == 'vertical' ? 'vertical-carousel' : 'horizontal-carousel'">
+  <div class="left-arrow" [attr.id]="elementId+'leftarrow'" style="cursor: pointer"> <div class="controls" (click)="leftClick();"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </div>
 
   <div class="scrollpanel" [attr.id]="elementId">
     <ul class="ul_wrapper">
-      <li *ngFor="let item of data;let i = index" >
+      <li *ngFor="let item of data;let i = index" style="padding-left: 10px;">
         <div class="prom-photo" [style.background-image]="'url('+ item.img + ')'+''" >
           <div class="synopsis">
             <!--<div class="playpanel" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0), #000000)">-->
@@ -32,10 +32,9 @@
     </ul>
   </div>
 
-  <div class="content right-arrow" [attr.id]="elementId+'rightarrow'" style="cursor: pointer"> <div class="controls" (click)="rightClick();"><i class="fa fa-chevron-right" aria-hidden="true"></i></div></div>
+  <div class="right-arrow" [attr.id]="elementId+'rightarrow'" style="cursor: pointer"> <div class="controls" (click)="rightClick();"><i class="fa fa-chevron-right" aria-hidden="true"></i></div></div>
 
 </div>
-
 
 
 <div [attr.id]="elementId+'carousel-detail-content'" class="collapse" *ngIf="hasDetail">

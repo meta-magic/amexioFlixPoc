@@ -25,7 +25,7 @@
 }
 /* Carousel Area */
 .horizontal-carousel  .scrollpanel{
-  width: 100%;
+  width: 90%;
   float: left;
   display: flex;
   overflow: hidden;
@@ -163,11 +163,13 @@
 /* -------------------------------------- */
 
 .left-arrow{
-  left: 0px;
+  float: left;
+  width: 7%;
 }
 
 .right-arrow{
-  right: 0px;
+  float: right;
+  width: 3%;
 }
 
 
