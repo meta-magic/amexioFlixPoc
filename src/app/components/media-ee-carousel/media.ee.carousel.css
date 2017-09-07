@@ -118,9 +118,10 @@ a:hover {
   width: 100%;
   font-size: 30px;
   margin-left: 7px;
-  margin-top: -18px;
+  margin-top: -24px;
   text-align: center;
   z-index: 2;
+  color: red;
 }
 .tile:hover .tile__details {
   opacity: 1;
@@ -129,6 +130,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   padding: 10px;
+  color: white;
 }
 .row__inner:hover {
   -webkit-transform: translate3d(-62.5px, 0, 0);
@@ -163,6 +165,43 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: dimgrey;
   font-size: 1em;
+}
+
+.textonly{
+  padding: 0px 7px 2px 7px;
+  width: 100%;
+  text-align: left;
+  color: white;
+  background-color: transparent;
+}
+
+.title{
+  font-size: 10pt;
+  font-weight: 600;
+}
+.subtitle{
+  font-size: 6pt;
+  font-weight: 600;
+}
+
+.match{
+  color: lightgreen;
+}
+.age{
+  display: inline-block;
+  border: solid 2px #666;
+  padding: 0 10px 0 10px;
+  font-size: 100%;
+  color: white;
+}
+.mini{
+  border: solid 1px #666;
+  padding: 0 5px 0 5px;
+}
+
+.actionpanel{
+  color:  #e50914;
+  background-color: transparent;
 }
