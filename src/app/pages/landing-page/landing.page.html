@@ -1,5 +1,5 @@
 <app-nav-bar></app-nav-bar>
-<div  style="background-color: black;overflow: hidden;padding-top: 80px;" >
+<div  style="background-color: black;overflow: hidden;padding-top: 80px;padding-left: 20px" >
   <div class="row">
     <div class="col-sm-12">
       <amexio-tab-pane  [closable]="false">
@@ -21,15 +21,14 @@
                              [displayField]="'episode'"
                              [valueField]="'code'"
                              [width]="'250px'">
-            </amexio-dropdown>
+            </amexio-dropdown><br>
             <media-ee-carousel [title]="'Season 1'"  [data]="topRateContent[1].episode"></media-ee-carousel>
           </div>
         </amexio-tab>
       </amexio-tab-pane>
     </div>
   </div>
-
-
+<br>
   <div class="col-lg-12">
     <!--<amexio-media-ee-carousel title="Top Rated"  [data]="topRateContent" carouselStyle="vertical"></amexio-media-ee-carousel>-->
     <media-ee-carousel title="Top Rated" [data]="topRateContent" carouselStyle="vertical"></media-ee-carousel>
@@ -48,9 +47,5 @@
   <div class="col-lg-12">
     <media-ee-carousel title="Documentaries" [data]="documentries"></media-ee-carousel>
   </div>
-
-
-
-
 </div>
 
