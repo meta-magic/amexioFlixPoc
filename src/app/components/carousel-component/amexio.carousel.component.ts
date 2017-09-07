@@ -235,9 +235,6 @@ export class AmexioCarouselXComponent implements OnInit {
     }
 
     $('#'+this.elementId+'carousel-detail-content').collapse('hide');
-    $('html, body').animate({
-      scrollTop: $('#'+this.elementId).offset().top
-    }, 500);
 
   }
 
