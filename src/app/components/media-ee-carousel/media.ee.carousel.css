@@ -268,7 +268,8 @@ a:hover {
   padding: 0em 0em 0em 1em;
   font-size: 150%;
   color: white;
-
+  position: absolute;
+  bottom: 100;
 }
 
 
