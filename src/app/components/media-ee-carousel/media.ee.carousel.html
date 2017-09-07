@@ -1,7 +1,7 @@
 <div class="section-header">{{title}}</div>
 <div class="contain row">
 
-  <div class="left-arrow" [attr.id]="elementId+'leftarrow'" style="cursor: pointer"> <div class="controls" (click)="leftClick();"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </div>
+  <div class="left-arrow" [attr.id]="elementId+'leftarrow'" style="cursor: pointer"> <div [ngClass]="{'controls' : carouselStyle=='horizontal','controls-v' : carouselStyle=='vertical'}" (click)="leftClick();"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </div>
 
   <div class="row1" [attr.id]="elementId">
     <div class="row__inner">
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <div class="right-arrow" [attr.id]="elementId+'rightarrow'" style="cursor: pointer"> <div class="controls" (click)="rightClick();"><i class="fa fa-chevron-right" aria-hidden="true"></i></div></div>
+  <div class="right-arrow" [attr.id]="elementId+'rightarrow'" style="cursor: pointer"> <div [ngClass]="{'controls' : carouselStyle=='horizontal','controls-v' : carouselStyle=='vertical'}" (click)="rightClick();"><i class="fa fa-chevron-right" aria-hidden="true"></i></div></div>
 </div>
 
 

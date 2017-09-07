@@ -229,6 +229,18 @@ a:hover {
   font-size: 1em;
 }
 
+
+.controls-v{
+  padding-top: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: dimgrey;
+  font-size: 1em;
+}
+
+
+
 .textonly{
   padding: 0px 7px 2px 7px;
   width: 100%;

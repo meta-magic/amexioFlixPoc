@@ -95,7 +95,7 @@ export class MultiMediaCarousel implements OnInit {
     this.router.navigate(['/player',item.video])
   }
 
-  onClick(){
-    debugger;
+  playVideo(video : any){
+    this.router.navigate(['player',video]);
   }
 }
