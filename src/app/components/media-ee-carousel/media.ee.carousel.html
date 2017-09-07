@@ -22,7 +22,7 @@
             <div class="subtitle">{{item.desc}}</div>
 
           </div>
-          <div class="actionpanel"   *ngIf="item.content">
+          <div class="actionpanel {{item.selected}}"   *ngIf="item.content">
             <div style="cursor: pointer;" (click)="openDetailsSection(item)"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></div>
           </div>
         </div>

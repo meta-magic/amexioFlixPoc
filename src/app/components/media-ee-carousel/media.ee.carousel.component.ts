@@ -63,6 +63,9 @@ export class MultiMediaCarousel implements OnInit {
 
 
   closeDetailPage(){
+    this.data.forEach( (item)=>{
+      item.selected = null;
+    });
     $('#'+this.elementId+'carousel-detail-content').collapse('hide');
   }
 
@@ -77,7 +80,7 @@ export class MultiMediaCarousel implements OnInit {
     this.matchPercentage = item.matchPercentage;
     this.ageLimit = item.ageLimit;
     this.releaseYear = item.releaseYear;
-
+    debugger;
     item.selected = "selected";
     $('#'+this.elementId+'carousel-detail-content').collapse('show');
     setTimeout(()=>{
@@ -89,7 +92,6 @@ export class MultiMediaCarousel implements OnInit {
 
 
   loadVideo(item){
-    debugger;
     this.router.navigate(['/player',item.video])
   }
 

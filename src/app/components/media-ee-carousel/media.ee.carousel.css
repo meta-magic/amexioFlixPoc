@@ -302,3 +302,7 @@ a:hover {
   color: #e50914;
 }
 
+.selected{
+  align-items: center; display: flex;justify-content: center; color: white; padding: 0px; height: 5px; border-top: 3px solid white;
+}
+
