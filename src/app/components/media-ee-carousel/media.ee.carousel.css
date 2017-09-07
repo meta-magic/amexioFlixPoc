@@ -111,15 +111,15 @@ a:hover {
   margin-left: -25px;
   width: 50px;
   height: 50px;
-  border: 3px solid #ecf0f1;
+  /*border: 3px solid #ecf0f1;*/
   line-height: 50px;
   text-align: center;
   border-radius: 100%;
-  background: rgba(0,0,0,0.5);
+  /*background: rgba(0,0,0,0.5);*/
   z-index: 1;
 }
 .tile__details:before {
-  content: '▶';
+ /* content: '▶';
   left: 0;
   width: 100%;
   font-size: 30px;
@@ -127,7 +127,7 @@ a:hover {
   margin-top: -24px;
   text-align: center;
   z-index: 2;
-  color: red;
+  color: red;*/
 }
 .tile:hover .tile__details {
   opacity: 1;
@@ -220,4 +220,28 @@ a:hover {
   font-size: 150%;
   color: white;
 
+}
+
+
+.playpanel{
+  padding: 40px 0 0 100px;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.playpanel .playbutton{
+  display: inline-block;
+  border: solid 1px #ffffff;
+  padding: 8px;
+  height:30px;
+  width: 30px;
+  border-radius: 40px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}
+
+.playpanel .playbutton:hover{
+  color: #e50914;
 }

@@ -12,7 +12,11 @@
         </div>
         <div class="tile__details">
           <div class="textonly">
-            <span class="title" *ngIf="item.title">{{item.title}}</span><br>
+
+            <div class="playpanel">
+              <div style="cursor: pointer" (click)="loadVideo(item)" class="playbutton"><i class="fa fa-play" aria-hidden="true"></i></div>
+            </div>
+           <!-- <span class="title" *ngIf="item.title">{{item.title}}</span><br>
             <span class="subtitle">
                       <ng-container  *ngIf="item.matchPercentage">
                       <span class="match">{{item.matchPercentage}}  Match</span>
@@ -23,10 +27,8 @@
             <p class="subtitle">
               {{item.desc}}
             </p>
-            <br>
-          </div>
-          <div class="actionpanel" (click)="openDetailsSection(item)" *ngIf="item.content">
-            <div style="cursor: pointer;"><i  class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></div>
+            <br>-->
+
           </div>
         </div>
       </div>
