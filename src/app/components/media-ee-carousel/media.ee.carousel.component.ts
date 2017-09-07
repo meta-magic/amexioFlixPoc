@@ -80,7 +80,11 @@ export class MultiMediaCarousel implements OnInit {
     this.matchPercentage = item.matchPercentage;
     this.ageLimit = item.ageLimit;
     this.releaseYear = item.releaseYear;
-    debugger;
+
+    this.data.forEach( (item)=>{
+      item.selected = null;
+    });
+
     item.selected = "selected";
     $('#'+this.elementId+'carousel-detail-content').collapse('show');
     setTimeout(()=>{
