@@ -253,12 +253,12 @@
 }
 .vertical-carousel .prom-photo .synopsis .playpanel .playbutton{
   display: inline-block;
-  border: solid 2px #ffffff;
+  /*border: solid 2px #ffffff;*/
   padding: 5px;
   height:50px;
   width: 50px;
   border-radius: 100px;
-  background-color: rgba(0,0,0,.5);
+  /*background-color: rgba(0,0,0,.5);*/
   color: #fff;
 }
 .vertical-carousel .prom-photo .synopsis .playpanel .playbutton:hover{

@@ -31,6 +31,7 @@ import {AmexioCarouselXComponent} from './carousel-component/amexio.carousel.com
 import {NavbarComponent} from "./navbar/navbar.component";
 import {NavbarSubMenuComponent} from "./navbar/navbarsubmenu.component";
 import {MediaCarouselComponent} from "./media-carousel/media.carousel.component";
+import {MultiMediaCarousel} from "./media-ee-carousel/media.ee.carousel.component";
 
 const COMPONENTS = [
   DeferredLoader,
@@ -39,7 +40,7 @@ const COMPONENTS = [
   DropDownComponent, ListBoxComponent, ButtonComponent, MediaContentItem, DialogComponent,
   PaneHeaderComponent, WindowPaneComponent, VerticalLeftTabPaneComponent, VerticalRightTabPaneComponent,
   AmexioYoutubePlayerComponent, AmexioMultiMediaCarouselComponent, AmexioCarouselXComponent,
-  NavbarComponent, NavbarSubMenuComponent, MediaCarouselComponent
+  NavbarComponent, NavbarSubMenuComponent, MediaCarouselComponent,MultiMediaCarousel
 ];
 
 @NgModule({
