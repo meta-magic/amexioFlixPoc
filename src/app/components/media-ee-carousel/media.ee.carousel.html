@@ -37,23 +37,17 @@
 
 <div [attr.id]="elementId+'carousel-detail-content'" class="collapse" *ngIf="hasDetail">
 
-  <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
 
-    <amexio-pane-body>
-      <span class="close-button" style="padding-left: 99%;background: radial-gradient(ellipse at top right,rgba(0,0,0,.4) 0,rgba(0,0,0,0)70%,rgba(0,0,0,0) 100%);">
+     <!-- <span class="close-button" style="padding-left: 99%;background: radial-gradient(ellipse at top right,rgba(0,0,0,.4) 0,rgba(0,0,0,0)70%,rgba(0,0,0,0) 100%);">
         <i class="fa fa-times fa-2x" style="cursor: pointer" (click)="closeDetailPage()" aria-hidden="true"></i>
-      </span>
-
+      </span>-->
       <amexio-content [bgImgUrl]="currentDetailsImagePath"
                       [title]="currentDetailsTitle" [description]="currentDetailsDesc"
                       [contents]="currentContent" [videoLink]="videoUrl"
-                      (onWatchClick)="playVideo(videoUrl)"
+                      (onWatchClick)="playVideo(videoUrl)" (onCloseClick)="closeDetailPage()"
                       [rate]="rate" [enableWatch]="true" [enableMyList]="true"
-                      [seasonNo]="seasonNo" [releaseYear]="releaseYear" [ageLimit]="ageLimit" [matchPercentage]="matchPercentage"
+                      [closeEnable]="true" [seasonNo]="seasonNo" [releaseYear]="releaseYear" [ageLimit]="ageLimit" [matchPercentage]="matchPercentage"
       ></amexio-content>
-
-    </amexio-pane-body>
-  </amexio-card-pane>
 </div>
 
 
