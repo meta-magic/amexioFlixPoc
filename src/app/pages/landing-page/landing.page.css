@@ -6,14 +6,4 @@
   left: 0;
 }
 
-.mainpagepadding{
-  padding-top: 100px;
-  padding-left: 40px;
-}
 
-@media(max-width: 480px)  {
-  .mainpagepadding{
-    padding-top: 100px;
-    padding-left: 20px;
-  }
-}

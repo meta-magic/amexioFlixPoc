@@ -30,7 +30,7 @@ export class MediaCarouselComponent implements OnInit,AfterViewInit {
 
   @Input()    data : any;
 
-  @Input()    hasDetail : boolean;
+  @Input()    hasDetail : boolean = true;
 
   @Input()    title : any;
 
@@ -165,13 +165,13 @@ export class MediaCarouselComponent implements OnInit,AfterViewInit {
 
   //****** Details Section Methods *******//
   closeDetailPage(){
-    for(let i=0; i<this.currentActiveViewBucket.length;i++){
+   /* for(let i=0; i<this.currentActiveViewBucket.length;i++){
       for
       (let j=0; j<this.currentActiveViewBucket[i].length;j++){
         delete this.currentActiveViewBucket[i][j].selected;
       }
 
-    }
+    }*/
     $('#'+this.elementId+'carousel-detail-content').collapse('hide');
   }
 
@@ -186,16 +186,17 @@ export class MediaCarouselComponent implements OnInit,AfterViewInit {
     this.ageLimit = item.ageLimit;
     this.releaseYear = item.releaseYear;
 
-    for(let i=0; i<this.currentActiveViewBucket.length;i++){
+   /* for(let i=0; i<this.currentActiveViewBucket.length;i++){
       for
       (let j=0; j<this.currentActiveViewBucket[i].length;j++){
         delete this.currentActiveViewBucket[i][j].selected;
       }
 
-    }
+    }*/
 
     item.selected = "selected";
 
+    debugger;
     $('#'+this.elementId+'carousel-detail-content').collapse('show');
     setTimeout(()=>{
       $('html, body').animate({
