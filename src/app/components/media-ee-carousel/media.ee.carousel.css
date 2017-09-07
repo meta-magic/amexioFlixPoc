@@ -70,7 +70,7 @@ a:hover {
   position: relative;
   display: inline-block;
   width: 250px;
-  height: 140.625px;
+  /*height: 140.625px;*/
   margin-right: 10px;
   font-size: 20px;
   cursor: pointer;
@@ -81,7 +81,7 @@ a:hover {
 }
 .tile__img {
   width: 250px;
-  height: 140.625px;
+ /* height: 140.625px;*/
   -o-object-fit: cover;
   object-fit: cover;
 }
