@@ -6,57 +6,43 @@ declare var $;
 @Component({
   selector: 'amexio-content',
   template: `
-
-    <div class="maincontent"  [ngStyle]="{'background-image':'url('+bgImgUrl+')'}">
-      <div>
+    <div class="maincontent"  [ngStyle]="{'background-image':'url('+bgImgUrl+')'}" (window:resize)="onResize($event)">
+       <span *ngIf="closeEnable" class="close-button">
+        <i class="fa fa-times fa-lg" (click)="closeDetailPage()" aria-hidden="true"></i>
+      </span>
         <div class="col-lg-6 col-sm-12 content-area" style="color: white;padding-left: 30px;">
           <span class="title">{{title}}</span><br>
           <span class="subtitle"><span class="match">{{matchPercentage}} Match</span> {{releaseYear}} <span class="age">{{ageLimit}}+</span> {{seasonNo}} Season</span><br>
           {{description}}<br>
-          
+
           <ng-container *ngIf="contents">
               <span>
                 <li *ngFor="let data of contents"><strong style="color: #999;">{{data.key}}: </strong> <strong>  {{data.value}}</strong></li><br>
           </span>
           </ng-container>
-          <table>
-            <tr>
-              <td *ngIf="enableWatch">
-                <amexio-btn [cClass]="'buttoncustom'" [label]="'Play'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'play'" [size]="size" (onClick)="playVideo()"></amexio-btn>
-              </td>
-              <td>&nbsp;&nbsp;</td>
-              <td *ngIf="enableMyList" >
-                  <amexio-btn [cClass]="'secondarybutton'" [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" [size]="size" (onClick)="addToList()"></amexio-btn>
-              </td>
-              <td *ngIf="rate && max">
-                <amexio-rating-input [(ngModel)]="rate"
-                                     [max]="max" name="rate"
-                                     [readonly]="isReadonly">
-                </amexio-rating-input>
-              </td>
-              
-              <td style="padding-bottom: 20px">
-               &nbsp; <a class="button"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></a>
-                <a class="button"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></a>
-              </td>
-            </tr>
-          </table>
-        </div>
+          <ul>
+            <li *ngIf="enableWatch"><amexio-btn [cClass]="'buttoncustom'" [label]="'Play'" [type]="'danger'" [icon]="'fa fa-play'" [tooltipMessage]="'play'" [size]="size" (onClick)="playVideo()"></amexio-btn></li>
+            <li *ngIf="enableMyList" ><amexio-btn [cClass]="'secondarybutton'" [label]="'MY LIST'" [icon]="'fa fa-plus'" [type]="'secondary'" [tooltipMessage]="'My List'" [size]="size" (onClick)="addToList()"></amexio-btn></li>
+            <li><a   [ngClass]="getClassName()" (click)="likeClick()"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></a>
+              </li>
+            <li><a   [ngClass]="getClassName()" (click)="unlikeClick()"><i class="fa fa-thumbs-o-down fa-lg " aria-hidden="true"></i></a></li>
+
+          </ul>
+          <ng-container *ngIf="rate && max">
+            <amexio-rating-input [(ngModel)]="rate"
+                                 [max]="max" name="rate"
+                                 [readonly]="isReadonly">
+            </amexio-rating-input>
+          </ng-container>
       </div>
     </div>
   `,
   styles: [
-    `
-
-      .button{
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin-right: .75em;
-        font-size: 80%;
+      `
+      ul li {
+        display:inline;
       }
-      
-      
+
       .maincontent {
         position: relative;
         width: 100%; /* for IE 6 */
@@ -65,14 +51,13 @@ declare var $;
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }
-
       .maincontent div {
         position: absolute;
         top: 10px;
         left: 0;
         width: 100%;
       }
-      
+
       .title{
         width: 100%;
         font-size: 180%;
@@ -81,20 +66,18 @@ declare var $;
         color: #fff;
         text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
       }
-
       @media screen and (min-width: 1400px){
         .maincontent div {
           height: 32vw;
           padding-bottom: 20px;
         }
       }
-
       @media (max-width: 799px)
       {
         .maincontent div {
           font-size: 11px;
         }
-         
+
         .maincontent div {
           top: 10px;
           width: 33vw;
@@ -102,13 +85,12 @@ declare var $;
           color: #999;
           line-height: 1.3;
         }
-
         .maincontent div table {
-         height: 50px;
+          height: 50px;
         }
       }
-
       @media(max-width: 480px) {
+
         img{
           width: 170px;
           height: 35px;
@@ -142,8 +124,6 @@ declare var $;
           background-repeat: no-repeat;
         }
       }
-
-
       header{
         width: 100%;
         padding: 0px 48px;
@@ -205,7 +185,7 @@ declare var $;
         text-transform: uppercase;
         color: #fff;
       }
-       .button i{
+      .button i{
         display: inline-block;
         margin-top: 20px;
         width: 40px;
@@ -220,20 +200,42 @@ declare var $;
         color: #fff;
         transition: transform 0.5s;
       }
-       .button i:hover{
+      .button i:hover{
         border: solid 2px #fff;
         transform: scale(1.1);
       }
-      
+
+      .buttonSmall i{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        padding: 7px 0 0 5px;
+        border: solid 2px rgba(255,255,255,.4);
+        border-radius: 100px;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        transition: transform 0.5s;
+      }
+      .buttonSmall i:hover{
+        border: solid 2px #fff;
+        transform: scale(1.1);
+      }
+
+      .close-button{
+        cursor: pointer;
+        padding-left: 98%;color:gray;background: radial-gradient(ellipse at top right,rgba(0,0,0,.4) 0,rgba(0,0,0,0)70%,rgba(0,0,0,0) 100%);
+      }
+
     `
   ]
 })
 
-export class ContentComponent implements OnInit,OnChanges {
+export class ContentComponent implements OnInit, OnChanges {
 
   @Input() bgImgUrl: any;
-
-  @Input() bgMobileImgUrl: any;
 
   @Input() title: string;
 
@@ -249,9 +251,9 @@ export class ContentComponent implements OnInit,OnChanges {
 
   @Input() isReadonly: boolean;
 
-  @Input() enableWatch: boolean = false;
+  @Input() enableWatch = false;
 
-  @Input() enableMyList: boolean = false;
+  @Input() enableMyList = false;
 
   @Input() ageLimit: any;
 
@@ -261,42 +263,52 @@ export class ContentComponent implements OnInit,OnChanges {
 
   @Input() matchPercentage: any;
 
+  @Input() closeEnable: boolean;
+
   @Output() onWatchClick: EventEmitter<any>= new EventEmitter<any>();
 
   @Output() onAddListClick: EventEmitter<any>= new EventEmitter<any>();
 
-  size : string;
-  bgImageClass: any;
+  @Output() onLikeClick: EventEmitter<any>= new EventEmitter<any>();
+
+  @Output() onUnlikeLikeClick: EventEmitter<any>= new EventEmitter<any>();
+
+  @Output() onCloseClick: EventEmitter<any>= new EventEmitter<any>();
+
+  size: string;
 
   overviewData: any;
 
-  isMobileView : boolean;
+  smallScreen: boolean;
 
   constructor() {
+    this.closeEnable = false;
+    this.smallScreen = false;
     console.log($(window).width());
-    if($(window).width() < 500)
+    if ($(window).width() < 500) {
       this.size = 'small';
-    else
+    } else {
       this.size = 'default';
+    }
   }
 
   ngOnInit() {
-    this.onResize();
+    if (window.innerWidth < 768) {
+      this.smallScreen = true;
+    }else {
+      this.smallScreen = false;
+    }
   }
 
-  ngAfterViewInit(){
-
-  }
-
-  ngOnChanges(changes: SimpleChanges){
-    if(changes.videoLink && !changes.videoLink.isFirstChange()){
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes.videoLink && !changes.videoLink.isFirstChange()){
       this.videoLink = changes.videoLink.currentValue;
       console.log(this.videoLink);
     }
   }
 
   playVideo() {
-   this.onWatchClick.emit(this.videoLink);
+    this.onWatchClick.emit(this.videoLink);
   }
   addToList() {
     this.overviewData = {
@@ -305,29 +317,43 @@ export class ContentComponent implements OnInit,OnChanges {
       'Video Link': this.videoLink,
       'rate': this.rate
     };
-  this.onAddListClick.emit(this.overviewData);
+    this.onAddListClick.emit(this.overviewData);
   }
-  onResize() {
-    if (window.innerWidth < 995) {
-      this.size = "small";
-      this.bgImageClass = {
-        //'background-image': 'url(' + this.bgMobileImgUrl + ')',
-        'height': 100 + '%',
-        'background-repeat': 'no-repeat',
-        'background-color': 'black'
-    };
+  onResize(event: any) {
+    if (event.target.innerWidth < 995) {
+      this.size = 'small';
+      this.smallScreen = true;
     } else {
-      this.size = "default";
-      this.bgImageClass = {
-        //'background-image': 'url(' + this.bgImgUrl + ')',
-        'position': 'absolute',
-
-      'left': '0',
-      'width': '100%',
-      'height': 100 + '%',
-        'background-repeat': 'no-repeat',
-        'background-position': 'right top'
-      };
+      this.size = 'default';
+      this.smallScreen = false;
     }
+  }
+
+  getClassName() {
+    if (this.smallScreen) {
+      return 'buttonSmall';
+    } else {
+      return 'button';
+    }
+  }
+
+  unlikeClick() {
+    this.overviewData = {
+      'title': this.title,
+      'rate': this.rate
+    };
+    this.onUnlikeLikeClick.emit(this.overviewData);
+  }
+
+  likeClick() {
+    this.overviewData = {
+      'title': this.title,
+      'rate': this.rate
+    };
+    this.onLikeClick.emit(this.overviewData);
+  }
+
+  closeDetailPage() {
+    this.onCloseClick.emit(this.title);
   }
 }
