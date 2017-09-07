@@ -190,6 +190,7 @@ a:hover {
 .subtitle{
   font-size: 6pt;
   font-weight: 600;
+  white-space: pre-wrap;
 }
 
 .match{
