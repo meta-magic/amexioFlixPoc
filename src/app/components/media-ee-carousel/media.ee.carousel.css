@@ -209,6 +209,8 @@ a:hover {
 }
 
 .actionpanel{
+  padding-top: 10px;
+  padding-left: 100px;
   color:  #e50914;
   background-color: transparent;
 }
