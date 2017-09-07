@@ -226,11 +226,11 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Defenders",
+       "title" : "Designated Survivor",
        "img" : "assets/images/tvshows/designatedsurvivor/DS_main_img.jpg",
        "details_img": "assets/images/tvshows/designatedsurvivor/dc_details.jpg",
        "desc" : "While the conspirators make a surprise move, the FBI scrambles to arrest the ringleader. Kirkman asks Aaron to smoke out the White House traitor.",
-       "video" : "D_6J9BqgonU",
+       "video" : "N_f1v0Nx5Sw",
        "matchPercentage" : "94",
        "releaseYear" : "2015",
        "ageLimit" : "13",
@@ -753,7 +753,7 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "A Big Short",
+       "title" : "The Big Short",
        "img" : "assets/images/drama/the_big_short.jpg",
        "details_img": "assets/images/drama/the_big_short_details.jpg",
        "desc" : "TA group of wily opportunists make a fortune off of the U.S. economic crash by sniffing out the situation in advance and betting against the banks.",
@@ -786,7 +786,7 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "titile" : "American Sniper",
+       "title" : "American Sniper",
        "img" : "assets/images/drama/american_sniper.jpg",
        "details_img": "assets/images/drama/american_sniper_details.jpg",
        "desc" : "U.S. Navy SEAL marksman Chris Kyle racks up an unprecedented number of kills in Iraq, even as his home life starts to slip away from him.",
@@ -950,7 +950,7 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "titile" : "Banking On Bitcoin",
+       "title" : "Banking On Bitcoin",
        "img" : "assets/images/newrelease/bankingonbitcoin.jpg",
        "details_img": "assets/images/newrelease/bitcoin_details.jpg",
        "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
@@ -1111,7 +1111,7 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "titile" : "Now You See Me 2",
+       "title" : "Now You See Me 2",
        "img" : "assets/images/newrelease/now_you_see.jpg",
        "details_img": "assets/images/newrelease/you_see_me_details.jpg",
        "desc" : "With a new member in the fold, the Four Horsemen use their power of illusion in a heist involving a shady tycoon and revolutionary tech device.",
@@ -1246,8 +1246,8 @@ export class LandingPageComponent implements OnInit {
        "title" : "The 80's India",
        "img" : "assets/images/documentory/80_india.jpg",
        "details_img": "assets/images/documentory/80_details.jpg",
-       "desc" : "To avenge his father's death, a young man leads an army into battle against a cruel tyrant in this Hindi conclusion to the historic saga.",
-       "video" : "Xx---l5CoMQ",
+       "desc" : "The face of India was changed forever during the '80s, thanks to the iconic personalities and world-shaking events profiled in this documentary.",
+       "video" : "zeX4cQBbgCk",
        "matchPercentage" : "95",
        "releaseYear" : "2017",
        "ageLimit" : "16",
@@ -1276,11 +1276,11 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "titile" : "India - BSF",
+       "title" : "India - BSF",
        "img" : "assets/images/documentory/bsf.jpg",
        "details_img": "assets/images/documentory/bsf_details.jpg",
-       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
-       "video" : "CTbyaj8Y-Co",
+       "desc" : "India's Border Security Force is the world's largest. This documentary looks at those inside and the enormous challenges they've faced for 50 years.",
+       "video" : "JpK3tpRoQvY",
        "matchPercentage" : "94",
        "releaseYear" : "2015",
        "ageLimit" : "13",
@@ -1308,8 +1308,8 @@ export class LandingPageComponent implements OnInit {
        "title" : "Saudi Arabia",
        "img" : "assets/images/documentory/saudi_arabi.jpg",
        "details_img": "assets/images/documentory/saudi_arabi_details.jpg",
-       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
-       "video" : "nIgeVoVMv90",
+       "desc" : "Undercover cameras expose public floggings, executions and other brutality in Saudi Arabia, and introduce those risking their own lives for change.",
+       "video" : "cHzar9QKT4k",
        "matchPercentage" : "90",
        "releaseYear" : "2017",
        "ageLimit" : "16",
@@ -1338,11 +1338,11 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Steve Jobs",
+       "title" : "Steve Jobs: Billion Dollar Happy",
        "img" : "assets/images/documentory/steve_jobs.jpg",
        "details_img": "assets/images/documentory/steve_jobs_details.jpg",
-       "desc" : "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
-       "video" : "L83qMnbJ198",
+       "desc" : "Insiders including Apple co-founder Steve Wozniak tell extraordinary stories of the rise, fall and rise again of Apple with Steve Jobs at its helm.",
+       "video" : "aEr6K1bwIVs",
        "matchPercentage" : "94",
        "releaseYear" : "2015",
        "ageLimit" : "13",
@@ -1371,11 +1371,11 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "title" : "Alcohol",
+       "title" : "Truth About Alcohol",
        "img" : "assets/images/documentory/alcohol.jpg",
        "details_img": "assets/images/documentory/alcohol_details.jpg",
-       "desc" : "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
-       "video" : "8hq28cZ938E",
+       "desc" : "Emergency room doctor Javid Abdelmoneim endeavors to learn the truth about alcohol, both its benefits and risks, by exploring the science of drinking.",
+       "video" : "PNq-JcVlYD4",
        "matchPercentage" : "90",
        "releaseYear" : "2017",
        "ageLimit" : "16",
@@ -1407,8 +1407,8 @@ export class LandingPageComponent implements OnInit {
        "title" : "Conspiracies",
        "img" : "assets/images/documentory/conspiracies.jpg",
        "details_img": "assets/images/documentory/conspiracies_details.jpg",
-       "desc" : "This drama series chronicles the true story of the rise, capture and escape of notorious Mexican drug lord Joaquín 'El Chapo' Guzmán.",
-       "video" : "Xx---l5CoMQ",
+       "desc" : "Skeptics and others discuss widely held conspiracy theories involving aliens, government cover-ups, secret assassinations and other intrigues.",
+       "video" : "o2dw3vpf5Uc",
        "matchPercentage" : "95",
        "releaseYear" : "2017",
        "ageLimit" : "16",
@@ -1437,11 +1437,11 @@ export class LandingPageComponent implements OnInit {
        ]
      },
      {
-       "titile" : "Kedarnath",
+       "title" : "Kedarnath",
        "img" : "assets/images/documentory/kedarnath.jpg",
        "details_img": "assets/images/documentory/kedarnath_details.jpg",
-       "desc" : "With a new member in the fold, the Four Horsemen use their power of illusion in a heist involving a shady tycoon and revolutionary tech device.",
-       "video" : "CTbyaj8Y-Co",
+       "desc" : "This documentary looks at stories of both despair and survival more than a year after the catastrophic Kedarnath floods devastated northern India.",
+       "video" : "HofOmet_8h0",
        "matchPercentage" : "94",
        "releaseYear" : "2015",
        "ageLimit" : "13",
@@ -1469,70 +1469,8 @@ export class LandingPageComponent implements OnInit {
        "title" : "Roman Empire",
        "img" : "assets/images/documentory/roman_empire.jpg",
        "details_img": "assets/images/documentory/roman_empire_details.jpg",
-       "desc" : "After turning himself in, a brilliant fugitive offers to help the FBI bag other baddies, but only if rookie profiler Elizabeth Keen is his partner.",
-       "video" : "nIgeVoVMv90",
-       "matchPercentage" : "90",
-       "releaseYear" : "2017",
-       "ageLimit" : "16",
-       "seasonNo" : "1",
-       "content" : [
-         {
-           "key":"Starring",
-           "value":"Marlon Wayans, Dennis, Eliza"
-         },
-         {
-           "key":"Creator",
-           "value":"Michale Tiddes"
-         },
-         {
-           'key': 'Genres',
-           'value': 'International Movie, Comedies'
-         },
-         {
-           'key': 'Subtitles',
-           'value': '	English [CC]'
-         },
-         {
-           'key': 'Audio Languages',
-           'value': 'English'
-         }
-       ]
-     },
-     {
-       "titile" : "India - BSF",
-       "img" : "assets/images/documentory/bsf.jpg",
-       "details_img": "assets/images/documentory/bsf_details.jpg",
-       "desc" : "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
-       "video" : "CTbyaj8Y-Co",
-       "matchPercentage" : "94",
-       "releaseYear" : "2015",
-       "ageLimit" : "13",
-       "seasonNo" : "2",
-       "content" : [
-         {
-           "key":"Creator",
-           "value":"Christopher Cannucciar"
-         },
-         {
-           'key': 'Genres',
-           'value': 'Documentary'
-         },
-         {
-           'key': 'Subtitles',
-           'value': '	English [CC]'
-         },
-         {
-           'key': 'Audio Languages',
-           'value': 'English'
-         }
-       ]
-     },
-     {
-       "title" : "Saudi Arabia",
-       "img" : "assets/images/documentory/saudi_arabi.jpg",
-       "details_img": "assets/images/documentory/saudi_arabi_details.jpg",
-       "desc" : "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
-       "video" : "nIgeVoVMv90",
+       "desc" : "This stylish mix of documentary and historical epic chronicles the reign of Commodus, the emperor whose rule marked the beginning of Rome's fall.",
+       "video" : "9MwAY4E57hE",
        "matchPercentage" : "90",
        "releaseYear" : "2017",
        "ageLimit" : "16",
