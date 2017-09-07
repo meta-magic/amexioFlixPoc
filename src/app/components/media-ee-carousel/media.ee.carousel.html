@@ -7,11 +7,11 @@
     <div class="row__inner">
 
       <div class="tile" *ngFor="let item of data;let i = index">
-        <div class="tile__media">
-          <img class="tile__img" [attr.src]="item.img" [ngStyle]="{'height.px' : carouselStyle == 'vertical' ? 450 : ''}" />
+        <div class="tile__media" (click)="loadVideo(item)">
+          <img class="tile__img" [attr.src]="item.img" />
         </div>
         <div class="tile__details">
-          <div class="textonly" (click)="loadVideo(item)">
+          <div class="textonly">
             <span class="title" *ngIf="item.title">{{item.title}}</span><br>
             <span class="subtitle">
                       <ng-container  *ngIf="item.matchPercentage">
@@ -20,13 +20,13 @@
                       </ng-container>
             </span>
             <br>
-            <span class="subtitle">
+            <p class="subtitle">
               {{item.desc}}
-            </span>
+            </p>
             <br>
           </div>
-          <div class="actionpanel"  (click)="openDetailsSection(item)"  *ngIf="item.content">
-            <div style="cursor: pointer;"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></div>
+          <div class="actionpanel" (click)="openDetailsSection(item)" *ngIf="item.content">
+            <div style="cursor: pointer;"><i  class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></div>
           </div>
         </div>
       </div>
