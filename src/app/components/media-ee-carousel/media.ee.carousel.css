@@ -85,6 +85,8 @@ a:hover {
   -o-object-fit: cover;
   object-fit: cover;
 }
+
+
 .tile__details {
   position: absolute;
   bottom: 0;
@@ -129,6 +131,58 @@ a:hover {
   z-index: 2;
   color: red;*/
 }
+
+.tile__details_v {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50%;
+  font-size: 10px;
+  opacity: 0;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  -webkit-transition: 450ms opacity;
+  transition: 450ms opacity;
+}
+
+
+.tile__details_v:after,
+.tile__details_v:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+.tile__details_v:after {
+  margin-top: -25px;
+  margin-left: -20px;
+  width: 50px;
+  height: 50px;
+  /*border: 3px solid #ecf0f1;*/
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  /*background: rgba(0,0,0,0.5);*/
+  z-index: 1;
+}
+.tile__details_v:before {
+  /* content: '▶';
+   left: 0;
+   width: 100%;
+   font-size: 30px;
+   margin-left: 7px;
+   margin-top: -24px;
+   text-align: center;
+   z-index: 2;
+   color: red;*/
+}
+
+.tile:hover .tile__details_v {
+  opacity: 1;
+}
+
 .tile:hover .tile__details {
   opacity: 1;
 }
@@ -236,7 +290,7 @@ a:hover {
 .playpanel .playbutton{
   display: inline-block;
   border: solid 1px #ffffff;
-  padding: 8px;
+  padding: 8px  0px 0px 10px;
   height:30px;
   width: 30px;
   border-radius: 40px;
@@ -247,3 +301,4 @@ a:hover {
 .playpanel .playbutton:hover{
   color: #e50914;
 }
+
