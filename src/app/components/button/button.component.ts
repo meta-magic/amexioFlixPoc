@@ -15,8 +15,7 @@ import {AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output
 declare var $;
 @Component({
   selector: 'amexio-btn',
-  template : `
-    <div>
+  template : `    
       <button type="button" (click)="btnClick($event)"
               [class]="btnStyleClass"
               [attr.fieldName] = "fieldName"
@@ -31,7 +30,7 @@ declare var $;
         </ng-container>
         {{label}}
       </button>
-    </div>
+    
   `,
   styles : [`
     .glyphicon-refresh-animate {
