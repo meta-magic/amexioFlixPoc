@@ -46,6 +46,12 @@ a:hover {
 .contain {
   width: 100%;
 }
+
+.contain-vertical{
+  width: 100%;
+  height: 450px;
+}
+
 .row1 {
   overflow: hidden;
   width: 94%;
@@ -204,4 +210,13 @@ a:hover {
 .actionpanel{
   color:  #e50914;
   background-color: transparent;
+}
+
+
+.section-header{
+  font-weight: 700;
+  padding: 0em 0em 0em 1em;
+  font-size: 150%;
+  color: white;
+
 }

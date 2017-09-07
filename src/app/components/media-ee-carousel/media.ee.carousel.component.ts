@@ -15,6 +15,8 @@ export class MultiMediaCarousel implements OnInit {
 
   @Input()  hasDetail : boolean = true;
 
+  @Input()  title : string;
+
   elementId : any;
   right = false;
   left = false;
@@ -43,7 +45,7 @@ export class MultiMediaCarousel implements OnInit {
 
   leftClick(){
     let ts = document.getElementById(this.elementId);
-    $('#'+this.elementId).animate( { scrollLeft: '-=400' }, 600);
+    $('#'+this.elementId).animate( { scrollLeft: '-=350' }, 600);
     if (ts.scrollLeft == 0 ) {
       document.getElementById(this.elementId+'leftarrow').style.visibility = 'hidden';
     }
@@ -52,7 +54,7 @@ export class MultiMediaCarousel implements OnInit {
 
   rightClick(){
     let ts = document.getElementById(this.elementId);
-    $('#'+this.elementId).animate( { scrollLeft: '+=400' }, 600);
+    $('#'+this.elementId).animate( { scrollLeft: '+=350' }, 600);
     if ((ts.scrollWidth - ts.offsetWidth - ts.scrollLeft ) <= 0) {
       document.getElementById(this.elementId+'rightarrow').style.visibility = 'hidden';
     }

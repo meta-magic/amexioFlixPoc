@@ -1,5 +1,5 @@
-
-<div class="contain row">
+<div class="section-header">{{title}}</div>
+<div [ngClass]="{'contain row' : carouselStyle=='horizontal','contain-vertical' : carouselStyle=='vertical'}">
 
   <div class="left-arrow" [attr.id]="elementId+'leftarrow'" style="cursor: pointer"> <div class="controls" (click)="leftClick();"><i class="fa fa-chevron-left" aria-hidden="true"></i></div> </div>
 
@@ -8,7 +8,7 @@
 
       <div class="tile" *ngFor="let item of data;let i = index">
         <div class="tile__media">
-          <img class="tile__img" [attr.src]="item.img" />
+          <img [ngClass]="{'tile__img' : carouselStyle == 'horizontal','tile__img img-fluid' : carouselStyle == 'vertical'}" [attr.src]="item.img" [ngStyle]="{'height.px' : carouselStyle == 'vertical' ? 450 : ''}" />
         </div>
         <div class="tile__details">
           <div class="textonly" (click)="loadVideo(item)">
