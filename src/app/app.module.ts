@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import {RouterModule} from "@angular/router";
 import {ROUTES} from "./app.routes";
 import {PlayerComponent} from "./pages/player/content.video.player";
-import {ComponentModule} from "./components/components.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {AppSharedService} from "./shared.app.service";
 
 @NgModule({
   declarations: [
@@ -16,10 +16,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(ROUTES, { useHash: true }),
-    ComponentModule
+    RouterModule.forRoot(ROUTES, { useHash: true })
   ],
-  providers: [],
+  providers: [AppSharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

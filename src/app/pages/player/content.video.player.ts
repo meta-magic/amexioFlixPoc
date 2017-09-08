@@ -4,11 +4,12 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {fadeInAnimation} from "./fade-in.animation";
+import {AppSharedService} from "../../shared.app.service";
 
 @Component({
   selector: 'app-player',
-  template : `    
-    <amexio-youtube-player [videoId]="vidId"></amexio-youtube-player>
+  template : `
+    <amexio-ee-youtube-player [url]="url"></amexio-ee-youtube-player>
   `,
   animations: [fadeInAnimation],
   host: { '[@fadeInAnimation]': '' }
@@ -16,14 +17,13 @@ import {fadeInAnimation} from "./fade-in.animation";
 
 export class PlayerComponent implements OnInit {
   vidId : any;
-  constructor(private route : ActivatedRoute) {
+  url : any;
+  constructor(private route : ActivatedRoute,private appService : AppSharedService) {
     this.vidId = this.route.snapshot.params['id'];
+    this.url = this.appService.getVideoUrlSanitized(this.vidId);
   }
 
   ngOnInit() {
   }
 
-  routeBackToApp(){
-    debugger;
-  }
 }
