@@ -7,6 +7,7 @@ import {ROUTES} from "./app.routes";
 import {PlayerComponent} from "./pages/player/content.video.player";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppSharedService} from "./shared.app.service";
+import {AmexioMediaModule} from 'amexio-ng-extensions/enterprise/media';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {AppSharedService} from "./shared.app.service";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(ROUTES, { useHash: true })
+    RouterModule.forRoot(ROUTES, { useHash: true }),
+    AmexioMediaModule
   ],
   providers: [AppSharedService],
   bootstrap: [AppComponent]
