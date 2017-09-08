@@ -22,7 +22,9 @@
                              [valueField]="'code'"
                              [width]="'250px'">
             </amexio-dropdown><br>
-            <media-ee-carousel [title]="'Season 1'"  [data]="topRateContent[1].episode"></media-ee-carousel>
+            <ng-container *ngIf="topRateContent">
+              <media-ee-carousel [title]="'Season 1'"  [data]="topRateContent[1].episode"></media-ee-carousel>
+            </ng-container>
           </div>
         </amexio-tab>
       </amexio-tab-pane>

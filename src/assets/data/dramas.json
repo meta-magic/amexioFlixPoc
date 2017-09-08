@@ -1,0 +1,328 @@
+[
+  {
+    "title": "Bahubali 2: The Conclusion",
+    "img": "assets/images/drama/bahubali2/Bahubali2_main_img.jpg",
+    "details_img": "assets/images/drama/bahubali2/bahubali2_details.jpg",
+    "desc": "To avenge his father's death, a young man leads an army into battle against a cruel tyrant.",
+    "video": "G62HrubdD6o",
+    "matchPercentage": "94",
+    "releaseYear": "2017",
+    "ageLimit": "13",
+    "seasonNo": "1",
+    "content": [
+      {
+        "key": "Director",
+        "value": "S.S Rajamouli"
+      },
+      {
+        "key": "Starring",
+        "value": "Prabhas, Ranna"
+      },
+      {
+        "key": "Genres",
+        "value": "Action "
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "Hindi"
+      }
+    ]
+  },
+  {
+    "title": "Dangal",
+    "img": "assets/images/drama/dangal/Dangal_main_img.jpg",
+    "details_img": "assets/images/drama/dangal/dangal_details.jpg",
+    "desc": "A once-promising wrestler pursues the gold medal he never won by training two of his daughters to compete at the Commonwealth Games.",
+    "video": "91ZI3IrojMU",
+    "matchPercentage": "95",
+    "releaseYear": "2017",
+    "ageLimit": "16",
+    "seasonNo": "3",
+    "content": [
+      {
+        "key": "Director",
+        "value": "Nitesh Tiwari"
+      },
+      {
+        "key": "Starring",
+        "value": "Aamir Khan, Sakshi, Fatima"
+      },
+      {
+        "key": "Genres",
+        "value": "Dramas, Biography"
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "Hindi"
+      }
+    ]
+  },
+  {
+    "title": "Interstellar",
+    "img": "assets/images/drama/Interstellar/interstellar_main_img.jpg",
+    "details_img": "assets/images/drama/Interstellar/interstellar_details.jpg",
+    "desc": "With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.",
+    "video": "0vxOhd4qlnA",
+    "matchPercentage": "94",
+    "releaseYear": "2015",
+    "ageLimit": "13",
+    "seasonNo": "2",
+    "content": [
+      {
+        "key": "Director",
+        "value": "Christopher Nolan"
+      },
+      {
+        "key": "Starring",
+        "value": "Matthwe, Anne, Jessica"
+      },
+      {
+        "key": "Genres",
+        "value": "International Movie, Award Winning Movie"
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "English"
+      }
+    ]
+  },
+  {
+    "title": "Raees",
+    "img": "assets/images/drama/Raees/Raees_main_img.jpg",
+    "details_img": "assets/images/drama/Raees/raees_details.jpg",
+    "desc": "After street smart kid Raees rises to become Gujarat's bootlegging king in the 1980s, he tries to balance his life of crime with helping his people.",
+    "video": "lpdRqn6xwiM",
+    "matchPercentage": "94",
+    "releaseYear": "2015",
+    "ageLimit": "13",
+    "seasonNo": "2",
+    "content": [
+      {
+        "key": "Director",
+        "value": "Rahul Dholakia"
+      },
+      {
+        "key": "Starring",
+        "value": "Sharukh Khan, Mahir Khan"
+      },
+      {
+        "key": "Genres",
+        "value": "Crime, Action & Adventure"
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "Hindi"
+      }
+    ]
+  },
+  {
+    "title": "War Machine",
+    "img": "assets/images/drama/warmachine/war_machine_main_img.jpg",
+    "details_img": "assets/images/drama/warmachine/war_machine_details.jpg",
+    "desc": "When a proud general is tasked with winning an unpopular war, he takes the challenge head-on, not knowing that hubris may be his own worst enemy.",
+    "video": "a9Jg20Ukf4E",
+    "matchPercentage": "90",
+    "releaseYear": "2017",
+    "ageLimit": "16",
+    "seasonNo": "1",
+    "content": [
+      {
+        "key": "Director",
+        "value": "David Michod"
+      },
+      {
+        "key": "Starring",
+        "value": "Brad Pitt, Topher Grace"
+      },
+      {
+        "key": "Genres",
+        "value": "International Movie, Drama"
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "English"
+      }
+    ]
+  },
+  {
+    "title": "The Big Short",
+    "img": "assets/images/drama/the_big_short.jpg",
+    "details_img": "assets/images/drama/the_big_short_details.jpg",
+    "desc": "TA group of wily opportunists make a fortune off of the U.S. economic crash by sniffing out the situation in advance and betting against the banks.",
+    "video": "Xx---l5CoMQ",
+    "matchPercentage": "95",
+    "releaseYear": "2017",
+    "ageLimit": "16",
+    "seasonNo": "3",
+    "content": [
+      {
+        "key": "Creator",
+        "value": "I Malene King"
+      },
+      {
+        "key": "Starring",
+        "value": "Troian, Ashely, Lucy"
+      },
+      {
+        "key": "Genres",
+        "value": "TV Programmes"
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "English"
+      }
+    ]
+  },
+  {
+    "title": "American Sniper",
+    "img": "assets/images/drama/american_sniper.jpg",
+    "details_img": "assets/images/drama/american_sniper_details.jpg",
+    "desc": "U.S. Navy SEAL marksman Chris Kyle racks up an unprecedented number of kills in Iraq, even as his home life starts to slip away from him.",
+    "video": "CTbyaj8Y-Co",
+    "matchPercentage": "94",
+    "releaseYear": "2015",
+    "ageLimit": "13",
+    "seasonNo": "2",
+    "content": [
+      {
+        "key": "Creator",
+        "value": "Christopher Cannucciar"
+      },
+      {
+        "key": "Genres",
+        "value": "Documentary"
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "English"
+      }
+    ]
+  },
+  {
+    "title": "Dilwale",
+    "img": "assets/images/drama/dilwale.jpg",
+    "details_img": "assets/images/drama/diwale_details.jpg",
+    "desc": "A young couple falls in love, but conflicting loyalties drive them apart. Years later, fate intervenes and hands them a second chance.",
+    "video": "nIgeVoVMv90",
+    "matchPercentage": "90",
+    "releaseYear": "2017",
+    "ageLimit": "16",
+    "seasonNo": "1",
+    "content": [
+      {
+        "key": "Starring",
+        "value": "Marlon Wayans, Dennis, Eliza"
+      },
+      {
+        "key": "Creator",
+        "value": "Michale Tiddes"
+      },
+      {
+        "key": "Genres",
+        "value": "International Movie, Comedies"
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "English"
+      }
+    ]
+  },
+  {
+    "title": "Queen",
+    "img": "assets/images/drama/queen.jpg",
+    "details_img": "assets/images/drama/queen_details.jpg",
+    "desc": "A jilted bride decides to go on her European honeymoon anyway -- by herself -- and ends up embarking on a journey of self-discovery.",
+    "video": "L83qMnbJ198",
+    "matchPercentage": "94",
+    "releaseYear": "2015",
+    "ageLimit": "13",
+    "seasonNo": "2",
+    "content": [
+      {
+        "key": "Starring",
+        "value": "Akshay Kumar, Esha Gupta, Pavan Malhotra"
+      },
+      {
+        "key": "Director",
+        "value": "Dharmendra"
+      },
+      {
+        "key": "Genres",
+        "value": "Crime"
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "Hindi"
+      }
+    ]
+  },
+  {
+    "title": "Focus",
+    "img": "assets/images/drama/focus.jpg",
+    "details_img": "assets/images/drama/focus_details.jpg",
+    "desc": "Three years after breaking off a romance with his protégé, expert con man Nicky Spurgeon finds her on the other side of his elaborate new scam.",
+    "video": "8hq28cZ938E",
+    "matchPercentage": "90",
+    "releaseYear": "2017",
+    "ageLimit": "16",
+    "seasonNo": "1",
+    "content": [
+      {
+        "key": "Starring",
+        "value": "Nicholos Hoult, Logan, Neil"
+      },
+      {
+        "key": "Director",
+        "value": "Fernado Coimara"
+      },
+      {
+        "key": "Genres",
+        "value": "Internation Movie, British Movie, Adventure"
+      },
+      {
+        "key": "Subtitles",
+        "value": "English [CC]"
+      },
+      {
+        "key": "Audio Languages",
+        "value": "English"
+      }
+    ]
+  }
+]

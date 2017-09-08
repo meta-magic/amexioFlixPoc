@@ -70,7 +70,6 @@ export class MultiMediaCarousel implements OnInit {
   }
 
   openDetailsSection(item : any) {
-    debugger;
     this.videoUrl = item.video;
     this.currentDetailsImagePath = item.details_img;
     this.currentDetailsTitle = item.title;
