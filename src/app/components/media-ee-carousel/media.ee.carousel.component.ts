@@ -1,8 +1,7 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
-import {Router} from "@angular/router";
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 declare var $;
 @Component({
- selector: 'media-ee-carousel',
+ selector: 'amexio-media-ee-carousel',
  templateUrl: 'media.ee.carousel.html',
  styleUrls : ['media.ee.carousel.css']
 })
@@ -16,6 +15,8 @@ export class MultiMediaCarousel implements OnInit,OnChanges {
   @Input()  hasDetail : boolean = true;
 
   @Input()  title : string;
+
+  @Output() onVideoLoad : EventEmitter<any> = new EventEmitter<any>();
 
   elementId : any;
   right = false;
@@ -32,7 +33,7 @@ export class MultiMediaCarousel implements OnInit,OnChanges {
   ageLimit : any;
   matchPercentage : any;
 
-  constructor(private router : Router) {
+  constructor() {
     this.elementId = 'multi-media-ee-carousel-' + Math.floor(Math.random()*90000) + 10000;
   }
 
@@ -101,10 +102,10 @@ export class MultiMediaCarousel implements OnInit,OnChanges {
 
 
   loadVideo(item){
-    this.router.navigate(['/player',item.video])
+    this.onVideoLoad.emit(item.video);
   }
 
   playVideo(video : any){
-    this.router.navigate(['player',video]);
+    this.onVideoLoad.emit(video)
   }
 }

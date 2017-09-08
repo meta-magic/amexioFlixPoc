@@ -68,6 +68,10 @@ export class LandingPageComponent implements OnInit {
     }
 
   }
+
+  loadVideo(videoId : any){
+    this.router.navigate(['/player',videoId])
+  }
 }
 
 

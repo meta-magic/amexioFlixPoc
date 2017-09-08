@@ -15,7 +15,7 @@ import {Router} from "@angular/router";
 declare var $;
 @Component({
   moduleId: module.id,
-  selector: 'amexio-media-ee-carousel',
+  selector: 'amexio-media-ee-carousel-ex',
   templateUrl: 'media.carousel.component.html',
   styleUrls : ['media.carousel.style.css']
 })

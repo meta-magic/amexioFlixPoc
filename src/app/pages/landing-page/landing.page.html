@@ -24,7 +24,7 @@
                              [width]="'250px'">
             </amexio-dropdown><br>
             <ng-container *ngIf="topRateContent">
-              <media-ee-carousel [title]="'Season 1'"  [data]="changingEpisodeData"></media-ee-carousel>
+              <amexio-media-ee-carousel [title]="'Season 1'" (onVideoLoad)="loadVideo($event)"  [data]="changingEpisodeData"></amexio-media-ee-carousel>
             </ng-container>
           </div>
         </amexio-tab>
@@ -33,21 +33,22 @@
   </div>
 <br>
   <div class="col-lg-12">
-    <media-ee-carousel title="Top Rated" [data]="topRateContent" carouselStyle="vertical"></media-ee-carousel>
+    <amexio-media-ee-carousel title="Top Rated" (onVideoLoad)="loadVideo($event)" [data]="topRateContent" carouselStyle="vertical"></amexio-media-ee-carousel>
   </div>
 
   <div class="col-lg-12">
-    <media-ee-carousel title="New Release" [data]="newreleases"></media-ee-carousel>
+    <amexio-media-ee-carousel title="New Release" (onVideoLoad)="loadVideo($event)" [data]="newreleases"></amexio-media-ee-carousel>
   </div>
 
   <div class="col-lg-12">
-    <media-ee-carousel title="Dramas" [data]="dramas"></media-ee-carousel>
+    <amexio-media-ee-carousel title="Dramas" (onVideoLoad)="loadVideo($event)" [data]="dramas"></amexio-media-ee-carousel>
   </div>
 
 
 
   <div class="col-lg-12">
-    <media-ee-carousel title="Documentaries" [data]="documentries"></media-ee-carousel>
+    <amexio-media-ee-carousel title="Documentaries" (onVideoLoad)="loadVideo($event)" [data]="documentries"></amexio-media-ee-carousel>
   </div>
+
 </div>
 
