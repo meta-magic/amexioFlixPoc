@@ -9,7 +9,7 @@ import {AppSharedService} from "../../shared.app.service";
 @Component({
   selector: 'app-player',
   template : `
-    <amexio-ee-youtube-player [videoId]="url"></amexio-ee-youtube-player>
+    <amexio-ee-youtube-player [url]="url"></amexio-ee-youtube-player>
   `,
   animations: [fadeInAnimation],
   host: { '[@fadeInAnimation]': '' }
