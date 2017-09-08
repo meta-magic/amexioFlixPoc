@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {Router} from "@angular/router";
 declare var $;
 @Component({
@@ -7,7 +7,7 @@ declare var $;
  styleUrls : ['media.ee.carousel.css']
 })
 
-export class MultiMediaCarousel implements OnInit {
+export class MultiMediaCarousel implements OnInit,OnChanges {
 
   @Input()  data : any;
 
@@ -39,6 +39,12 @@ export class MultiMediaCarousel implements OnInit {
   ngOnInit() {
     if(this.carouselStyle == null){
       this.carouselStyle = 'horizontal';
+    }
+  }
+
+  ngOnChanges(changes : SimpleChanges){
+    if(changes['data']!=null){
+      this.data = changes['data'].currentValue;
     }
   }
 

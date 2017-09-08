@@ -1,10 +1,6 @@
 {
   "data": [
     {"episode": "Season 1","code": "Ck"},
-    {"episode": "Season 2","code": "Sw"},
-    {"episode": "Season 3","code": "Glf"},
-    {"episode": "Season 4","code": "Hky"},
-    {"episode": "Season 5","code": "Scr"},
-    {"episode": "Season 6","code": "F1"}
+    {"episode": "Season 2","code": "Sw"}
   ]
 }
